@@ -125,7 +125,7 @@
         }
 
         .grayscale-init {
-            filter: grayscale(100%);
+            filter: none;
             transition: filter 1s cubic-bezier(0.4, 0, 0.2, 1);
         }
         
@@ -315,21 +315,21 @@
 </header>
 <main class="max-w-[1140px] mx-auto px-margin-page pb-section-gap pt-element-gap">
 <!-- Hero Section -->
-<section class="grid grid-cols-1 md:grid-cols-2 gap-gutter items-center min-h-[716px] mb-section-gap parallax-layer" id="about">
-<div class="relative h-[600px] w-full flex justify-center items-end group overflow-hidden rounded-2xl bg-surface-container/30">
+<section class="grid grid-cols-1 lg:grid-cols-2 gap-gutter items-center lg:min-h-[716px] mb-section-gap parallax-layer" id="about">
+<div class="relative h-[360px] md:h-[460px] lg:h-[600px] w-full max-w-[280px] md:max-w-[360px] lg:max-w-none mx-auto flex justify-center items-end group overflow-hidden rounded md:rounded lg:rounded-2xl bg-surface-container/30">
 <div class="hero-glow"></div>
 <div class="hero-texture"></div>
 <img alt="Portrait of Zikang Shao" class="h-full w-full object-contain object-bottom transition-transform duration-[3000ms] ease-out group-hover:scale-[1.03] group-hover:-translate-y-1 grayscale-init cursor-pointer relative z-10" data-alt="A professional studio portrait of an Asian male professional in his late 20s. He is dressed in a sharp, minimalist dark tailored suit over a crisp white shirt, exuding quiet confidence. The background is completely removed (transparent), allowing the figure to blend seamlessly into the minimalist UI. The lighting is sophisticated and editorial, with soft shadows defining his features. The overall aesthetic is high-end, clean, and modern, fitting for a finance and AI product builder." onmouseover="this.classList.add('colored')" src="https://lh3.googleusercontent.com/aida/ADBb0ujzprqDJonGoQsa_f-7QoHvRM1pktJYb9yXSucjngYFgovxh5MAV6nGj2K5ef7BYxO5Ev2W5_RoQ2rDaPa8qgmi4U5VtqHpp3pVmt1E86J9m2KFkmhw18Yk-0QTQGY5GemUn3btakGamKQ-bV6S3MMu1asWXmA63WW5hVHCQuwwdx2m7mjGbthj3XqZBdPTETZeW_MpiIGGEK26XFTH7nYtgZ8c8V3z21LvjOaK2IbV3kxfgW3FFJlxQAIB-PdY4fUUUYYt7EWc7Ss"/>
 </div>
 <div class="space-y-stack-md flex flex-col justify-center parallax-layer" data-speed="0.05">
-<h1 class="font-display-lg text-display-lg text-primary">
+<h1 class="font-display-lg text-[30px] md:text-[40px] lg:text-[56px] leading-[1.15] tracking-tight font-normal text-primary">
 <span data-i18n="hero.titleLine1">Hi, I'm Zikang Shao —</span><br/>
 <span data-i18n="hero.titleLine2a">Finance × AI</span> <span class="italic text-surface-tint" data-i18n="hero.titleLine2b">Product Builder.</span>
 </h1>
 <p class="font-body-lg text-body-lg text-on-surface-variant max-w-md" data-i18n="hero.subtitle">
                     MSc Finance, emlyon business school. I run due diligence on leasing deals — and build AI tools that make investment research faster, sharper, and more honest.
                 </p>
-<div class="pt-stack-sm flex flex-col gap-6"><div class="flex flex-wrap gap-element-gap items-center"><a href="./Zikang_Shao_CV_EN.pdf" download="Zikang_Shao_CV_EN.pdf" class="border border-primary text-primary px-8 py-3 font-ui-label text-ui-label rounded hover:bg-primary hover:text-on-primary hover:-translate-y-1 active:translate-y-0 active:scale-95 transition-all duration-500 bg-transparent hover:shadow-lg inline-block" data-cv-link data-i18n="hero.ctaResume">Download Resume</a><a href="#" onclick="event.preventDefault(); window.scrollTo({top: document.body.scrollHeight, behavior: 'smooth'});" class="font-ui-label text-ui-label text-primary underline underline-offset-4 decoration-1 hover:decoration-2 transition-all" data-i18n="hero.ctaContact">Get in touch ↓</a></div></div>
+<div class="pt-stack-sm flex flex-col gap-6"><div class="flex flex-col md:flex-row md:flex-wrap gap-4 md:gap-element-gap items-stretch md:items-center"><a href="./Zikang_Shao_CV_EN.pdf" download="Zikang_Shao_CV_EN.pdf" class="border border-primary text-primary px-8 font-ui-label text-ui-label rounded hover:bg-primary hover:text-on-primary hover:-translate-y-1 active:translate-y-0 active:scale-95 transition-all duration-500 bg-transparent hover:shadow-lg inline-flex items-center justify-center min-h-[48px] w-full md:w-auto" data-cv-link data-i18n="hero.ctaResume">Download Resume</a><a href="#" onclick="event.preventDefault(); window.scrollTo({top: document.body.scrollHeight, behavior: 'smooth'});" class="font-ui-label text-ui-label text-primary underline underline-offset-4 decoration-1 hover:decoration-2 transition-all inline-flex items-center justify-center min-h-[48px] w-full md:w-auto" data-i18n="hero.ctaContact">Get in touch ↓</a></div></div>
 </div>
 </section>
 <!-- Divider -->
