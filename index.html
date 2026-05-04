@@ -192,12 +192,22 @@
             border: 1px solid #c4c7c7;
             width: 80%;
             max-width: 800px;
+            max-height: 90vh;
+            overflow-y: auto;
             border-radius: 8px;
             box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
             position: relative;
             transform: translateY(20px);
             opacity: 0;
             transition: all 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+        }
+        @media (max-width: 1023px) {
+            .modal-content {
+                margin: 5% auto;
+                padding: 20px;
+                width: 92%;
+                border-width: 1px;
+            }
         }
         .modal.show .modal-content {
             transform: translateY(0);
@@ -362,15 +372,15 @@
 <hr class="border-t border-outline-variant mb-section-gap"/>
 <!-- Experience & Education Rail -->
 <section class="mb-section-gap scroll-mt-24 parallax-layer" id="experience">
-<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
-<div class="col-span-1 md:col-span-3">
-<h2 class="font-h2 text-h2 text-primary mb-element-gap sticky top-24" data-i18n="bg.heading">Background</h2>
-<div class="flex flex-col gap-2 border-l border-outline-variant pl-4">
-<button class="text-left font-ui-label text-ui-label text-primary py-2 border-l-2 border-primary -ml-[17px] pl-4 transition-all" onclick="showTab('work')" data-i18n="bg.tab.work">Work Experience</button>
-<button class="text-left font-ui-label text-ui-label text-on-surface-variant py-2 border-l-2 border-transparent hover:border-outline-variant -ml-[17px] pl-4 transition-all" onclick="showTab('edu')" data-i18n="bg.tab.edu">Education</button>
-<button class="text-left font-ui-label text-ui-label text-on-surface-variant py-2 border-l-2 border-transparent hover:border-outline-variant -ml-[17px] pl-4 transition-all" onclick="showTab('proj')" data-i18n="bg.tab.proj">Project Experience</button></div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+<div class="col-span-1 lg:col-span-3">
+<h2 class="font-h2 text-h2 text-primary mb-element-gap lg:sticky lg:top-24" data-i18n="bg.heading">Background</h2>
+<div class="bg-tab-bar flex flex-row lg:flex-col gap-2 lg:border-l border-b lg:border-b-0 border-outline-variant lg:pl-4 mb-element-gap lg:mb-0 overflow-x-auto lg:overflow-visible whitespace-nowrap sticky top-[64px] lg:top-24 z-30 bg-[#FBFAF7]">
+<button class="text-left font-ui-label text-ui-label text-primary py-2 px-3 lg:px-0 border-b-2 lg:border-b-0 lg:border-l-2 border-primary lg:-ml-[17px] lg:pl-4 transition-all flex-shrink-0 min-h-[44px]" onclick="showTab('work')" data-i18n="bg.tab.work">Work Experience</button>
+<button class="text-left font-ui-label text-ui-label text-on-surface-variant py-2 px-3 lg:px-0 border-b-2 lg:border-b-0 lg:border-l-2 border-transparent hover:border-outline-variant lg:-ml-[17px] lg:pl-4 transition-all flex-shrink-0 min-h-[44px]" onclick="showTab('edu')" data-i18n="bg.tab.edu">Education</button>
+<button class="text-left font-ui-label text-ui-label text-on-surface-variant py-2 px-3 lg:px-0 border-b-2 lg:border-b-0 lg:border-l-2 border-transparent hover:border-outline-variant lg:-ml-[17px] lg:pl-4 transition-all flex-shrink-0 min-h-[44px]" onclick="showTab('proj')" data-i18n="bg.tab.proj">Project Experience</button></div>
 </div>
-<div class="col-span-1 md:col-span-9 space-y-gutter relative">
+<div class="col-span-1 lg:col-span-9 space-y-gutter relative">
 <!-- Work Experience -->
 <div class="block" id="tab-work">
 <div class="border border-transparent border-b-outline-variant pb-element-gap exp-card cursor-pointer p-4 rounded-lg group" onclick="openModal('modal-work-1')">
