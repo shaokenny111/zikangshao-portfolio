@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+
+<html class="light scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Zikang Shao - Finance &amp; AI Product Builder</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400;1,6..72,500&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-error-container": "#93000a",
+                        "surface-container-high": "#ebe7e6",
+                        "error-container": "#ffdad6",
+                        "error": "#ba1a1a",
+                        "on-tertiary-fixed": "#1c1b1a",
+                        "secondary-fixed": "#ffddb7",
+                        "primary-container": "#1c1b1b",
+                        "inverse-surface": "#313030",
+                        "background": "#fdf8f8",
+                        "on-surface-variant": "#444748",
+                        "on-secondary-container": "#795b37",
+                        "on-background": "#1c1b1b",
+                        "secondary": "#765935",
+                        "on-primary-fixed": "#1c1b1b",
+                        "inverse-on-surface": "#f4f0ef",
+                        "on-tertiary": "#ffffff",
+                        "on-error": "#ffffff",
+                        "primary-fixed-dim": "#c8c6c5",
+                        "on-surface": "#1c1b1b",
+                        "surface": "#fdf8f8",
+                        "on-tertiary-fixed-variant": "#484645",
+                        "on-primary-container": "#858383",
+                        "secondary-container": "#fed6a9",
+                        "inverse-primary": "#c8c6c5",
+                        "tertiary-container": "#1c1b1a",
+                        "on-secondary-fixed-variant": "#5c4220",
+                        "surface-dim": "#ddd9d8",
+                        "primary-fixed": "#e5e2e1",
+                        "outline-variant": "#c4c7c7",
+                        "on-secondary-fixed": "#2a1700",
+                        "surface-bright": "#fdf8f8",
+                        "primary": "#000000",
+                        "on-secondary": "#ffffff",
+                        "tertiary-fixed": "#e6e2df",
+                        "surface-tint": "#5f5e5e",
+                        "on-tertiary-container": "#868382",
+                        "tertiary-fixed-dim": "#cac6c4",
+                        "surface-container-low": "#f7f3f2",
+                        "outline": "#747878",
+                        "surface-variant": "#e5e2e1",
+                        "surface-container-highest": "#e5e2e1",
+                        "on-primary-fixed-variant": "#474746",
+                        "surface-container": "#f1edec",
+                        "on-primary": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "tertiary": "#000000",
+                        "secondary-fixed-dim": "#e6c094"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-page": "5vw",
+                        "stack-sm": "8px",
+                        "section-gap": "120px",
+                        "element-gap": "24px",
+                        "gutter": "32px",
+                        "container-max": "1140px",
+                        "stack-md": "16px"
+                    },
+                    "fontFamily": {
+                        "h1": ["Newsreader"],
+                        "display-lg": ["Newsreader"],
+                        "ui-label": ["Inter"],
+                        "h2": ["Newsreader"],
+                        "caption": ["Newsreader"],
+                        "body-lg": ["Newsreader"],
+                        "body-md": ["Newsreader"],
+                        "ui-metadata": ["Inter"]
+                    },
+                    "fontSize": {
+                        "h1": ["32px", { "lineHeight": "1.2", "fontWeight": "500" }],
+                        "display-lg": ["48px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "400" }],
+                        "ui-label": ["13px", { "lineHeight": "1", "letterSpacing": "0.04em", "fontWeight": "600" }],
+                        "h2": ["24px", { "lineHeight": "1.3", "fontWeight": "500" }],
+                        "caption": ["14px", { "lineHeight": "1.4", "fontWeight": "400" }],
+                        "body-lg": ["20px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "body-md": ["17px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "ui-metadata": ["12px", { "lineHeight": "1.4", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>body {
+            background-color: #FBFAF7;
+            color: #1A1A1A;
+            scroll-behavior: smooth;
+        }
+        
+        /* Smooth Parallax Elements */
+        .parallax-layer {
+            transition: transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1);
+        }
+
+        .grayscale-init {
+            filter: grayscale(100%);
+            transition: filter 1s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .hero-glow {
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(circle at center, rgba(200, 198, 197, 0.15) 0%, transparent 60%);
+            opacity: 0;
+            transition: opacity 3s cubic-bezier(0.4, 0, 0.2, 1);
+            mix-blend-mode: multiply;
+            pointer-events: none;
+        }
+
+        .hero-texture {
+            position: absolute;
+            inset: 0;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.05'/%3E%3C/svg%3E");
+            opacity: 0;
+            transition: opacity 3s cubic-bezier(0.4, 0, 0.2, 1);
+            mix-blend-mode: overlay;
+            pointer-events: none;
+        }
+
+        .group:hover .grayscale-init, .grayscale-init.colored {
+            filter: grayscale(0%);
+        }
+        
+        .group:hover .hero-glow, .group:hover .hero-texture {
+            opacity: 1;
+        }
+
+        .exp-card {
+            transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1), 
+                        box-shadow 0.4s cubic-bezier(0.2, 0.8, 0.2, 1), 
+                        border-color 0.4s ease;
+        }
+        .exp-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+            border-color: #000;
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 100;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(251, 250, 247, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+        .modal.show {
+            opacity: 1;
+        }
+        .modal-content {
+            background-color: #fdf8f8;
+            margin: 10% auto;
+            padding: 40px;
+            border: 1px solid #c4c7c7;
+            width: 80%;
+            max-width: 800px;
+            border-radius: 8px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+            position: relative;
+            transform: translateY(20px);
+            opacity: 0;
+            transition: all 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+        }
+        .modal.show .modal-content {
+            transform: translateY(0);
+            opacity: 1;
+        }
+        .close {
+            color: #747878;
+            position: absolute;
+            top: 20px;
+            right: 24px;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: color 0.2s;
+        }
+        .close:hover,
+        .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        
+        /* Navigation Highlight */
+        .nav-link {
+            position: relative;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: currentColor;
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+            transform-origin: right;
+        }
+        .nav-link:hover::after, .nav-link.active::after {
+            transform: scaleX(1);
+            transform-origin: left;
+        }
+        .nav-link.active {
+            color: #1c1b1b;
+            font-weight: 600;
+        }
+        .dark .nav-link.active {
+            color: #fdf8f8;
+        }</style>
+</head>
+<body class="antialiased min-h-screen relative">
+<!-- TopAppBar -->
+<header class="bg-[#FBFAF7]/90 dark:bg-stone-950/90 backdrop-blur-xl font-['Inter'] tracking-tight text-sm uppercase sticky full-width top-0 border-b border-[#E5E2DA] dark:border-stone-800 flat no shadows z-50 transition-all duration-300">
+<div class="flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto">
+<div class="font-['Newsreader'] text-2xl italic font-medium text-stone-900 dark:text-stone-50">
+                Zikang Shao
+            </div>
+<nav class="hidden md:flex gap-8">
+<a class="nav-link text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-50 transition-colors duration-300 cursor-pointer pb-0.5 active" href="#about">About</a>
+<a class="nav-link text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-50 transition-colors duration-300 cursor-pointer pb-0.5" href="#experience">Background</a>
+<a class="nav-link text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-50 transition-colors duration-300 cursor-pointer pb-0.5" href="#projects">Selected Works</a>
+<a class="nav-link text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-50 transition-colors duration-300 cursor-pointer pb-0.5" href="#toolbox">Toolbox</a>
+</nav>
+<div class="text-stone-900 dark:text-stone-100 cursor-pointer hover:text-stone-900 dark:hover:text-stone-50 transition-colors duration-300 font-ui-label text-ui-label">
+                EN / 中
+            </div>
+</div>
+</header>
+<main class="max-w-[1140px] mx-auto px-margin-page pb-section-gap pt-element-gap">
+<!-- Hero Section -->
+<section class="grid grid-cols-1 md:grid-cols-2 gap-gutter items-center min-h-[716px] mb-section-gap parallax-layer" id="about">
+<div class="relative h-[600px] w-full flex justify-center items-end group overflow-hidden rounded-2xl bg-surface-container/30">
+<div class="hero-glow"></div>
+<div class="hero-texture"></div>
+<img alt="Portrait of Zikang Shao" class="h-full w-full object-contain object-bottom transition-transform duration-[3000ms] ease-out group-hover:scale-[1.03] group-hover:-translate-y-1 grayscale-init cursor-pointer relative z-10" data-alt="A professional studio portrait of an Asian male professional in his late 20s. He is dressed in a sharp, minimalist dark tailored suit over a crisp white shirt, exuding quiet confidence. The background is completely removed (transparent), allowing the figure to blend seamlessly into the minimalist UI. The lighting is sophisticated and editorial, with soft shadows defining his features. The overall aesthetic is high-end, clean, and modern, fitting for a finance and AI product builder." onmouseover="this.classList.add('colored')" src="https://lh3.googleusercontent.com/aida/ADBb0ujzprqDJonGoQsa_f-7QoHvRM1pktJYb9yXSucjngYFgovxh5MAV6nGj2K5ef7BYxO5Ev2W5_RoQ2rDaPa8qgmi4U5VtqHpp3pVmt1E86J9m2KFkmhw18Yk-0QTQGY5GemUn3btakGamKQ-bV6S3MMu1asWXmA63WW5hVHCQuwwdx2m7mjGbthj3XqZBdPTETZeW_MpiIGGEK26XFTH7nYtgZ8c8V3z21LvjOaK2IbV3kxfgW3FFJlxQAIB-PdY4fUUUYYt7EWc7Ss"/>
+</div>
+<div class="space-y-stack-md flex flex-col justify-center parallax-layer" data-speed="0.05">
+<h1 class="font-display-lg text-display-lg text-primary">
+                    Hi, I'm Zikang Shao —<br/>
+                    Finance × AI <span class="italic text-surface-tint">Product Builder.</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-md">
+                    MSc Finance, emlyon business school. I run due diligence on leasing deals — and build AI tools that make investment research faster, sharper, and more honest.
+                </p>
+<div class="pt-stack-sm flex flex-col gap-6"><div class="flex flex-wrap gap-element-gap items-center"><a href="Zikang_Shao_CV_EN.pdf" download class="border border-primary text-primary px-8 py-3 font-ui-label text-ui-label rounded hover:bg-primary hover:text-on-primary hover:-translate-y-1 active:translate-y-0 active:scale-95 transition-all duration-500 bg-transparent hover:shadow-lg inline-block" data-cv-link>Download Resume</a><a href="#contact" class="font-ui-label text-ui-label text-primary underline underline-offset-4 decoration-1 hover:decoration-2 transition-all">Get in touch ↓</a></div></div>
+</div>
+</section>
+<!-- Divider -->
+<hr class="border-t border-outline-variant mb-section-gap"/>
+<!-- Experience & Education Rail -->
+<section class="mb-section-gap scroll-mt-24 parallax-layer" id="experience">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<div class="col-span-1 md:col-span-3">
+<h2 class="font-h2 text-h2 text-primary mb-element-gap sticky top-24">Background</h2>
+<div class="flex flex-col gap-2 border-l border-outline-variant pl-4">
+<button class="text-left font-ui-label text-ui-label text-primary py-2 border-l-2 border-primary -ml-[17px] pl-4 transition-all" onclick="showTab('work')">Work Experience</button>
+<button class="text-left font-ui-label text-ui-label text-on-surface-variant py-2 border-l-2 border-transparent hover:border-outline-variant -ml-[17px] pl-4 transition-all" onclick="showTab('edu')">Education</button>
+<button class="text-left font-ui-label text-ui-label text-on-surface-variant py-2 border-l-2 border-transparent hover:border-outline-variant -ml-[17px] pl-4 transition-all" onclick="showTab('proj')">Project Experience</button></div>
+</div>
+<div class="col-span-1 md:col-span-9 space-y-gutter relative">
+<!-- Work Experience -->
+<div class="block" id="tab-work">
+<div class="border border-transparent border-b-outline-variant pb-element-gap exp-card cursor-pointer p-4 rounded-lg group" onclick="openModal('modal-work-1')">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-body-lg text-body-lg text-primary group-hover:italic transition-all">Project Manager Assistant — Financial Leasing</h3>
+<span class="font-ui-metadata text-ui-metadata text-on-surface-variant uppercase tracking-widest">08/2025 — Present</span>
+</div>
+<h4 class="font-body-md text-body-md italic text-surface-tint mb-4">Haisheng Financial Leasing, Foshan</h4>
+<p class="font-caption text-caption text-on-surface-variant">Lead due diligence on financial leasing engagements — running industry, business, operational, and financial deep-dives via desk research and on-site visits. Identify cash flow and asset quality risks; draft DD reports that feed approval and structuring decisions.</p>
+<div class="mt-4 text-xs font-semibold uppercase tracking-wider text-surface-tint opacity-0 group-hover:opacity-100 transition-opacity flex items-center gap-1">Click to expand <span class="material-symbols-outlined text-[14px]">open_in_new</span></div>
+</div>
+<div class="border border-transparent border-b-outline-variant pb-element-gap exp-card cursor-pointer p-4 rounded-lg mt-4 group" onclick="openModal('modal-work-2')">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-body-lg text-body-lg text-primary group-hover:italic transition-all">Automotive Group Analyst</h3>
+<span class="font-ui-metadata text-ui-metadata text-on-surface-variant uppercase tracking-widest">07/2024 — 11/2024</span>
+</div>
+<h4 class="font-body-md text-body-md italic text-surface-tint mb-4">Guoyuan Securities Company Limited, Shanghai</h4>
+<p class="font-caption text-caption text-on-surface-variant">Contributed to 5 in-depth research reports on the automotive sector and its supply chain. Analyzed industry trends, business models, competitive landscape, and company fundamentals to back investment conclusions.</p>
+<div class="mt-4 text-xs font-semibold uppercase tracking-wider text-surface-tint opacity-0 group-hover:opacity-100 transition-opacity flex items-center gap-1">Click to expand <span class="material-symbols-outlined text-[14px]">open_in_new</span></div>
+</div>
+<div class="border border-transparent border-b-outline-variant pb-element-gap exp-card cursor-pointer p-4 rounded-lg mt-4 group" onclick="openModal('modal-work-3')">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-body-lg text-body-lg text-primary group-hover:italic transition-all">Financial Service Clerk — Fund NAV Automation</h3>
+<span class="font-ui-metadata text-ui-metadata text-on-surface-variant uppercase tracking-widest">01/2023 — 06/2023</span>
+</div>
+<h4 class="font-body-md text-body-md italic text-surface-tint mb-4">HSBC, Foshan</h4>
+<p class="font-caption text-caption text-on-surface-variant">Joined the fund NAV automation project: daily, monthly, and quarterly NAV calculation, procedure verification, and reporting that supported the department's valuation and accounting workflows.</p>
+<div class="mt-4 text-xs font-semibold uppercase tracking-wider text-surface-tint opacity-0 group-hover:opacity-100 transition-opacity flex items-center gap-1">Click to expand <span class="material-symbols-outlined text-[14px]">open_in_new</span></div>
+</div>
+</div>
+<!-- Project Experience -->
+<div class="hidden space-y-6" id="tab-proj">
+<div class="border border-transparent border-b-outline-variant pb-element-gap exp-card cursor-pointer p-4 rounded-lg group" onclick="openModal('modal-proj-1')">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-body-lg text-body-lg text-primary group-hover:italic transition-all">AI Research Engine for Investment Workflows</h3>
+<span class="font-ui-metadata text-ui-metadata text-on-surface-variant uppercase tracking-widest">01/2026 — Present</span>
+</div>
+<h4 class="font-body-md text-body-md italic text-surface-tint mb-4">Personal product · Solo build</h4>
+<p class="font-caption text-caption text-on-surface-variant">Building a precision internal aggregation engine on Coze + DeepSeek that solves fragmented data sources in investment research. Workflow: search → multi-source aggregation → refined output, with both internal knowledge-base retrieval and live web search.</p>
+<div class="mt-4 text-xs font-semibold uppercase tracking-wider text-surface-tint opacity-0 group-hover:opacity-100 transition-opacity flex items-center gap-1">Click to expand <span class="material-symbols-outlined text-[14px]">open_in_new</span></div>
+</div>
+<div class="border border-transparent border-b-outline-variant pb-element-gap exp-card cursor-pointer p-4 rounded-lg group" onclick="openModal('modal-proj-2')">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-body-lg text-body-lg text-primary group-hover:italic transition-all">Machine Learning & Investment Backtesting in R</h3>
+<span class="font-ui-metadata text-ui-metadata text-on-surface-variant uppercase tracking-widest">02/2024 — 05/2024</span>
+</div>
+<h4 class="font-body-md text-body-md italic text-surface-tint mb-4">Course final, MSc Finance · Top 5% of class</h4>
+<p class="font-caption text-caption text-on-surface-variant">End-to-end independent project: data ingestion from financial terminals → cleansing → EDA → regression and time-series modeling → simulated investment decisions → portfolio backtesting.</p>
+<div class="mt-4 text-xs font-semibold uppercase tracking-wider text-surface-tint opacity-0 group-hover:opacity-100 transition-opacity flex items-center gap-1">Click to expand <span class="material-symbols-outlined text-[14px]">open_in_new</span></div>
+</div>
+<div class="border border-transparent border-b-outline-variant pb-element-gap exp-card cursor-pointer p-4 rounded-lg group" onclick="openModal('modal-proj-3')">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-body-lg text-body-lg text-primary group-hover:italic transition-all">UBS M&A Strategic Analysis</h3>
+<span class="font-ui-metadata text-ui-metadata text-on-surface-variant uppercase tracking-widest">10/2023 — 12/2023</span>
+</div>
+<h4 class="font-body-md text-body-md italic text-surface-tint mb-4">Course group project · 2nd place</h4>
+<p class="font-caption text-caption text-on-surface-variant">Strategic analysis of a UBS M&A case — external environment, internal challenges, strategic objectives, and implementation pathway. AI-assisted research lifted team efficiency ~30% vs. peer groups.</p>
+<div class="mt-4 text-xs font-semibold uppercase tracking-wider text-surface-tint opacity-0 group-hover:opacity-100 transition-opacity flex items-center gap-1">Click to expand <span class="material-symbols-outlined text-[14px]">open_in_new</span></div>
+</div>
+<div class="border border-transparent border-b-outline-variant pb-element-gap exp-card cursor-pointer p-4 rounded-lg group" onclick="openModal('modal-proj-4')">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-body-lg text-body-lg text-primary group-hover:italic transition-all">Greater Bay Area Finance Challenge — Muyuan Co.</h3>
+<span class="font-ui-metadata text-ui-metadata text-on-surface-variant uppercase tracking-widest">09/2021 — 12/2021</span>
+</div>
+<h4 class="font-body-md text-body-md italic text-surface-tint mb-4">National finance challenge · University 2nd prize</h4>
+<p class="font-caption text-caption text-on-surface-variant">Equity research on Muyuan Co. using Porter's Five Forces and SWOT. Built a financial model end-to-end. Owned research direction, content integration, and final presentation. Advanced to next round.</p>
+<div class="mt-4 text-xs font-semibold uppercase tracking-wider text-surface-tint opacity-0 group-hover:opacity-100 transition-opacity flex items-center gap-1">Click to expand <span class="material-symbols-outlined text-[14px]">open_in_new</span></div>
+</div>
+<div class="border border-transparent border-b-outline-variant pb-element-gap exp-card cursor-pointer p-4 rounded-lg group" onclick="openModal('modal-proj-5')">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-body-lg text-body-lg text-primary group-hover:italic transition-all">Huangshang Rural Revitalization — Dengshan Village</h3>
+<span class="font-ui-metadata text-ui-metadata text-on-surface-variant uppercase tracking-widest">09/2021 — 09/2022</span>
+</div>
+<h4 class="font-body-md text-body-md italic text-surface-tint mb-4">University-led initiative</h4>
+<p class="font-caption text-caption text-on-surface-variant">Funding mobilization, field research, and industrialization support for the local black-olive industry. Linked government, institutions, enterprises, and the university to move the project from research to execution.</p>
+<div class="mt-4 text-xs font-semibold uppercase tracking-wider text-surface-tint opacity-0 group-hover:opacity-100 transition-opacity flex items-center gap-1">Click to expand <span class="material-symbols-outlined text-[14px]">open_in_new</span></div>
+</div>
+</div>
+<!-- Education -->
+<div class="hidden" id="tab-edu">
+<div class="border border-transparent border-b-outline-variant pb-element-gap exp-card cursor-pointer p-4 rounded-lg group" onclick="openModal('modal-edu-1')">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-body-lg text-body-lg text-primary group-hover:italic transition-all">MSc in Finance</h3>
+<span class="font-ui-metadata text-ui-metadata text-on-surface-variant uppercase tracking-widest">09/2023 — 03/2025</span>
+</div>
+<h4 class="font-body-md text-body-md italic text-surface-tint mb-4">emlyon business school, Lyon, France</h4>
+<div class="mt-4 text-xs font-semibold uppercase tracking-wider text-surface-tint opacity-0 group-hover:opacity-100 transition-opacity flex items-center gap-1">Click to expand <span class="material-symbols-outlined text-[14px]">open_in_new</span></div>
+</div>
+<div class="border border-transparent border-b-outline-variant pb-element-gap exp-card cursor-pointer p-4 rounded-lg mt-4 group" onclick="openModal('modal-edu-2')">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-body-lg text-body-lg text-primary group-hover:italic transition-all">BA in Financial Engineering</h3>
+<span class="font-ui-metadata text-ui-metadata text-on-surface-variant uppercase tracking-widest">09/2019 — 06/2023</span>
+</div>
+<h4 class="font-body-md text-body-md italic text-surface-tint mb-4">Huashang College, Guangdong University of Finance & Economics, Guangzhou</h4>
+<div class="mt-4 text-xs font-semibold uppercase tracking-wider text-surface-tint opacity-0 group-hover:opacity-100 transition-opacity flex items-center gap-1">Click to expand <span class="material-symbols-outlined text-[14px]">open_in_new</span></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Modals for Experience Details -->
+<div class="modal" id="modal-work-1">
+<div class="modal-content">
+<span class="close" onclick="closeModal('modal-work-1')">×</span>
+<h2 class="font-h2 text-h2 text-primary mb-4">Project Manager Assistant — Financial Leasing</h2>
+<h4 class="font-body-md text-body-md italic text-surface-tint mb-6">Haisheng Financial Leasing, Foshan | 08/2025 — Present</h4>
+<div class="space-y-4 font-body-md text-on-surface-variant">
+<p class="">Lead due diligence on financial leasing deals end-to-end — from kickoff and on-site visit through report drafting and internal approval. Identify cash flow volatility and asset quality risks; structure findings into DD reports that feed approval and deal-structuring decisions.</p>
+<ul class="list-disc pl-6 space-y-2">
+<li class="">Led 10+ client due diligence engagements end-to-end, from kickoff to internal approval.</li>
+<li class="">Reconstructed client financial profiles from fragmented data to unblock negotiations and structure transactions.</li>
+<li class="">Cross-functional coordination with Compliance, Risk, Finance, and Asset Management to keep approvals on schedule.</li>
+<li class="">Tracked milestones and consolidated stakeholder updates across the full deal lifecycle.</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="modal" id="modal-work-2">
+<div class="modal-content">
+<span class="close" onclick="closeModal('modal-work-2')">×</span>
+<h2 class="font-h2 text-h2 text-primary mb-4">Automotive Group Analyst</h2>
+<h4 class="font-body-md text-body-md italic text-surface-tint mb-6">Guoyuan Securities Company Limited, Shanghai | 07/2024 — 11/2024</h4>
+<div class="space-y-4 font-body-md text-on-surface-variant">
+<p class="">Contributed to the automotive coverage team — sector reports, company fundamentals, and supporting investment narratives across the supply chain.</p>
+<ul class="list-disc pl-6 space-y-2">
+<li class="">Performed full fundamental and valuation analysis: revenue / margin / cash flow drivers, peer comps, model refinement.</li>
+<li class="">Built and maintained an industry database tracking policy moves, market dynamics, and competitor activity.</li>
+<li class="">Synthesized analytical takeaways into team-wide notes that lifted downstream research efficiency.</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="modal" id="modal-work-3">
+<div class="modal-content">
+<span class="close" onclick="closeModal('modal-work-3')">×</span>
+<h2 class="font-h2 text-h2 text-primary mb-4">Financial Service Clerk — Fund NAV Automation</h2>
+<h4 class="font-body-md text-body-md italic text-surface-tint mb-6">HSBC, Foshan | 01/2023 — 06/2023</h4>
+<div class="space-y-4 font-body-md text-on-surface-variant">
+<p class="">Joined the fund NAV automation initiative supporting the department's valuation and accounting workflows.</p>
+<ul class="list-disc pl-6 space-y-2">
+<li class="">Diagnosed failure points in automated workflows; co-redesigned process logic with Risk and IT, reducing operational error rates by ~20%.</li>
+<li class="">Operated in a fully English environment with cross-region colleagues, organizing reports and market data.</li>
+<li class="">Improved cross-team execution on financial reporting and reconciliation tasks.</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="modal" id="modal-proj-1">
+<div class="modal-content">
+<span class="close" onclick="closeModal('modal-proj-1')">×</span>
+<h2 class="font-h2 text-h2 text-primary mb-4">AI Research Engine for Investment Workflows</h2>
+<h4 class="font-body-md text-body-md italic text-surface-tint mb-6">Personal product · Solo build | 01/2026 — Present</h4>
+<div class="space-y-4 font-body-md text-on-surface-variant">
+<p class="">Building a precision internal aggregation engine on Coze + DeepSeek that solves fragmented data sources in investment research. Workflow: search → multi-source aggregation → refined output, with both internal knowledge-base retrieval and live web search.</p>
+<ul class="list-disc pl-6 space-y-2">
+<li class="">Demand discovery via user interviews; identified cross-platform retrieval as the priority pain.</li>
+<li class="">Designed for "one-stop access and synthesis" — single workflow over multi-tool stitching.</li>
+<li class="">Built dialogue flows + tool plugins on Coze, integrating DeepSeek, RAG over a private knowledge base, and a Web Search plugin.</li>
+<li class="">Targets: ~50% lift in internal search efficiency, ~60% lift in external data integration efficiency.</li>
+<li class="">Iterating on prompt engineering, output structure, and search strategy based on real-use feedback.</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="modal" id="modal-proj-2">
+<div class="modal-content">
+<span class="close" onclick="closeModal('modal-proj-2')">×</span>
+<h2 class="font-h2 text-h2 text-primary mb-4">Machine Learning & Investment Backtesting in R</h2>
+<h4 class="font-body-md text-body-md italic text-surface-tint mb-6">Course final, MSc Finance · Top 5% of class | 02/2024 — 05/2024</h4>
+<div class="space-y-4 font-body-md text-on-surface-variant">
+<p class="">End-to-end independent project: data ingestion from financial terminals → cleansing → EDA → regression and time-series modeling → simulated investment decisions → portfolio backtesting.</p>
+<ul class="list-disc pl-6 space-y-2">
+<li class="">Built a complete data analysis pipeline in R from raw terminal export to backtested portfolio.</li>
+<li class="">Constructed regression and time-series models to validate strategy effectiveness.</li>
+<li class="">Delivered a full performance report on the simulated portfolio.</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="modal" id="modal-proj-3">
+<div class="modal-content">
+<span class="close" onclick="closeModal('modal-proj-3')">×</span>
+<h2 class="font-h2 text-h2 text-primary mb-4">UBS M&A Strategic Analysis</h2>
+<h4 class="font-body-md text-body-md italic text-surface-tint mb-6">Course group project · 2nd place | 10/2023 — 12/2023</h4>
+<div class="space-y-4 font-body-md text-on-surface-variant">
+<p class="">Strategic analysis of a UBS M&A case — external environment, internal challenges, strategic objectives, and implementation pathway. Co-authored the research report and follow-up recommendations.</p>
+<ul class="list-disc pl-6 space-y-2">
+<li class="">Coordinated team deliverables and aligned outputs into a coherent final narrative.</li>
+<li class="">Integrated AI tools into data collection, organization, and refinement — lifted efficiency ~30% vs. peer projects.</li>
+<li class="">Owned a section of the final presentation that secured 2nd place.</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="modal" id="modal-proj-4">
+<div class="modal-content">
+<span class="close" onclick="closeModal('modal-proj-4')">×</span>
+<h2 class="font-h2 text-h2 text-primary mb-4">Greater Bay Area Finance Challenge — Muyuan Co.</h2>
+<h4 class="font-body-md text-body-md italic text-surface-tint mb-6">National finance challenge · University 2nd prize | 09/2021 — 12/2021</h4>
+<div class="space-y-4 font-body-md text-on-surface-variant">
+<p class="">Equity research on Muyuan Co. using Porter's Five Forces and SWOT. Built a financial model end-to-end. Owned research direction, content integration, and final presentation. Advanced to the next round of the competition.</p>
+</div>
+</div>
+</div>
+<div class="modal" id="modal-proj-5">
+<div class="modal-content">
+<span class="close" onclick="closeModal('modal-proj-5')">×</span>
+<h2 class="font-h2 text-h2 text-primary mb-4">Huangshang Rural Revitalization — Dengshan Village</h2>
+<h4 class="font-body-md text-body-md italic text-surface-tint mb-6">University-led initiative | 09/2021 — 09/2022</h4>
+<div class="space-y-4 font-body-md text-on-surface-variant">
+<p class="">Funding mobilization, field research, and industrialization support for the local black-olive industry. Linked government, institutions, enterprises, and the university to move the project from research to execution.</p>
+</div>
+</div>
+</div>
+<div class="modal" id="modal-edu-1">
+<div class="modal-content">
+<span class="close" onclick="closeModal('modal-edu-1')">×</span>
+<h2 class="font-h2 text-h2 text-primary mb-4">MSc in Finance</h2>
+<h4 class="font-body-md text-body-md italic text-surface-tint mb-6">emlyon business school, Lyon, France | 09/2023 — 03/2025</h4>
+<div class="space-y-4 font-body-md text-on-surface-variant">
+<p class="">2026 QS Finance Master · Rank #26.</p>
+<p class=""><strong>Coursework:</strong> Strategy Analysis · Global Asset Allocation · Commodity Pricing · Negotiation Techniques.</p>
+</div>
+</div>
+</div>
+<div class="modal" id="modal-edu-2">
+<div class="modal-content">
+<span class="close" onclick="closeModal('modal-edu-2')">×</span>
+<h2 class="font-h2 text-h2 text-primary mb-4">BA in Financial Engineering</h2>
+<h4 class="font-body-md text-body-md italic text-surface-tint mb-6">Huashang College, Guangdong University of Finance & Economics, Guangzhou | 09/2019 — 06/2023</h4>
+<div class="space-y-4 font-body-md text-on-surface-variant">
+<p class="">Foundational training in finance, accounting, and quantitative methods.</p>
+<p class=""><strong>Coursework:</strong> Financial Metrology · Economics · Financial Statement Analysis · Corporate Finance.</p>
+</div>
+</div>
+</div>
+<!-- Projects Grid -->
+<section class="mb-section-gap scroll-mt-24 parallax-layer" id="projects">
+<div class="flex justify-between items-end mb-element-gap border-b border-outline-variant pb-4">
+<h2 class="font-h2 text-h2 text-primary">Selected Works</h2>
+<a class="font-ui-label text-ui-label text-on-surface-variant hover:text-primary transition-colors flex items-center gap-1" href="#">
+                    View All <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<!-- Project Card 1 -->
+<div class="group cursor-pointer hover:-translate-y-2 hover:shadow-xl transition-all duration-500 rounded-lg p-2">
+<div class="bg-surface-container aspect-[4/3] mb-4 overflow-hidden relative bg-stone-200 animate-pulse-slow">
+<img alt="Project Image" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A sophisticated digital interface displaying a dark mode financial dashboard. The screen is filled with elegant, minimalist data visualizations, including subtle neon-blue line graphs and deep gray bar charts against a pure black background. The typography is precise and editorial, using small, crisp sans-serif fonts for data points. The lighting implies a high-end monitor glowing in a dimly lit, modern workspace. The aesthetic is highly technical, professional, and refined, suitable for an AI-driven finance application." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5l7HkOXlhzbWVTMqOM-VXnQ6zn7rLaigM1L3w__17T-4OSRfYqDilwnTDj7bmA7041DLiASgGHVBGOz9Y3gqkTyqsXtXv811Gdcjb9oCr4NxPaywS2Qot11gOEhqhR6mwnjdfl2nzhDD4EN0hvajv8f3vNVeX0W2u1_xHKre-fypvgvmUW5s6QOrIlL5kjq6owonKj_kkU7H_CPDhAuwQs9Fth0-y_UWaioOB-YsONALE5Bk2ZYVTA0DZPrq9VaCN7JxKChV0o1WX"/>
+<div class="absolute inset-0 border border-outline/20 mix-blend-overlay pointer-events-none"></div>
+</div>
+<div class="space-y-2">
+<div class="flex gap-2 mb-2 flex-wrap">
+<span class="font-ui-metadata text-ui-metadata bg-surface-variant px-2 py-1 text-on-surface uppercase tracking-widest">Coze</span>
+<span class="font-ui-metadata text-ui-metadata bg-surface-variant px-2 py-1 text-on-surface uppercase tracking-widest">DeepSeek</span>
+<span class="font-ui-metadata text-ui-metadata bg-surface-variant px-2 py-1 text-on-surface uppercase tracking-widest">RAG</span>
+</div>
+<h3 class="font-h1 text-h1 text-primary group-hover:italic transition-all">AI Research Engine</h3>
+<p class="font-caption text-caption text-on-surface-variant">A precision aggregation engine for investment research — turning fragmented multi-source workflows into one structured output.</p>
+<p class="font-ui-metadata text-ui-metadata text-outline mt-2 uppercase tracking-widest">2026</p>
+</div>
+</div>
+<!-- Project Card 2 -->
+<div class="group cursor-pointer hover:-translate-y-2 hover:shadow-xl transition-all duration-500 rounded-lg p-2">
+<div class="bg-surface-container aspect-[4/3] mb-4 overflow-hidden relative bg-stone-200 animate-pulse-slow">
+<img alt="Project Image" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 grayscale opacity-90" data-alt="An abstract, architectural macro shot of stacked paper documents or ledger pages, rendered in a warm, minimalist monochromatic palette. The lighting is soft and directional, highlighting the texture of the fine parchment-like paper and casting razor-thin shadows along the edges. The mood is quiet, archival, and intellectually rigorous. The visual style mimics a high-end editorial spread, focusing on structural whitespace and geometric purity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUjaTlNswUFEBO6mT735oPu6Gal-g7WqGer0Xw_mpJcr_2IQiJFhsDecFsw6bYxkNFVHnY0WQYeyLbsQ_pRVpSN0bnsWqG0bdh3fPtkjLozo6L2oa3rf5FCblYftOjppCHCzNQQXWQxyICrMZUvH6k4pANNwkHndSmXmruIrD6ODpcXk9pT6SqpAY0F237amPzpu3NdjSP3oX7A53vi6STy3Bj7zVC1oPCzHm3q256Zv23XtqLV6Dm380Rzy2EIJBa2Eoh2d8qJWyy"/>
+<div class="absolute inset-0 border border-outline/20 mix-blend-overlay pointer-events-none"></div>
+</div>
+<div class="space-y-2">
+<div class="flex gap-2 mb-2 flex-wrap">
+<span class="font-ui-metadata text-ui-metadata bg-surface-variant px-2 py-1 text-on-surface uppercase tracking-widest">R</span>
+<span class="font-ui-metadata text-ui-metadata bg-surface-variant px-2 py-1 text-on-surface uppercase tracking-widest">Time Series</span>
+<span class="font-ui-metadata text-ui-metadata bg-surface-variant px-2 py-1 text-on-surface uppercase tracking-widest">Backtesting</span>
+</div>
+<h3 class="font-h1 text-h1 text-primary group-hover:italic transition-all">ML-Driven Backtesting in R</h3>
+<p class="font-caption text-caption text-on-surface-variant">An end-to-end pipeline from financial-terminal data to a backtested portfolio — regression, time-series, and a full performance report.</p>
+<p class="font-ui-metadata text-ui-metadata text-outline mt-2 uppercase tracking-widest">2024</p>
+</div>
+</div>
+<!-- Project Card 3 -->
+<div class="group cursor-pointer hover:-translate-y-2 hover:shadow-xl transition-all duration-500 rounded-lg p-2">
+<div class="bg-surface-container aspect-[4/3] mb-4 overflow-hidden relative bg-stone-200 animate-pulse-slow">
+<img alt="Project Image" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 grayscale opacity-90" data-alt="A minimalist photograph of a corporate financial district building exterior — clean architectural lines, neutral concrete and glass tones, warm natural daylight. No logos or brand markings. Editorial quality, subtle and confident." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUjaTlNswUFEBO6mT735oPu6Gal-g7WqGer0Xw_mpJcr_2IQiJFhsDecFsw6bYxkNFVHnY0WQYeyLbsQ_pRVpSN0bnsWqG0bdh3fPtkjLozo6L2oa3rf5FCblYftOjppCHCzNQQXWQxyICrMZUvH6k4pANNwkHndSmXmruIrD6ODpcXk9pT6SqpAY0F237amPzpu3NdjSP3oX7A53vi6STy3Bj7zVC1oPCzHm3q256Zv23XtqLV6Dm380Rzy2EIJBa2Eoh2d8qJWyy"/>
+<div class="absolute inset-0 border border-outline/20 mix-blend-overlay pointer-events-none"></div>
+</div>
+<div class="space-y-2">
+<div class="flex gap-2 mb-2 flex-wrap">
+<span class="font-ui-metadata text-ui-metadata bg-surface-variant px-2 py-1 text-on-surface uppercase tracking-widest">M&amp;A</span>
+<span class="font-ui-metadata text-ui-metadata bg-surface-variant px-2 py-1 text-on-surface uppercase tracking-widest">Strategy</span>
+<span class="font-ui-metadata text-ui-metadata bg-surface-variant px-2 py-1 text-on-surface uppercase tracking-widest">AI-Assisted</span>
+</div>
+<h3 class="font-h1 text-h1 text-primary group-hover:italic transition-all">UBS M&amp;A Strategic Analysis</h3>
+<p class="font-caption text-caption text-on-surface-variant">A strategic deep-dive on a real UBS M&amp;A case — environment, objectives, and pathway. AI-assisted research lifted team efficiency ~30%.</p>
+<p class="font-ui-metadata text-ui-metadata text-outline mt-2 uppercase tracking-widest">2023</p>
+</div>
+</div>
+<!-- Project Card 4 -->
+<div class="group cursor-pointer hover:-translate-y-2 hover:shadow-xl transition-all duration-500 rounded-lg p-2">
+<div class="bg-surface-container aspect-[4/3] mb-4 overflow-hidden relative bg-stone-200 animate-pulse-slow">
+<img alt="Project Image" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 grayscale opacity-90" data-alt="A close-up macro photograph of a printed financial spreadsheet with elegant typography and subtle paper texture. Soft directional lighting, warm neutral tones, editorial minimalism." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5l7HkOXlhzbWVTMqOM-VXnQ6zn7rLaigM1L3w__17T-4OSRfYqDilwnTDj7bmA7041DLiASgGHVBGOz9Y3gqkTyqsXtXv811Gdcjb9oCr4NxPaywS2Qot11gOEhqhR6mwnjdfl2nzhDD4EN0hvajv8f3vNVeX0W2u1_xHKre-fypvgvmUW5s6QOrIlL5kjq6owonKj_kkU7H_CPDhAuwQs9Fth0-y_UWaioOB-YsONALE5Bk2ZYVTA0DZPrq9VaCN7JxKChV0o1WX"/>
+<div class="absolute inset-0 border border-outline/20 mix-blend-overlay pointer-events-none"></div>
+</div>
+<div class="space-y-2">
+<div class="flex gap-2 mb-2 flex-wrap">
+<span class="font-ui-metadata text-ui-metadata bg-surface-variant px-2 py-1 text-on-surface uppercase tracking-widest">Equity Research</span>
+<span class="font-ui-metadata text-ui-metadata bg-surface-variant px-2 py-1 text-on-surface uppercase tracking-widest">Modeling</span>
+<span class="font-ui-metadata text-ui-metadata bg-surface-variant px-2 py-1 text-on-surface uppercase tracking-widest">Porter</span>
+</div>
+<h3 class="font-h1 text-h1 text-primary group-hover:italic transition-all">Muyuan Co. — Equity Research</h3>
+<p class="font-caption text-caption text-on-surface-variant">Industry and company research using Porter's Five Forces and SWOT, with a fully built financial model. University 2nd prize.</p>
+<p class="font-ui-metadata text-ui-metadata text-outline mt-2 uppercase tracking-widest">2021</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Toolbox Section -->
+<section class="mb-section-gap scroll-mt-24 parallax-layer" id="toolbox">
+<div class="text-center mb-element-gap">
+<h2 class="font-h2 text-h2 text-primary italic">The Toolbox.</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-4 max-w-lg mx-auto">Instruments I use to translate fragmented information into structured decisions — and to build tools that do the same.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<div class="bg-surface-container rounded-xl p-8 border border-outline-variant flex flex-col h-full hover:shadow-lg transition-shadow duration-300">
+<h3 class="font-h2 text-h2 text-primary mb-6 border-b border-outline-variant pb-4">Core Disciplines</h3>
+<ul class="space-y-4 font-body-md text-body-md text-on-surface-variant flex-grow">
+<li class="flex items-start gap-3 hover:translate-x-1 transition-transform duration-200">
+<span class="material-symbols-outlined text-surface-tint mt-0.5">check_circle</span>
+<span class=""><strong>Industry &amp; Company Research:</strong> Sector deep-dives, business-model deconstruction, competitive landscape, fundamentals.</span>
+</li>
+<li class="flex items-start gap-3 hover:translate-x-1 transition-transform duration-200">
+<span class="material-symbols-outlined text-surface-tint mt-0.5">check_circle</span>
+<span class=""><strong>Due Diligence:</strong> Cash flow, asset quality, and risk assessment via desk research and on-site visits.</span>
+</li>
+<li class="flex items-start gap-3 hover:translate-x-1 transition-transform duration-200">
+<span class="material-symbols-outlined text-surface-tint mt-0.5">check_circle</span>
+<span class=""><strong>Financial Modeling &amp; Valuation:</strong> Revenue / margin / cash-flow drivers, peer comps, and time-series strategy backtesting.</span>
+</li>
+<li class="flex items-start gap-3 hover:translate-x-1 transition-transform duration-200">
+<span class="material-symbols-outlined text-surface-tint mt-0.5">check_circle</span>
+<span class=""><strong>AI Product Building:</strong> Workflow design, prompt engineering, RAG, and tool integration on Coze + DeepSeek.</span>
+</li>
+</ul>
+</div>
+<div class="bg-surface-container rounded-xl p-8 border border-outline-variant flex flex-col h-full hover:shadow-lg transition-shadow duration-300">
+<h3 class="font-h2 text-h2 text-primary mb-6 border-b border-outline-variant pb-4">Software Stack</h3>
+<div class="grid grid-cols-2 gap-4 flex-grow content-start">
+<div class="flex items-center gap-3 p-4 bg-surface rounded-lg border border-outline-variant hover:border-primary hover:-translate-y-1 hover:shadow-md transition-all duration-300 cursor-pointer">
+<span class="material-symbols-outlined text-primary text-2xl">monitoring</span>
+<span class="font-ui-label text-ui-label text-primary">Wind / Bloomberg</span>
+</div>
+<div class="flex items-center gap-3 p-4 bg-surface rounded-lg border border-outline-variant hover:border-primary hover:-translate-y-1 hover:shadow-md transition-all duration-300 cursor-pointer">
+<span class="material-symbols-outlined text-primary text-2xl">terminal</span>
+<span class="font-ui-label text-ui-label text-primary">Python</span>
+</div>
+<div class="flex items-center gap-3 p-4 bg-surface rounded-lg border border-outline-variant hover:border-primary hover:-translate-y-1 hover:shadow-md transition-all duration-300 cursor-pointer">
+<span class="material-symbols-outlined text-primary text-2xl">analytics</span>
+<span class="font-ui-label text-ui-label text-primary">R</span>
+</div>
+<div class="flex items-center gap-3 p-4 bg-surface rounded-lg border border-outline-variant hover:border-primary hover:-translate-y-1 hover:shadow-md transition-all duration-300 cursor-pointer">
+<span class="material-symbols-outlined text-primary text-2xl">database</span>
+<span class="font-ui-label text-ui-label text-primary">SQL</span>
+</div>
+<div class="flex items-center gap-3 p-4 bg-surface rounded-lg border border-outline-variant hover:border-primary hover:-translate-y-1 hover:shadow-md transition-all duration-300 cursor-pointer">
+<span class="material-symbols-outlined text-primary text-2xl">hub</span>
+<span class="font-ui-label text-ui-label text-primary">Coze / DeepSeek</span>
+</div>
+<div class="flex items-center gap-3 p-4 bg-surface rounded-lg border border-outline-variant hover:border-primary hover:-translate-y-1 hover:shadow-md transition-all duration-300 cursor-pointer">
+<span class="material-symbols-outlined text-primary text-2xl">smart_toy</span>
+<span class="font-ui-label text-ui-label text-primary">Claude Code / Codex</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#FBFAF7] dark:bg-stone-950 text-stone-900 dark:text-stone-100 font-['Inter'] text-xs tracking-widest uppercase full-width py-20 border-t border-[#E5E2DA] dark:border-stone-800 flat no shadows transition-all duration-200">
+<div class="flex flex-col md:flex-row justify-between items-center w-full px-8 max-w-7xl mx-auto gap-8">
+<div class=""><br/></div>
+<div class="flex gap-6">
+<a class="text-stone-400 dark:text-stone-500 hover:text-stone-900 dark:hover:text-stone-50 underline decoration-1 underline-offset-4 transition-all duration-200" href="#">LinkedIn</a>
+<a class="text-stone-400 dark:text-stone-500 hover:text-stone-900 dark:hover:text-stone-50 underline decoration-1 underline-offset-4 transition-all duration-200" href="mailto:847919752@qq.com">Email</a>
+</div>
+</div>
+</footer>
+<script>
+    // Navigation active state
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    window.addEventListener('scroll', () => {
+        let current = '';
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
+            if (scrollY >= (sectionTop - 200)) {
+                current = section.getAttribute('id');
+            }
+        });
+
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href').includes(current)) {
+                link.classList.add('active');
+            }
+        });
+    });
+
+    // Parallax effect on scroll
+    window.addEventListener('scroll', () => {
+        const scrolled = window.scrollY;
+        document.querySelectorAll('.parallax-layer').forEach(el => {
+            const speed = el.dataset.speed || 0.02;
+            const yPos = -(scrolled * speed);
+            el.style.transform = `translateY(${yPos}px)`;
+        });
+    });
+
+    function showTab(tabName) {
+        // Hide all tabs
+        document.getElementById('tab-work').classList.add('hidden');
+        document.getElementById('tab-work').classList.remove('block');
+        document.getElementById('tab-edu').classList.add('hidden');
+        document.getElementById('tab-edu').classList.remove('block');
+        document.getElementById('tab-proj').classList.add('hidden');
+        document.getElementById('tab-proj').classList.remove('block');
+
+        // Show selected tab
+        document.getElementById('tab-' + tabName).classList.remove('hidden');
+        document.getElementById('tab-' + tabName).classList.add('block');
+        
+        // Update button styles
+        const buttons = document.querySelectorAll('#experience button');
+        buttons.forEach(btn => {
+            if(btn.textContent.toLowerCase().includes(tabName)) {
+                btn.classList.remove('text-on-surface-variant', 'border-transparent');
+                btn.classList.add('text-primary', 'border-primary');
+            } else {
+                btn.classList.add('text-on-surface-variant', 'border-transparent');
+                btn.classList.remove('text-primary', 'border-primary');
+            }
+        });
+        
+        // Manual override for specific names
+        if(tabName === 'work') {
+            buttons[0].classList.add('text-primary', 'border-primary');
+            buttons[0].classList.remove('text-on-surface-variant', 'border-transparent');
+        } else if(tabName === 'edu') {
+            buttons[1].classList.add('text-primary', 'border-primary');
+            buttons[1].classList.remove('text-on-surface-variant', 'border-transparent');
+        } else if(tabName === 'proj') {
+            buttons[2].classList.add('text-primary', 'border-primary');
+            buttons[2].classList.remove('text-on-surface-variant', 'border-transparent');
+        }
+    }
+
+    function openModal(modalId) {
+        const modal = document.getElementById(modalId);
+        modal.style.display = "block";
+        // Force reflow to enable transition
+        void modal.offsetWidth;
+        modal.classList.add('show');
+        document.body.style.overflow = "hidden";
+    }
+
+    function closeModal(modalId) {
+        const modal = document.getElementById(modalId);
+        modal.classList.remove('show');
+        setTimeout(() => {
+            modal.style.display = "none";
+            document.body.style.overflow = "auto";
+        }, 400); // Wait for transition
+    }
+
+    // Close modal when clicking outside of it
+    window.onclick = function(event) {
+        if (event.target.classList.contains('modal')) {
+            event.target.classList.remove('show');
+            setTimeout(() => {
+                event.target.style.display = "none";
+                document.body.style.overflow = "auto";
+            }, 400);
+        }
+    }
+</script>
+</body></html>

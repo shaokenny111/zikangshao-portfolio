@@ -1,0 +1,14 @@
+# Source documents (not for version control)
+*.docx
+screen.png
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+.claude/
+
+# Logs / temp
+*.log
+*.tmp
