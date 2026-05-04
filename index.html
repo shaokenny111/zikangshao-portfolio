@@ -279,7 +279,17 @@
         .lang-btn.active .lang-flag { opacity: 1; }
         .dark .lang-btn:hover, .dark .lang-btn.active { color: #fdf8f8; }
         .lang-divider { color: #d6d3d1; user-select: none; }
-        .dark .lang-divider { color: #44403c; }</style>
+        .dark .lang-divider { color: #44403c; }
+
+        /* Touch tooltip toggle (footer) */
+        @media (hover: none) {
+            .tip-trigger.tip-open > span[data-linkedin-handle],
+            .tip-trigger.tip-open > span[data-wechat-id],
+            .tip-trigger.tip-open > span[data-email-handle] {
+                opacity: 1 !important;
+                pointer-events: auto;
+            }
+        }</style>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -633,10 +643,10 @@
 <span data-i18n="works.viewAll">View All</span> <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
 </a>
 </div>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
 <!-- Project Card 1 -->
 <div class="group cursor-pointer hover:-translate-y-2 hover:shadow-xl transition-all duration-500 rounded-lg p-2">
-<div class="bg-surface-container aspect-[4/3] mb-4 overflow-hidden relative bg-stone-200 animate-pulse-slow">
+<div class="bg-surface-container aspect-[16/10] mb-4 overflow-hidden relative bg-stone-200 animate-pulse-slow">
 <img alt="Project Image" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A sophisticated digital interface displaying a dark mode financial dashboard. The screen is filled with elegant, minimalist data visualizations, including subtle neon-blue line graphs and deep gray bar charts against a pure black background. The typography is precise and editorial, using small, crisp sans-serif fonts for data points. The lighting implies a high-end monitor glowing in a dimly lit, modern workspace. The aesthetic is highly technical, professional, and refined, suitable for an AI-driven finance application." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5l7HkOXlhzbWVTMqOM-VXnQ6zn7rLaigM1L3w__17T-4OSRfYqDilwnTDj7bmA7041DLiASgGHVBGOz9Y3gqkTyqsXtXv811Gdcjb9oCr4NxPaywS2Qot11gOEhqhR6mwnjdfl2nzhDD4EN0hvajv8f3vNVeX0W2u1_xHKre-fypvgvmUW5s6QOrIlL5kjq6owonKj_kkU7H_CPDhAuwQs9Fth0-y_UWaioOB-YsONALE5Bk2ZYVTA0DZPrq9VaCN7JxKChV0o1WX"/>
 <div class="absolute inset-0 border border-outline/20 mix-blend-overlay pointer-events-none"></div>
 </div>
@@ -653,7 +663,7 @@
 </div>
 <!-- Project Card 2 -->
 <div class="group cursor-pointer hover:-translate-y-2 hover:shadow-xl transition-all duration-500 rounded-lg p-2">
-<div class="bg-surface-container aspect-[4/3] mb-4 overflow-hidden relative bg-stone-200 animate-pulse-slow">
+<div class="bg-surface-container aspect-[16/10] mb-4 overflow-hidden relative bg-stone-200 animate-pulse-slow">
 <img alt="Project Image" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 grayscale opacity-90" data-alt="An abstract, architectural macro shot of stacked paper documents or ledger pages, rendered in a warm, minimalist monochromatic palette. The lighting is soft and directional, highlighting the texture of the fine parchment-like paper and casting razor-thin shadows along the edges. The mood is quiet, archival, and intellectually rigorous. The visual style mimics a high-end editorial spread, focusing on structural whitespace and geometric purity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUjaTlNswUFEBO6mT735oPu6Gal-g7WqGer0Xw_mpJcr_2IQiJFhsDecFsw6bYxkNFVHnY0WQYeyLbsQ_pRVpSN0bnsWqG0bdh3fPtkjLozo6L2oa3rf5FCblYftOjppCHCzNQQXWQxyICrMZUvH6k4pANNwkHndSmXmruIrD6ODpcXk9pT6SqpAY0F237amPzpu3NdjSP3oX7A53vi6STy3Bj7zVC1oPCzHm3q256Zv23XtqLV6Dm380Rzy2EIJBa2Eoh2d8qJWyy"/>
 <div class="absolute inset-0 border border-outline/20 mix-blend-overlay pointer-events-none"></div>
 </div>
@@ -670,7 +680,7 @@
 </div>
 <!-- Project Card 3 -->
 <div class="group cursor-pointer hover:-translate-y-2 hover:shadow-xl transition-all duration-500 rounded-lg p-2">
-<div class="bg-surface-container aspect-[4/3] mb-4 overflow-hidden relative bg-stone-200 animate-pulse-slow">
+<div class="bg-surface-container aspect-[16/10] mb-4 overflow-hidden relative bg-stone-200 animate-pulse-slow">
 <img alt="Project Image" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 grayscale opacity-90" data-alt="A minimalist photograph of a corporate financial district building exterior — clean architectural lines, neutral concrete and glass tones, warm natural daylight. No logos or brand markings. Editorial quality, subtle and confident." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUjaTlNswUFEBO6mT735oPu6Gal-g7WqGer0Xw_mpJcr_2IQiJFhsDecFsw6bYxkNFVHnY0WQYeyLbsQ_pRVpSN0bnsWqG0bdh3fPtkjLozo6L2oa3rf5FCblYftOjppCHCzNQQXWQxyICrMZUvH6k4pANNwkHndSmXmruIrD6ODpcXk9pT6SqpAY0F237amPzpu3NdjSP3oX7A53vi6STy3Bj7zVC1oPCzHm3q256Zv23XtqLV6Dm380Rzy2EIJBa2Eoh2d8qJWyy"/>
 <div class="absolute inset-0 border border-outline/20 mix-blend-overlay pointer-events-none"></div>
 </div>
@@ -687,7 +697,7 @@
 </div>
 <!-- Project Card 4 -->
 <div class="group cursor-pointer hover:-translate-y-2 hover:shadow-xl transition-all duration-500 rounded-lg p-2">
-<div class="bg-surface-container aspect-[4/3] mb-4 overflow-hidden relative bg-stone-200 animate-pulse-slow">
+<div class="bg-surface-container aspect-[16/10] mb-4 overflow-hidden relative bg-stone-200 animate-pulse-slow">
 <img alt="Project Image" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 grayscale opacity-90" data-alt="A close-up macro photograph of a printed financial spreadsheet with elegant typography and subtle paper texture. Soft directional lighting, warm neutral tones, editorial minimalism." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5l7HkOXlhzbWVTMqOM-VXnQ6zn7rLaigM1L3w__17T-4OSRfYqDilwnTDj7bmA7041DLiASgGHVBGOz9Y3gqkTyqsXtXv811Gdcjb9oCr4NxPaywS2Qot11gOEhqhR6mwnjdfl2nzhDD4EN0hvajv8f3vNVeX0W2u1_xHKre-fypvgvmUW5s6QOrIlL5kjq6owonKj_kkU7H_CPDhAuwQs9Fth0-y_UWaioOB-YsONALE5Bk2ZYVTA0DZPrq9VaCN7JxKChV0o1WX"/>
 <div class="absolute inset-0 border border-outline/20 mix-blend-overlay pointer-events-none"></div>
 </div>
@@ -710,8 +720,8 @@
 <h2 class="font-h2 text-h2 text-primary italic" data-i18n="toolbox.heading">The Toolbox.</h2>
 <p class="font-body-md text-body-md text-on-surface-variant mt-4 max-w-lg" data-i18n="toolbox.subtitle">Instruments I use to translate fragmented information into structured decisions — and to build tools that do the same.</p>
 </div>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
-<div class="bg-surface-container rounded-xl p-8 border border-outline-variant flex flex-col h-full hover:shadow-lg transition-shadow duration-300">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-gutter">
+<div class="bg-surface-container rounded-xl p-5 lg:p-8 border border-outline-variant flex flex-col h-full hover:shadow-lg transition-shadow duration-300">
 <h3 class="font-h2 text-h2 text-primary mb-6 border-b border-outline-variant pb-4" data-i18n="toolbox.disciplines.title">Core Disciplines</h3>
 <ul class="space-y-4 font-body-md text-body-md text-on-surface-variant flex-grow">
 <li class="flex items-start gap-3 hover:translate-x-1 transition-transform duration-200">
@@ -732,7 +742,7 @@
 </li>
 </ul>
 </div>
-<div class="bg-surface-container rounded-xl p-8 border border-outline-variant flex flex-col h-full hover:shadow-lg transition-shadow duration-300">
+<div class="bg-surface-container rounded-xl p-5 lg:p-8 border border-outline-variant flex flex-col h-full hover:shadow-lg transition-shadow duration-300">
 <h3 class="font-h2 text-h2 text-primary mb-6 border-b border-outline-variant pb-4" data-i18n="toolbox.stack.title">Software Stack</h3>
 <div class="grid grid-cols-2 gap-4 flex-grow content-start">
 <div class="flex items-center gap-3 p-4 bg-surface rounded-lg border border-outline-variant hover:border-primary hover:-translate-y-1 hover:shadow-md transition-all duration-300 cursor-pointer">
@@ -769,17 +779,17 @@
 <div class="flex justify-center items-center w-full px-8 max-w-7xl mx-auto">
 <div class="flex gap-6 items-center">
 <!-- LinkedIn -->
-<a class="text-stone-400 dark:text-stone-500 hover:text-stone-900 dark:hover:text-stone-50 transition-colors duration-200 inline-flex items-center justify-center relative group focus:outline-none" href="#" onclick="event.preventDefault()" aria-label="LinkedIn" data-linkedin-url>
+<a class="tip-trigger min-w-[44px] min-h-[44px] text-stone-400 dark:text-stone-500 hover:text-stone-900 dark:hover:text-stone-50 transition-colors duration-200 inline-flex items-center justify-center relative group focus:outline-none" href="#" onclick="event.preventDefault()" aria-label="LinkedIn" data-linkedin-url>
 <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14zM8.339 18.337v-8.49H5.667v8.49h2.672zM7.003 8.575a1.546 1.546 0 1 0 0-3.092 1.546 1.546 0 0 0 0 3.092zM18.338 18.337v-4.65c0-2.475-1.319-3.628-3.078-3.628-1.42 0-2.056.781-2.41 1.328v-1.14h-2.672c.035.755 0 8.49 0 8.49h2.672v-4.741c0-.24.017-.48.088-.652.193-.48.633-.977 1.371-.977.967 0 1.354.736 1.354 1.815v4.555h2.675z"/></svg>
 <span class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-3 py-1.5 bg-primary text-on-primary text-xs normal-case tracking-normal rounded whitespace-nowrap opacity-0 group-hover:opacity-100 group-focus:opacity-100 pointer-events-none transition-opacity duration-200" data-linkedin-handle>linkedin.com/in/zikang-shao</span>
 </a>
 <!-- WeChat -->
-<button type="button" class="text-stone-400 dark:text-stone-500 hover:text-stone-900 dark:hover:text-stone-50 transition-colors duration-200 inline-flex items-center justify-center relative group focus:outline-none" aria-label="WeChat" data-wechat-trigger>
+<button type="button" class="tip-trigger min-w-[44px] min-h-[44px] text-stone-400 dark:text-stone-500 hover:text-stone-900 dark:hover:text-stone-50 transition-colors duration-200 inline-flex items-center justify-center relative group focus:outline-none" aria-label="WeChat" data-wechat-trigger>
 <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M8.69 4C4.73 4 1.5 6.66 1.5 9.94c0 1.86 1.04 3.52 2.66 4.62-.13.46-.5 1.69-.55 1.86-.07.21.14.36.32.25.14-.08 1.66-1.05 1.96-1.24.84.21 1.74.32 2.7.32.16 0 .32 0 .48-.02-.13-.42-.21-.85-.21-1.31 0-2.91 2.83-5.27 6.32-5.27.16 0 .32 0 .48.02C15.17 6.43 12.21 4 8.69 4zm-2.43 3.66a.84.84 0 1 1 0 1.68.84.84 0 0 1 0-1.68zm5.04 0a.84.84 0 1 1 0 1.68.84.84 0 0 1 0-1.68zM16.5 9.95c-3.31 0-6 2.21-6 4.94 0 1.55.87 2.93 2.22 3.84-.11.39-.42 1.42-.46 1.56-.06.18.12.31.27.21.12-.07 1.39-.88 1.64-1.04.7.18 1.45.27 2.25.27 3.31 0 6-2.21 6-4.94s-2.69-4.84-5.92-4.84zm-2.02 3.05a.7.7 0 1 1 0 1.4.7.7 0 0 1 0-1.4zm4.18 0a.7.7 0 1 1 0 1.4.7.7 0 0 1 0-1.4z"/></svg>
 <span class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-3 py-1.5 bg-primary text-on-primary text-xs normal-case tracking-normal rounded whitespace-nowrap opacity-0 group-hover:opacity-100 group-focus:opacity-100 pointer-events-none transition-opacity duration-200" data-wechat-id>ZS_WeChat_ID</span>
 </button>
 <!-- Email -->
-<a class="text-stone-400 dark:text-stone-500 hover:text-stone-900 dark:hover:text-stone-50 transition-colors duration-200 inline-flex items-center justify-center relative group focus:outline-none" href="mailto:847919752@qq.com" aria-label="Email">
+<a class="tip-trigger min-w-[44px] min-h-[44px] text-stone-400 dark:text-stone-500 hover:text-stone-900 dark:hover:text-stone-50 transition-colors duration-200 inline-flex items-center justify-center relative group focus:outline-none" href="mailto:847919752@qq.com" aria-label="Email">
 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
 <span class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-3 py-1.5 bg-primary text-on-primary text-xs normal-case tracking-normal rounded whitespace-nowrap opacity-0 group-hover:opacity-100 group-focus:opacity-100 pointer-events-none transition-opacity duration-200" data-email-handle>847919752@QQ.com</span>
 </a>
@@ -822,6 +832,27 @@
         window.addEventListener('scroll', update, { passive: true });
         window.addEventListener('resize', update);
         update();
+    })();
+
+    // Footer tooltip click toggle (touch only)
+    (function () {
+        if (!matchMedia('(hover: none)').matches) return;
+        const triggers = document.querySelectorAll('footer .tip-trigger');
+        triggers.forEach(t => {
+            t.addEventListener('click', e => {
+                const wasOpen = t.classList.contains('tip-open');
+                triggers.forEach(o => o.classList.remove('tip-open'));
+                if (!wasOpen) {
+                    e.preventDefault();
+                    t.classList.add('tip-open');
+                }
+            });
+        });
+        document.addEventListener('click', e => {
+            if (!e.target.closest('footer .tip-trigger')) {
+                triggers.forEach(o => o.classList.remove('tip-open'));
+            }
+        });
     })();
 
     // Mobile nav overlay
