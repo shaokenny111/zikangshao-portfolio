@@ -269,7 +269,7 @@
 <p class="font-body-lg text-body-lg text-on-surface-variant max-w-md">
                     MSc Finance, emlyon business school. I run due diligence on leasing deals — and build AI tools that make investment research faster, sharper, and more honest.
                 </p>
-<div class="pt-stack-sm flex flex-col gap-6"><div class="flex flex-wrap gap-element-gap items-center"><a href="./Zikang_Shao_CV_EN.pdf" download class="border border-primary text-primary px-8 py-3 font-ui-label text-ui-label rounded hover:bg-primary hover:text-on-primary hover:-translate-y-1 active:translate-y-0 active:scale-95 transition-all duration-500 bg-transparent hover:shadow-lg inline-block" data-cv-link data-i18n="hero.cta.resume">Download Resume</a><a href="#contact" class="font-ui-label text-ui-label text-primary underline underline-offset-4 decoration-1 hover:decoration-2 transition-all">Get in touch ↓</a></div></div>
+<div class="pt-stack-sm flex flex-col gap-6"><div class="flex flex-wrap gap-element-gap items-center"><a href="./Zikang_Shao_CV_EN.pdf" download="Zikang_Shao_CV_EN.pdf" class="border border-primary text-primary px-8 py-3 font-ui-label text-ui-label rounded hover:bg-primary hover:text-on-primary hover:-translate-y-1 active:translate-y-0 active:scale-95 transition-all duration-500 bg-transparent hover:shadow-lg inline-block" data-cv-link data-i18n="hero.cta.resume">Download Resume</a><a href="#" onclick="event.preventDefault(); window.scrollTo({top: document.body.scrollHeight, behavior: 'smooth'});" class="font-ui-label text-ui-label text-primary underline underline-offset-4 decoration-1 hover:decoration-2 transition-all">Get in touch ↓</a></div></div>
 </div>
 </section>
 <!-- Divider -->
@@ -524,7 +524,7 @@
 <section class="mb-section-gap scroll-mt-24 parallax-layer" id="projects">
 <div class="flex justify-between items-end mb-element-gap border-b border-outline-variant pb-4">
 <h2 class="font-h2 text-h2 text-primary">Selected Works</h2>
-<a class="font-ui-label text-ui-label text-on-surface-variant hover:text-primary transition-colors flex items-center gap-1" href="#">
+<a class="font-ui-label text-ui-label text-on-surface-variant hover:text-primary transition-colors flex items-center gap-1" href="#experience" onclick="setTimeout(function(){showTab('proj');}, 0);">
                     View All <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
 </a>
 </div>
@@ -658,46 +658,15 @@
 </div>
 </div>
 </section>
-<!-- Contact Section -->
-<section class="mb-section-gap scroll-mt-24 parallax-layer" id="contact">
-<div class="border-b border-outline-variant pb-4 mb-element-gap">
-<h2 class="font-h2 text-h2 text-primary" data-i18n="contact.title">Get in touch.</h2>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
-<div class="col-span-1 md:col-span-7">
-<p class="font-body-lg text-body-lg text-on-surface-variant max-w-md" data-i18n="contact.lead">
-                I'm currently exploring roles at the intersection of <strong>finance and AI product</strong> — investment research, fintech product, AI tooling for analysts. If that sounds like a fit, I'd love to hear from you.
-            </p>
-</div>
-<div class="col-span-1 md:col-span-5 space-y-stack-md">
-<a href="mailto:847919752@qq.com" class="block group">
-<div class="font-ui-metadata text-ui-metadata text-on-surface-variant uppercase tracking-widest mb-1" data-i18n="contact.label.email">Email</div>
-<div class="font-body-md text-body-md text-primary group-hover:underline underline-offset-4 decoration-1 transition-all">847919752@QQ.com</div>
-</a>
-<a href="tel:+8619120636983" class="block group">
-<div class="font-ui-metadata text-ui-metadata text-on-surface-variant uppercase tracking-widest mb-1" data-i18n="contact.label.phone">Phone</div>
-<div class="font-body-md text-body-md text-primary group-hover:underline underline-offset-4 decoration-1 transition-all">+86 191 2063 6983</div>
-</a>
-<div>
-<div class="font-ui-metadata text-ui-metadata text-on-surface-variant uppercase tracking-widest mb-1" data-i18n="contact.label.location">Location</div>
-<div class="font-body-md text-body-md text-primary" data-i18n="contact.location.value">Foshan, Guangdong, China</div>
-</div>
-<a href="#" onclick="event.preventDefault()" class="block group" data-linkedin-url>
-<div class="font-ui-metadata text-ui-metadata text-on-surface-variant uppercase tracking-widest mb-1" data-i18n="contact.label.linkedin">LinkedIn</div>
-<div class="font-body-md text-body-md text-primary group-hover:underline underline-offset-4 decoration-1 transition-all" data-i18n="contact.linkedin.placeholder">linkedin.com/in/zikang-shao</div>
-</a>
-</div>
-</div>
-</section>
 </main>
 <!-- Footer -->
 <footer class="bg-[#FBFAF7] dark:bg-stone-950 text-stone-900 dark:text-stone-100 font-['Inter'] text-xs tracking-widest uppercase full-width py-20 border-t border-[#E5E2DA] dark:border-stone-800 flat no shadows transition-all duration-200">
-<div class="flex flex-col md:flex-row justify-between items-center w-full px-8 max-w-7xl mx-auto gap-8">
-<div class="text-stone-400 dark:text-stone-500 normal-case tracking-normal text-xs" data-i18n="footer.copyright">© 2026 Zikang Shao · Last updated May 2026</div>
+<div class="flex justify-center items-center w-full px-8 max-w-7xl mx-auto">
 <div class="flex gap-6 items-center">
 <!-- LinkedIn -->
-<a class="text-stone-400 dark:text-stone-500 hover:text-stone-900 dark:hover:text-stone-50 transition-colors duration-200 inline-flex items-center justify-center" href="#" onclick="event.preventDefault()" aria-label="LinkedIn" data-linkedin-url>
+<a class="text-stone-400 dark:text-stone-500 hover:text-stone-900 dark:hover:text-stone-50 transition-colors duration-200 inline-flex items-center justify-center relative group focus:outline-none" href="#" onclick="event.preventDefault()" aria-label="LinkedIn" data-linkedin-url>
 <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14zM8.339 18.337v-8.49H5.667v8.49h2.672zM7.003 8.575a1.546 1.546 0 1 0 0-3.092 1.546 1.546 0 0 0 0 3.092zM18.338 18.337v-4.65c0-2.475-1.319-3.628-3.078-3.628-1.42 0-2.056.781-2.41 1.328v-1.14h-2.672c.035.755 0 8.49 0 8.49h2.672v-4.741c0-.24.017-.48.088-.652.193-.48.633-.977 1.371-.977.967 0 1.354.736 1.354 1.815v4.555h2.675z"/></svg>
+<span class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-3 py-1.5 bg-primary text-on-primary text-xs normal-case tracking-normal rounded whitespace-nowrap opacity-0 group-hover:opacity-100 group-focus:opacity-100 pointer-events-none transition-opacity duration-200" data-linkedin-handle>linkedin.com/in/zikang-shao</span>
 </a>
 <!-- WeChat -->
 <button type="button" class="text-stone-400 dark:text-stone-500 hover:text-stone-900 dark:hover:text-stone-50 transition-colors duration-200 inline-flex items-center justify-center relative group focus:outline-none" aria-label="WeChat" data-wechat-trigger>
@@ -705,50 +674,49 @@
 <span class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-3 py-1.5 bg-primary text-on-primary text-xs normal-case tracking-normal rounded whitespace-nowrap opacity-0 group-hover:opacity-100 group-focus:opacity-100 pointer-events-none transition-opacity duration-200" data-wechat-id>ZS_WeChat_ID</span>
 </button>
 <!-- Email -->
-<a class="text-stone-400 dark:text-stone-500 hover:text-stone-900 dark:hover:text-stone-50 transition-colors duration-200 inline-flex items-center justify-center" href="mailto:847919752@qq.com" aria-label="Email">
+<a class="text-stone-400 dark:text-stone-500 hover:text-stone-900 dark:hover:text-stone-50 transition-colors duration-200 inline-flex items-center justify-center relative group focus:outline-none" href="mailto:847919752@qq.com" aria-label="Email">
 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+<span class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-3 py-1.5 bg-primary text-on-primary text-xs normal-case tracking-normal rounded whitespace-nowrap opacity-0 group-hover:opacity-100 group-focus:opacity-100 pointer-events-none transition-opacity duration-200" data-email-handle>847919752@QQ.com</span>
 </a>
 </div>
 </div>
 </footer>
 <script>
-    // Navigation active state via IntersectionObserver
+    // Navigation active state via scroll position (uniform behavior for all sections)
     (function() {
         const navLinks = document.querySelectorAll('.nav-link');
         const navTargets = ['about', 'experience', 'projects', 'toolbox'];
-        const sectionsToObserve = navTargets
+        const sections = navTargets
             .map(id => document.getElementById(id))
             .filter(Boolean);
-        const contactSection = document.getElementById('contact');
-        if (contactSection) sectionsToObserve.push(contactSection);
 
         let currentActive = null;
-
         const setActive = (id) => {
-            // Treat #contact as if #toolbox were active (contact is not in main nav)
-            const navId = id === 'contact' ? 'toolbox' : id;
-            if (currentActive === navId) return;
-            currentActive = navId;
+            if (currentActive === id) return;
+            currentActive = id;
             navLinks.forEach(link => {
-                const href = link.getAttribute('href');
-                link.classList.toggle('active', href === '#' + navId);
+                link.classList.toggle('active', link.getAttribute('href') === '#' + id);
             });
         };
 
-        const observer = new IntersectionObserver((entries) => {
-            // Of all currently-intersecting sections, pick the one nearest the top of viewport
-            const visible = entries
-                .filter(e => e.isIntersecting)
-                .sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top);
-            if (visible.length > 0) {
-                setActive(visible[0].target.id);
+        const update = () => {
+            // Use a horizontal probe line ~30% down the viewport. The section
+            // whose top is the largest value still <= probe is the active one.
+            const probe = window.scrollY + window.innerHeight * 0.3;
+            let active = sections[0];
+            for (const s of sections) {
+                if (s.offsetTop <= probe) active = s;
             }
-        }, {
-            rootMargin: '-20% 0px -60% 0px',
-            threshold: 0
-        });
+            // If we're at the very bottom (footer fully in view), keep last section active.
+            if (window.innerHeight + window.scrollY >= document.body.scrollHeight - 4) {
+                active = sections[sections.length - 1];
+            }
+            if (active) setActive(active.id);
+        };
 
-        sectionsToObserve.forEach(s => observer.observe(s));
+        window.addEventListener('scroll', update, { passive: true });
+        window.addEventListener('resize', update);
+        update();
     })();
 
     // Parallax effect on scroll
