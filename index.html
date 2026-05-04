@@ -3,7 +3,20 @@
 <html class="light scroll-smooth" lang="en"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Zikang Shao - Finance &amp; AI Product Builder</title>
+<title data-i18n="meta.title">Zikang Shao — Finance × AI Product Builder</title>
+<meta name="description" data-i18n-attr="meta.description" content="MSc Finance from emlyon business school. Building AI tools for investment research while doing due diligence in financial leasing."/>
+<link rel="canonical" href="./"/>
+<link rel="icon" type="image/svg+xml" href="./favicon.svg"/>
+<meta property="og:type" content="website"/>
+<meta property="og:title" data-i18n-attr="meta.title" content="Zikang Shao — Finance × AI Product Builder"/>
+<meta property="og:description" data-i18n-attr="meta.description" content="MSc Finance from emlyon business school. Building AI tools for investment research while doing due diligence in financial leasing."/>
+<meta property="og:url" content="./"/>
+<meta property="og:image" content="./og.png"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:locale:alternate" content="zh_CN"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" data-i18n-attr="meta.title" content="Zikang Shao — Finance × AI Product Builder"/>
+<meta name="twitter:description" data-i18n-attr="meta.description" content="MSc Finance from emlyon business school. Building AI tools for investment research while doing due diligence in financial leasing."/>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400;1,6..72,500&amp;display=swap" rel="stylesheet"/>
@@ -233,7 +246,46 @@
         }
         .dark .nav-link.active {
             color: #fdf8f8;
-        }</style>
+        }
+
+        /* Language toggle */
+        .lang-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            color: #a8a29e;
+            transition: color 0.2s ease, opacity 0.2s ease;
+            cursor: pointer;
+        }
+        .lang-btn:hover { color: #1c1b1b; }
+        .lang-btn .lang-flag { opacity: 0.55; transition: opacity 0.2s ease; }
+        .lang-btn:hover .lang-flag { opacity: 1; }
+        .lang-btn.active {
+            color: #1c1b1b;
+            font-weight: 700;
+            text-decoration: underline;
+            text-underline-offset: 4px;
+        }
+        .lang-btn.active .lang-flag { opacity: 1; }
+        .dark .lang-btn:hover, .dark .lang-btn.active { color: #fdf8f8; }
+        .lang-divider { color: #d6d3d1; user-select: none; }
+        .dark .lang-divider { color: #44403c; }</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Zikang Shao",
+  "jobTitle": "Finance × AI Product Builder",
+  "alumniOf": "emlyon business school",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Foshan",
+    "addressRegion": "Guangdong",
+    "addressCountry": "CN"
+  },
+  "email": "847919752@QQ.com"
+}
+</script>
 </head>
 <body class="antialiased min-h-screen relative">
 <!-- TopAppBar -->
@@ -243,14 +295,22 @@
                 Zikang Shao
             </div>
 <nav class="hidden md:flex gap-8">
-<a class="nav-link text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-50 transition-colors duration-300 cursor-pointer pb-0.5 active" href="#about">About</a>
-<a class="nav-link text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-50 transition-colors duration-300 cursor-pointer pb-0.5" href="#experience">Background</a>
-<a class="nav-link text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-50 transition-colors duration-300 cursor-pointer pb-0.5" href="#projects">Selected Works</a>
-<a class="nav-link text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-50 transition-colors duration-300 cursor-pointer pb-0.5" href="#toolbox">Toolbox</a>
+<a class="nav-link text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-50 transition-colors duration-300 cursor-pointer pb-0.5 active" href="#about" data-i18n="nav.about">About</a>
+<a class="nav-link text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-50 transition-colors duration-300 cursor-pointer pb-0.5" href="#experience" data-i18n="nav.background">Background</a>
+<a class="nav-link text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-50 transition-colors duration-300 cursor-pointer pb-0.5" href="#projects" data-i18n="nav.works">Selected Works</a>
+<a class="nav-link text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-50 transition-colors duration-300 cursor-pointer pb-0.5" href="#toolbox" data-i18n="nav.toolbox">Toolbox</a>
 </nav>
-<div class="text-stone-900 dark:text-stone-100 cursor-pointer hover:text-stone-900 dark:hover:text-stone-50 transition-colors duration-300 font-ui-label text-ui-label">
-                EN / 中
-            </div>
+<div class="font-ui-label text-ui-label flex items-center gap-2" id="lang-toggle" role="group" aria-label="Language">
+<button type="button" class="lang-btn" data-lang="en" aria-label="English">
+<svg class="lang-flag" width="20" height="14" viewBox="0 0 60 42" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="60" height="42" fill="#012169"/><path d="M0,0 L60,42 M60,0 L0,42" stroke="#ffffff" stroke-width="6"/><path d="M0,0 L60,42" stroke="#C8102E" stroke-width="3" clip-path="polygon(0 0, 50% 50%, 100% 0)"/><path d="M60,0 L0,42 M0,0 L60,42" stroke="#C8102E" stroke-width="3"/><path d="M30,0 V42 M0,21 H60" stroke="#ffffff" stroke-width="10"/><path d="M30,0 V42 M0,21 H60" stroke="#C8102E" stroke-width="6"/></svg>
+<span data-i18n="lang.en">EN</span>
+</button>
+<span class="lang-divider">/</span>
+<button type="button" class="lang-btn" data-lang="zh" aria-label="中文">
+<svg class="lang-flag" width="20" height="14" viewBox="0 0 30 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="30" height="20" fill="#DE2910"/><g fill="#FFDE00"><polygon points="6,3 7.18,5.6 9.95,5.6 7.69,7.21 8.7,9.83 6,8.16 3.3,9.83 4.31,7.21 2.05,5.6 4.82,5.6"/><polygon points="12,1.6 12.6,2.5 13.6,2.6 12.85,3.3 13.1,4.3 12.2,3.85 11.4,4.4 11.6,3.4 10.9,2.7 11.85,2.55"/><polygon points="14,3.8 14.5,4.7 15.5,4.7 14.8,5.4 15.05,6.4 14.15,5.95 13.25,6.4 13.5,5.4 12.8,4.7 13.8,4.7"/><polygon points="14,7 14.5,7.9 15.5,7.9 14.8,8.6 15.05,9.6 14.15,9.15 13.25,9.6 13.5,8.6 12.8,7.9 13.8,7.9"/><polygon points="12,9 12.6,9.9 13.6,9.95 12.85,10.65 13.1,11.65 12.2,11.2 11.4,11.75 11.6,10.75 10.9,10.05 11.85,9.95"/></g></svg>
+<span data-i18n="lang.zh">中</span>
+</button>
+</div>
 </div>
 </header>
 <main class="max-w-[1140px] mx-auto px-margin-page pb-section-gap pt-element-gap">
@@ -263,13 +323,13 @@
 </div>
 <div class="space-y-stack-md flex flex-col justify-center parallax-layer" data-speed="0.05">
 <h1 class="font-display-lg text-display-lg text-primary">
-                    Hi, I'm Zikang Shao —<br/>
-                    Finance × AI <span class="italic text-surface-tint">Product Builder.</span>
+<span data-i18n="hero.titleLine1">Hi, I'm Zikang Shao —</span><br/>
+<span data-i18n="hero.titleLine2a">Finance × AI</span> <span class="italic text-surface-tint" data-i18n="hero.titleLine2b">Product Builder.</span>
 </h1>
-<p class="font-body-lg text-body-lg text-on-surface-variant max-w-md">
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-md" data-i18n="hero.subtitle">
                     MSc Finance, emlyon business school. I run due diligence on leasing deals — and build AI tools that make investment research faster, sharper, and more honest.
                 </p>
-<div class="pt-stack-sm flex flex-col gap-6"><div class="flex flex-wrap gap-element-gap items-center"><a href="./Zikang_Shao_CV_EN.pdf" download="Zikang_Shao_CV_EN.pdf" class="border border-primary text-primary px-8 py-3 font-ui-label text-ui-label rounded hover:bg-primary hover:text-on-primary hover:-translate-y-1 active:translate-y-0 active:scale-95 transition-all duration-500 bg-transparent hover:shadow-lg inline-block" data-cv-link data-i18n="hero.cta.resume">Download Resume</a><a href="#" onclick="event.preventDefault(); window.scrollTo({top: document.body.scrollHeight, behavior: 'smooth'});" class="font-ui-label text-ui-label text-primary underline underline-offset-4 decoration-1 hover:decoration-2 transition-all">Get in touch ↓</a></div></div>
+<div class="pt-stack-sm flex flex-col gap-6"><div class="flex flex-wrap gap-element-gap items-center"><a href="./Zikang_Shao_CV_EN.pdf" download="Zikang_Shao_CV_EN.pdf" class="border border-primary text-primary px-8 py-3 font-ui-label text-ui-label rounded hover:bg-primary hover:text-on-primary hover:-translate-y-1 active:translate-y-0 active:scale-95 transition-all duration-500 bg-transparent hover:shadow-lg inline-block" data-cv-link data-i18n="hero.ctaResume">Download Resume</a><a href="#" onclick="event.preventDefault(); window.scrollTo({top: document.body.scrollHeight, behavior: 'smooth'});" class="font-ui-label text-ui-label text-primary underline underline-offset-4 decoration-1 hover:decoration-2 transition-all" data-i18n="hero.ctaContact">Get in touch ↓</a></div></div>
 </div>
 </section>
 <!-- Divider -->
@@ -278,108 +338,108 @@
 <section class="mb-section-gap scroll-mt-24 parallax-layer" id="experience">
 <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
 <div class="col-span-1 md:col-span-3">
-<h2 class="font-h2 text-h2 text-primary mb-element-gap sticky top-24">Background</h2>
+<h2 class="font-h2 text-h2 text-primary mb-element-gap sticky top-24" data-i18n="bg.heading">Background</h2>
 <div class="flex flex-col gap-2 border-l border-outline-variant pl-4">
-<button class="text-left font-ui-label text-ui-label text-primary py-2 border-l-2 border-primary -ml-[17px] pl-4 transition-all" onclick="showTab('work')">Work Experience</button>
-<button class="text-left font-ui-label text-ui-label text-on-surface-variant py-2 border-l-2 border-transparent hover:border-outline-variant -ml-[17px] pl-4 transition-all" onclick="showTab('edu')">Education</button>
-<button class="text-left font-ui-label text-ui-label text-on-surface-variant py-2 border-l-2 border-transparent hover:border-outline-variant -ml-[17px] pl-4 transition-all" onclick="showTab('proj')">Project Experience</button></div>
+<button class="text-left font-ui-label text-ui-label text-primary py-2 border-l-2 border-primary -ml-[17px] pl-4 transition-all" onclick="showTab('work')" data-i18n="bg.tab.work">Work Experience</button>
+<button class="text-left font-ui-label text-ui-label text-on-surface-variant py-2 border-l-2 border-transparent hover:border-outline-variant -ml-[17px] pl-4 transition-all" onclick="showTab('edu')" data-i18n="bg.tab.edu">Education</button>
+<button class="text-left font-ui-label text-ui-label text-on-surface-variant py-2 border-l-2 border-transparent hover:border-outline-variant -ml-[17px] pl-4 transition-all" onclick="showTab('proj')" data-i18n="bg.tab.proj">Project Experience</button></div>
 </div>
 <div class="col-span-1 md:col-span-9 space-y-gutter relative">
 <!-- Work Experience -->
 <div class="block" id="tab-work">
 <div class="border border-transparent border-b-outline-variant pb-element-gap exp-card cursor-pointer p-4 rounded-lg group" onclick="openModal('modal-work-1')">
 <div class="flex justify-between items-start mb-2">
-<h3 class="font-body-lg text-body-lg text-primary group-hover:italic transition-all">Project Manager Assistant — Financial Leasing</h3>
-<span class="font-ui-metadata text-ui-metadata text-on-surface-variant uppercase tracking-widest">08/2025 — Present</span>
+<h3 class="font-body-lg text-body-lg text-primary group-hover:italic transition-all" data-i18n="bg.work.1.title">Project Manager Assistant — Financial Leasing</h3>
+<span class="font-ui-metadata text-ui-metadata text-on-surface-variant uppercase tracking-widest" data-i18n="bg.work.1.date">08/2025 — Present</span>
 </div>
-<h4 class="font-body-md text-body-md italic text-surface-tint mb-4">Haisheng Financial Leasing, Foshan</h4>
-<p class="font-caption text-caption text-on-surface-variant">Lead due diligence on financial leasing engagements — running industry, business, operational, and financial deep-dives via desk research and on-site visits. Identify cash flow and asset quality risks; draft DD reports that feed approval and structuring decisions.</p>
-<div class="mt-4 text-xs font-semibold uppercase tracking-wider text-surface-tint opacity-0 group-hover:opacity-100 transition-opacity flex items-center gap-1">Click to expand <span class="material-symbols-outlined text-[14px]">open_in_new</span></div>
+<h4 class="font-body-md text-body-md italic text-surface-tint mb-4" data-i18n="bg.work.1.org">Haisheng Financial Leasing, Foshan</h4>
+<p class="font-caption text-caption text-on-surface-variant" data-i18n="bg.work.1.summary">Lead due diligence on financial leasing engagements — running industry, business, operational, and financial deep-dives via desk research and on-site visits. Identify cash flow and asset quality risks; draft DD reports that feed approval and structuring decisions.</p>
+<div class="mt-4 text-xs font-semibold uppercase tracking-wider text-surface-tint opacity-0 group-hover:opacity-100 transition-opacity flex items-center gap-1"><span data-i18n="bg.expand">Click to expand</span> <span class="material-symbols-outlined text-[14px]">open_in_new</span></div>
 </div>
 <div class="border border-transparent border-b-outline-variant pb-element-gap exp-card cursor-pointer p-4 rounded-lg mt-4 group" onclick="openModal('modal-work-2')">
 <div class="flex justify-between items-start mb-2">
-<h3 class="font-body-lg text-body-lg text-primary group-hover:italic transition-all">Automotive Group Analyst</h3>
-<span class="font-ui-metadata text-ui-metadata text-on-surface-variant uppercase tracking-widest">07/2024 — 11/2024</span>
+<h3 class="font-body-lg text-body-lg text-primary group-hover:italic transition-all" data-i18n="bg.work.2.title">Automotive Group Analyst</h3>
+<span class="font-ui-metadata text-ui-metadata text-on-surface-variant uppercase tracking-widest" data-i18n="bg.work.2.date">07/2024 — 11/2024</span>
 </div>
-<h4 class="font-body-md text-body-md italic text-surface-tint mb-4">Guoyuan Securities Company Limited, Shanghai</h4>
-<p class="font-caption text-caption text-on-surface-variant">Contributed to 5 in-depth research reports on the automotive sector and its supply chain. Analyzed industry trends, business models, competitive landscape, and company fundamentals to back investment conclusions.</p>
-<div class="mt-4 text-xs font-semibold uppercase tracking-wider text-surface-tint opacity-0 group-hover:opacity-100 transition-opacity flex items-center gap-1">Click to expand <span class="material-symbols-outlined text-[14px]">open_in_new</span></div>
+<h4 class="font-body-md text-body-md italic text-surface-tint mb-4" data-i18n="bg.work.2.org">Guoyuan Securities Company Limited, Shanghai</h4>
+<p class="font-caption text-caption text-on-surface-variant" data-i18n="bg.work.2.summary">Contributed to 5 in-depth research reports on the automotive sector and its supply chain. Analyzed industry trends, business models, competitive landscape, and company fundamentals to back investment conclusions.</p>
+<div class="mt-4 text-xs font-semibold uppercase tracking-wider text-surface-tint opacity-0 group-hover:opacity-100 transition-opacity flex items-center gap-1"><span data-i18n="bg.expand">Click to expand</span> <span class="material-symbols-outlined text-[14px]">open_in_new</span></div>
 </div>
 <div class="border border-transparent border-b-outline-variant pb-element-gap exp-card cursor-pointer p-4 rounded-lg mt-4 group" onclick="openModal('modal-work-3')">
 <div class="flex justify-between items-start mb-2">
-<h3 class="font-body-lg text-body-lg text-primary group-hover:italic transition-all">Financial Service Clerk — Fund NAV Automation</h3>
-<span class="font-ui-metadata text-ui-metadata text-on-surface-variant uppercase tracking-widest">01/2023 — 06/2023</span>
+<h3 class="font-body-lg text-body-lg text-primary group-hover:italic transition-all" data-i18n="bg.work.3.title">Financial Service Clerk — Fund NAV Automation</h3>
+<span class="font-ui-metadata text-ui-metadata text-on-surface-variant uppercase tracking-widest" data-i18n="bg.work.3.date">01/2023 — 06/2023</span>
 </div>
-<h4 class="font-body-md text-body-md italic text-surface-tint mb-4">HSBC, Foshan</h4>
-<p class="font-caption text-caption text-on-surface-variant">Joined the fund NAV automation project: daily, monthly, and quarterly NAV calculation, procedure verification, and reporting that supported the department's valuation and accounting workflows.</p>
-<div class="mt-4 text-xs font-semibold uppercase tracking-wider text-surface-tint opacity-0 group-hover:opacity-100 transition-opacity flex items-center gap-1">Click to expand <span class="material-symbols-outlined text-[14px]">open_in_new</span></div>
+<h4 class="font-body-md text-body-md italic text-surface-tint mb-4" data-i18n="bg.work.3.org">HSBC, Foshan</h4>
+<p class="font-caption text-caption text-on-surface-variant" data-i18n="bg.work.3.summary">Joined the fund NAV automation project: daily, monthly, and quarterly NAV calculation, procedure verification, and reporting that supported the department's valuation and accounting workflows.</p>
+<div class="mt-4 text-xs font-semibold uppercase tracking-wider text-surface-tint opacity-0 group-hover:opacity-100 transition-opacity flex items-center gap-1"><span data-i18n="bg.expand">Click to expand</span> <span class="material-symbols-outlined text-[14px]">open_in_new</span></div>
 </div>
 </div>
 <!-- Project Experience -->
 <div class="hidden space-y-6" id="tab-proj">
 <div class="border border-transparent border-b-outline-variant pb-element-gap exp-card cursor-pointer p-4 rounded-lg group" onclick="openModal('modal-proj-1')">
 <div class="flex justify-between items-start mb-2">
-<h3 class="font-body-lg text-body-lg text-primary group-hover:italic transition-all">AI Product for Investment Research Efficiency</h3>
-<span class="font-ui-metadata text-ui-metadata text-on-surface-variant uppercase tracking-widest">01/2026 — Present</span>
+<h3 class="font-body-lg text-body-lg text-primary group-hover:italic transition-all" data-i18n="bg.proj.1.title">AI Product for Investment Research Efficiency</h3>
+<span class="font-ui-metadata text-ui-metadata text-on-surface-variant uppercase tracking-widest" data-i18n="bg.proj.1.date">01/2026 — Present</span>
 </div>
-<h4 class="font-body-md text-body-md italic text-surface-tint mb-4">Personal product · Solo build</h4>
-<p class="font-caption text-caption text-on-surface-variant">Building a precision internal aggregation engine on Coze + DeepSeek that solves fragmented data sources in investment research. Workflow: search → multi-source aggregation → refined output, with both internal knowledge-base retrieval and live web search.</p>
-<div class="mt-4 text-xs font-semibold uppercase tracking-wider text-surface-tint opacity-0 group-hover:opacity-100 transition-opacity flex items-center gap-1">Click to expand <span class="material-symbols-outlined text-[14px]">open_in_new</span></div>
+<h4 class="font-body-md text-body-md italic text-surface-tint mb-4" data-i18n="bg.proj.1.org">Personal product · Solo build</h4>
+<p class="font-caption text-caption text-on-surface-variant" data-i18n="bg.proj.1.summary">Building a precision internal aggregation engine on Coze + DeepSeek that solves fragmented data sources in investment research. Workflow: search → multi-source aggregation → refined output, with both internal knowledge-base retrieval and live web search.</p>
+<div class="mt-4 text-xs font-semibold uppercase tracking-wider text-surface-tint opacity-0 group-hover:opacity-100 transition-opacity flex items-center gap-1"><span data-i18n="bg.expand">Click to expand</span> <span class="material-symbols-outlined text-[14px]">open_in_new</span></div>
 </div>
 <div class="border border-transparent border-b-outline-variant pb-element-gap exp-card cursor-pointer p-4 rounded-lg group" onclick="openModal('modal-proj-2')">
 <div class="flex justify-between items-start mb-2">
-<h3 class="font-body-lg text-body-lg text-primary group-hover:italic transition-all">Machine Learning & Investment Backtesting in R</h3>
-<span class="font-ui-metadata text-ui-metadata text-on-surface-variant uppercase tracking-widest">02/2024 — 05/2024</span>
+<h3 class="font-body-lg text-body-lg text-primary group-hover:italic transition-all" data-i18n="bg.proj.2.title">Machine Learning & Investment Backtesting in R</h3>
+<span class="font-ui-metadata text-ui-metadata text-on-surface-variant uppercase tracking-widest" data-i18n="bg.proj.2.date">02/2024 — 05/2024</span>
 </div>
-<h4 class="font-body-md text-body-md italic text-surface-tint mb-4">Course final, MSc Finance · Top 5% of class</h4>
-<p class="font-caption text-caption text-on-surface-variant">End-to-end independent project: data ingestion from financial terminals → cleansing → EDA → regression and time-series modeling → simulated investment decisions → portfolio backtesting.</p>
-<div class="mt-4 text-xs font-semibold uppercase tracking-wider text-surface-tint opacity-0 group-hover:opacity-100 transition-opacity flex items-center gap-1">Click to expand <span class="material-symbols-outlined text-[14px]">open_in_new</span></div>
+<h4 class="font-body-md text-body-md italic text-surface-tint mb-4" data-i18n="bg.proj.2.org">Course final, MSc Finance · Top 5% of class</h4>
+<p class="font-caption text-caption text-on-surface-variant" data-i18n="bg.proj.2.summary">End-to-end independent project: data ingestion from financial terminals → cleansing → EDA → regression and time-series modeling → simulated investment decisions → portfolio backtesting.</p>
+<div class="mt-4 text-xs font-semibold uppercase tracking-wider text-surface-tint opacity-0 group-hover:opacity-100 transition-opacity flex items-center gap-1"><span data-i18n="bg.expand">Click to expand</span> <span class="material-symbols-outlined text-[14px]">open_in_new</span></div>
 </div>
 <div class="border border-transparent border-b-outline-variant pb-element-gap exp-card cursor-pointer p-4 rounded-lg group" onclick="openModal('modal-proj-3')">
 <div class="flex justify-between items-start mb-2">
-<h3 class="font-body-lg text-body-lg text-primary group-hover:italic transition-all">UBS M&A Strategic Analysis</h3>
-<span class="font-ui-metadata text-ui-metadata text-on-surface-variant uppercase tracking-widest">10/2023 — 12/2023</span>
+<h3 class="font-body-lg text-body-lg text-primary group-hover:italic transition-all" data-i18n="bg.proj.3.title">UBS M&A Strategic Analysis</h3>
+<span class="font-ui-metadata text-ui-metadata text-on-surface-variant uppercase tracking-widest" data-i18n="bg.proj.3.date">10/2023 — 12/2023</span>
 </div>
-<h4 class="font-body-md text-body-md italic text-surface-tint mb-4">Course group project · 2nd place</h4>
-<p class="font-caption text-caption text-on-surface-variant">Strategic analysis of a UBS M&A case — external environment, internal challenges, strategic objectives, and implementation pathway. AI-assisted research lifted team efficiency ~30% vs. peer groups.</p>
-<div class="mt-4 text-xs font-semibold uppercase tracking-wider text-surface-tint opacity-0 group-hover:opacity-100 transition-opacity flex items-center gap-1">Click to expand <span class="material-symbols-outlined text-[14px]">open_in_new</span></div>
+<h4 class="font-body-md text-body-md italic text-surface-tint mb-4" data-i18n="bg.proj.3.org">Course group project · 2nd place</h4>
+<p class="font-caption text-caption text-on-surface-variant" data-i18n="bg.proj.3.summary">Strategic analysis of a UBS M&A case — external environment, internal challenges, strategic objectives, and implementation pathway. AI-assisted research lifted team efficiency ~30% vs. peer groups.</p>
+<div class="mt-4 text-xs font-semibold uppercase tracking-wider text-surface-tint opacity-0 group-hover:opacity-100 transition-opacity flex items-center gap-1"><span data-i18n="bg.expand">Click to expand</span> <span class="material-symbols-outlined text-[14px]">open_in_new</span></div>
 </div>
 <div class="border border-transparent border-b-outline-variant pb-element-gap exp-card cursor-pointer p-4 rounded-lg group" onclick="openModal('modal-proj-4')">
 <div class="flex justify-between items-start mb-2">
-<h3 class="font-body-lg text-body-lg text-primary group-hover:italic transition-all">Greater Bay Area Finance Challenge — Muyuan Co.</h3>
-<span class="font-ui-metadata text-ui-metadata text-on-surface-variant uppercase tracking-widest">09/2021 — 12/2021</span>
+<h3 class="font-body-lg text-body-lg text-primary group-hover:italic transition-all" data-i18n="bg.proj.4.title">Greater Bay Area Finance Challenge — Muyuan Co.</h3>
+<span class="font-ui-metadata text-ui-metadata text-on-surface-variant uppercase tracking-widest" data-i18n="bg.proj.4.date">09/2021 — 12/2021</span>
 </div>
-<h4 class="font-body-md text-body-md italic text-surface-tint mb-4">National finance challenge · University 2nd prize</h4>
-<p class="font-caption text-caption text-on-surface-variant">Equity research on Muyuan Co. using Porter's Five Forces and SWOT. Built a financial model end-to-end. Owned research direction, content integration, and final presentation. Advanced to next round.</p>
-<div class="mt-4 text-xs font-semibold uppercase tracking-wider text-surface-tint opacity-0 group-hover:opacity-100 transition-opacity flex items-center gap-1">Click to expand <span class="material-symbols-outlined text-[14px]">open_in_new</span></div>
+<h4 class="font-body-md text-body-md italic text-surface-tint mb-4" data-i18n="bg.proj.4.org">National finance challenge · University 2nd prize</h4>
+<p class="font-caption text-caption text-on-surface-variant" data-i18n="bg.proj.4.summary">Equity research on Muyuan Co. using Porter's Five Forces and SWOT. Built a financial model end-to-end. Owned research direction, content integration, and final presentation. Advanced to next round.</p>
+<div class="mt-4 text-xs font-semibold uppercase tracking-wider text-surface-tint opacity-0 group-hover:opacity-100 transition-opacity flex items-center gap-1"><span data-i18n="bg.expand">Click to expand</span> <span class="material-symbols-outlined text-[14px]">open_in_new</span></div>
 </div>
 <div class="border border-transparent border-b-outline-variant pb-element-gap exp-card cursor-pointer p-4 rounded-lg group" onclick="openModal('modal-proj-5')">
 <div class="flex justify-between items-start mb-2">
-<h3 class="font-body-lg text-body-lg text-primary group-hover:italic transition-all">Huangshang Economic Research Institute Rural Revitalization Project</h3>
-<span class="font-ui-metadata text-ui-metadata text-on-surface-variant uppercase tracking-widest">09/2021 — 09/2022</span>
+<h3 class="font-body-lg text-body-lg text-primary group-hover:italic transition-all" data-i18n="bg.proj.5.title">Huangshang Economic Research Institute Rural Revitalization Project</h3>
+<span class="font-ui-metadata text-ui-metadata text-on-surface-variant uppercase tracking-widest" data-i18n="bg.proj.5.date">09/2021 — 09/2022</span>
 </div>
-<h4 class="font-body-md text-body-md italic text-surface-tint mb-4">University-led initiative</h4>
-<p class="font-caption text-caption text-on-surface-variant">Funding mobilization, field research, and industrialization support for the local black-olive industry. Linked government, institutions, enterprises, and the university to move the project from research to execution.</p>
-<div class="mt-4 text-xs font-semibold uppercase tracking-wider text-surface-tint opacity-0 group-hover:opacity-100 transition-opacity flex items-center gap-1">Click to expand <span class="material-symbols-outlined text-[14px]">open_in_new</span></div>
+<h4 class="font-body-md text-body-md italic text-surface-tint mb-4" data-i18n="bg.proj.5.org">University-led initiative</h4>
+<p class="font-caption text-caption text-on-surface-variant" data-i18n="bg.proj.5.summary">Funding mobilization, field research, and industrialization support for the local black-olive industry. Linked government, institutions, enterprises, and the university to move the project from research to execution.</p>
+<div class="mt-4 text-xs font-semibold uppercase tracking-wider text-surface-tint opacity-0 group-hover:opacity-100 transition-opacity flex items-center gap-1"><span data-i18n="bg.expand">Click to expand</span> <span class="material-symbols-outlined text-[14px]">open_in_new</span></div>
 </div>
 </div>
 <!-- Education -->
 <div class="hidden" id="tab-edu">
 <div class="border border-transparent border-b-outline-variant pb-element-gap exp-card cursor-pointer p-4 rounded-lg group" onclick="openModal('modal-edu-1')">
 <div class="flex justify-between items-start mb-2">
-<h3 class="font-body-lg text-body-lg text-primary group-hover:italic transition-all">MSc in Finance</h3>
-<span class="font-ui-metadata text-ui-metadata text-on-surface-variant uppercase tracking-widest">09/2023 — 03/2025</span>
+<h3 class="font-body-lg text-body-lg text-primary group-hover:italic transition-all" data-i18n="bg.edu.1.title">MSc in Finance</h3>
+<span class="font-ui-metadata text-ui-metadata text-on-surface-variant uppercase tracking-widest" data-i18n="bg.edu.1.date">09/2023 — 03/2025</span>
 </div>
-<h4 class="font-body-md text-body-md italic text-surface-tint mb-4">emlyon business school, Lyon, France</h4>
-<div class="mt-4 text-xs font-semibold uppercase tracking-wider text-surface-tint opacity-0 group-hover:opacity-100 transition-opacity flex items-center gap-1">Click to expand <span class="material-symbols-outlined text-[14px]">open_in_new</span></div>
+<h4 class="font-body-md text-body-md italic text-surface-tint mb-4" data-i18n="bg.edu.1.org">emlyon business school, Lyon, France</h4>
+<div class="mt-4 text-xs font-semibold uppercase tracking-wider text-surface-tint opacity-0 group-hover:opacity-100 transition-opacity flex items-center gap-1"><span data-i18n="bg.expand">Click to expand</span> <span class="material-symbols-outlined text-[14px]">open_in_new</span></div>
 </div>
 <div class="border border-transparent border-b-outline-variant pb-element-gap exp-card cursor-pointer p-4 rounded-lg mt-4 group" onclick="openModal('modal-edu-2')">
 <div class="flex justify-between items-start mb-2">
-<h3 class="font-body-lg text-body-lg text-primary group-hover:italic transition-all">BA in Financial Engineering</h3>
-<span class="font-ui-metadata text-ui-metadata text-on-surface-variant uppercase tracking-widest">09/2019 — 06/2023</span>
+<h3 class="font-body-lg text-body-lg text-primary group-hover:italic transition-all" data-i18n="bg.edu.2.title">BA in Financial Engineering</h3>
+<span class="font-ui-metadata text-ui-metadata text-on-surface-variant uppercase tracking-widest" data-i18n="bg.edu.2.date">09/2019 — 06/2023</span>
 </div>
-<h4 class="font-body-md text-body-md italic text-surface-tint mb-4">Huashang College, Guangdong University of Finance & Economics, Guangzhou</h4>
-<div class="mt-4 text-xs font-semibold uppercase tracking-wider text-surface-tint opacity-0 group-hover:opacity-100 transition-opacity flex items-center gap-1">Click to expand <span class="material-symbols-outlined text-[14px]">open_in_new</span></div>
+<h4 class="font-body-md text-body-md italic text-surface-tint mb-4" data-i18n="bg.edu.2.org">Huashang College, Guangdong University of Finance & Economics, Guangzhou</h4>
+<div class="mt-4 text-xs font-semibold uppercase tracking-wider text-surface-tint opacity-0 group-hover:opacity-100 transition-opacity flex items-center gap-1"><span data-i18n="bg.expand">Click to expand</span> <span class="material-symbols-outlined text-[14px]">open_in_new</span></div>
 </div>
 </div>
 </div>
@@ -389,15 +449,15 @@
 <div class="modal" id="modal-work-1">
 <div class="modal-content">
 <span class="close" onclick="closeModal('modal-work-1')">×</span>
-<h2 class="font-h2 text-h2 text-primary mb-4">Project Manager Assistant — Financial Leasing</h2>
-<h4 class="font-body-md text-body-md italic text-surface-tint mb-6">Haisheng Financial Leasing, Foshan | 08/2025 — Present</h4>
+<h2 class="font-h2 text-h2 text-primary mb-4" data-i18n="bg.work.1.title">Project Manager Assistant — Financial Leasing</h2>
+<h4 class="font-body-md text-body-md italic text-surface-tint mb-6" data-i18n="modal.work.1.subtitle">Haisheng Financial Leasing, Foshan | 08/2025 — Present</h4>
 <div class="space-y-4 font-body-md text-on-surface-variant">
-<p class="">Lead due diligence on financial leasing deals end-to-end — from kickoff and on-site visit through report drafting and internal approval. Identify cash flow volatility and asset quality risks; structure findings into DD reports that feed approval and deal-structuring decisions.</p>
+<p class="" data-i18n="modal.work.1.intro">Lead due diligence on financial leasing deals end-to-end — from kickoff and on-site visit through report drafting and internal approval. Identify cash flow volatility and asset quality risks; structure findings into DD reports that feed approval and deal-structuring decisions.</p>
 <ul class="list-disc pl-6 space-y-2">
-<li class=""><strong>Due Diligence &amp; Report Writing:</strong> Led 10+ client due diligence for leasing projects, performing in-depth industry, business model, operational, and financial analysis through desktop research and on-site visits. Identified key risk factors including cash flow volatility and asset quality, summarized core operational findings, and drafted due diligence reports to inform project approval decisions and structural design.</li>
-<li class=""><strong>Project Documentation &amp; Negotiation Support:</strong> Drove deal execution under incomplete information by reconstructing client financial profiles from fragmented data, closing information gaps through iterative client follow-ups, and enabling transaction structuring and negotiation progression.</li>
-<li class=""><strong>Cross-functional Coordination:</strong> Collaborated with Compliance, Risk Management, Finance, and Asset Management departments to advance project workflows. Addressed feedback and additional requirements at each stage, minimized information gaps, and ensured smooth progression through internal approval processes.</li>
-<li class=""><strong>Milestone Tracking &amp; Progress Updates:</strong> Tracked project timelines and pending tasks according to advancement schedules. Consolidated updates from relevant stakeholders and communicated progress to project managers, helping maintain oversight, enhance process transparency, and ensure orderly execution.</li>
+<li class="" data-i18n-html="modal.work.1.li1"><strong>Due Diligence &amp; Report Writing:</strong> Led 10+ client due diligence for leasing projects, performing in-depth industry, business model, operational, and financial analysis through desktop research and on-site visits. Identified key risk factors including cash flow volatility and asset quality, summarized core operational findings, and drafted due diligence reports to inform project approval decisions and structural design.</li>
+<li class="" data-i18n-html="modal.work.1.li2"><strong>Project Documentation &amp; Negotiation Support:</strong> Drove deal execution under incomplete information by reconstructing client financial profiles from fragmented data, closing information gaps through iterative client follow-ups, and enabling transaction structuring and negotiation progression.</li>
+<li class="" data-i18n-html="modal.work.1.li3"><strong>Cross-functional Coordination:</strong> Collaborated with Compliance, Risk Management, Finance, and Asset Management departments to advance project workflows. Addressed feedback and additional requirements at each stage, minimized information gaps, and ensured smooth progression through internal approval processes.</li>
+<li class="" data-i18n-html="modal.work.1.li4"><strong>Milestone Tracking &amp; Progress Updates:</strong> Tracked project timelines and pending tasks according to advancement schedules. Consolidated updates from relevant stakeholders and communicated progress to project managers, helping maintain oversight, enhance process transparency, and ensure orderly execution.</li>
 </ul>
 </div>
 </div>
@@ -405,14 +465,14 @@
 <div class="modal" id="modal-work-2">
 <div class="modal-content">
 <span class="close" onclick="closeModal('modal-work-2')">×</span>
-<h2 class="font-h2 text-h2 text-primary mb-4">Automotive Group Analyst</h2>
-<h4 class="font-body-md text-body-md italic text-surface-tint mb-6">Guoyuan Securities Company Limited, Shanghai | 07/2024 — 11/2024</h4>
+<h2 class="font-h2 text-h2 text-primary mb-4" data-i18n="bg.work.2.title">Automotive Group Analyst</h2>
+<h4 class="font-body-md text-body-md italic text-surface-tint mb-6" data-i18n="modal.work.2.subtitle">Guoyuan Securities Company Limited, Shanghai | 07/2024 — 11/2024</h4>
 <div class="space-y-4 font-body-md text-on-surface-variant">
-<p class="">Contributed to the automotive coverage team — sector reports, company fundamentals, and supporting investment narratives across the supply chain.</p>
+<p class="" data-i18n="modal.work.2.intro">Contributed to the automotive coverage team — sector reports, company fundamentals, and supporting investment narratives across the supply chain.</p>
 <ul class="list-disc pl-6 space-y-2">
-<li class=""><strong>Industry &amp; Company Research:</strong> Completed and contributed to 5 in-depth industry and company research reports, with a focus on the automotive sector and its supply chain. Conducted analysis on industry trends, deconstructed business models, assessed competitive landscapes, and evaluated company fundamentals to support investment conclusions and research insights.</li>
-<li class=""><strong>Financial Analysis &amp; Valuation Updates:</strong> Performed comprehensive fundamental and valuation analysis to drive investment recommendations, including breaking down revenue, margins, and cash flow to identify key value drivers, while refining financial models and conducting peer/trend analysis to strengthen research conclusions.</li>
-<li class=""><strong>Database Development &amp; Ongoing Monitoring:</strong> Established and maintained industry databases, continuously tracking policy changes, market dynamics, and competitor information. Regularly updated data and summarized key analytical takeaways to enhance the completeness of research materials and improve the efficiency of subsequent team research.</li>
+<li class="" data-i18n-html="modal.work.2.li1"><strong>Industry &amp; Company Research:</strong> Completed and contributed to 5 in-depth industry and company research reports, with a focus on the automotive sector and its supply chain. Conducted analysis on industry trends, deconstructed business models, assessed competitive landscapes, and evaluated company fundamentals to support investment conclusions and research insights.</li>
+<li class="" data-i18n-html="modal.work.2.li2"><strong>Financial Analysis &amp; Valuation Updates:</strong> Performed comprehensive fundamental and valuation analysis to drive investment recommendations, including breaking down revenue, margins, and cash flow to identify key value drivers, while refining financial models and conducting peer/trend analysis to strengthen research conclusions.</li>
+<li class="" data-i18n-html="modal.work.2.li3"><strong>Database Development &amp; Ongoing Monitoring:</strong> Established and maintained industry databases, continuously tracking policy changes, market dynamics, and competitor information. Regularly updated data and summarized key analytical takeaways to enhance the completeness of research materials and improve the efficiency of subsequent team research.</li>
 </ul>
 </div>
 </div>
@@ -420,14 +480,14 @@
 <div class="modal" id="modal-work-3">
 <div class="modal-content">
 <span class="close" onclick="closeModal('modal-work-3')">×</span>
-<h2 class="font-h2 text-h2 text-primary mb-4">Financial Service Clerk — Fund NAV Automation</h2>
-<h4 class="font-body-md text-body-md italic text-surface-tint mb-6">HSBC, Foshan | 01/2023 — 06/2023</h4>
+<h2 class="font-h2 text-h2 text-primary mb-4" data-i18n="bg.work.3.title">Financial Service Clerk — Fund NAV Automation</h2>
+<h4 class="font-body-md text-body-md italic text-surface-tint mb-6" data-i18n="modal.work.3.subtitle">HSBC, Foshan | 01/2023 — 06/2023</h4>
 <div class="space-y-4 font-body-md text-on-surface-variant">
-<p class="">Joined the fund NAV automation initiative supporting the department's valuation and accounting workflows.</p>
+<p class="" data-i18n="modal.work.3.intro">Joined the fund NAV automation initiative supporting the department's valuation and accounting workflows.</p>
 <ul class="list-disc pl-6 space-y-2">
-<li class=""><strong>Fund NAV Calculation:</strong> Participated in the fund NAV automation project, responsible for the calculation of daily, monthly, and quarterly net asset values. Verified operational steps, maintained procedure records, and prepared corresponding reports to support the department's daily valuation and accounting tasks.</li>
-<li class=""><strong>Automated Process Optimization:</strong> Diagnosed failure points in automated workflows during daily operations, collaborated with risk and IT teams to redesign process logic, and reduced operational error rates by approximately 20 percent.</li>
-<li class=""><strong>Cross-Regional Collaboration in English-Speaking Environment:</strong> Worked in a fully English environment with colleagues across regions to handle financial reports and market data. Organized materials, communicated feedback, and executed tasks as required, improving cross-team collaboration efficiency and execution capability.</li>
+<li class="" data-i18n-html="modal.work.3.li1"><strong>Fund NAV Calculation:</strong> Participated in the fund NAV automation project, responsible for the calculation of daily, monthly, and quarterly net asset values. Verified operational steps, maintained procedure records, and prepared corresponding reports to support the department's daily valuation and accounting tasks.</li>
+<li class="" data-i18n-html="modal.work.3.li2"><strong>Automated Process Optimization:</strong> Diagnosed failure points in automated workflows during daily operations, collaborated with risk and IT teams to redesign process logic, and reduced operational error rates by approximately 20 percent.</li>
+<li class="" data-i18n-html="modal.work.3.li3"><strong>Cross-Regional Collaboration in English-Speaking Environment:</strong> Worked in a fully English environment with colleagues across regions to handle financial reports and market data. Organized materials, communicated feedback, and executed tasks as required, improving cross-team collaboration efficiency and execution capability.</li>
 </ul>
 </div>
 </div>
@@ -435,15 +495,15 @@
 <div class="modal" id="modal-proj-1">
 <div class="modal-content">
 <span class="close" onclick="closeModal('modal-proj-1')">×</span>
-<h2 class="font-h2 text-h2 text-primary mb-4">AI Product for Investment Research Efficiency</h2>
-<h4 class="font-body-md text-body-md italic text-surface-tint mb-6">Personal product · Solo build | 01/2026 — Present</h4>
+<h2 class="font-h2 text-h2 text-primary mb-4" data-i18n="bg.proj.1.title">AI Product for Investment Research Efficiency</h2>
+<h4 class="font-body-md text-body-md italic text-surface-tint mb-6" data-i18n="modal.proj.1.subtitle">Personal product · Solo build | 01/2026 — Present</h4>
 <div class="space-y-4 font-body-md text-on-surface-variant">
-<p class="">Building a precision internal aggregation engine on Coze + DeepSeek that solves fragmented data sources in investment research. Workflow: search → multi-source aggregation → refined output, with both internal knowledge-base retrieval and live web search.</p>
+<p class="" data-i18n="modal.proj.1.intro">Building a precision internal aggregation engine on Coze + DeepSeek that solves fragmented data sources in investment research. Workflow: search → multi-source aggregation → refined output, with both internal knowledge-base retrieval and live web search.</p>
 <ul class="list-disc pl-6 space-y-2">
-<li class=""><strong>Demand Insight &amp; Analysis:</strong> Identified and analyzed high-value user needs for information retrieval and synthesis in potential/ongoing investment projects. Through user interviews and process reviews, pinpointed core pain points such as fragmented data sources leading to prolonged searches and inefficient compilation, and defined key optimization metrics including search efficiency and information integration.</li>
-<li class=""><strong>Product Positioning &amp; Feature Design:</strong> Positioned the product as a high-precision internal information aggregation engine, focusing on the single core need of "one-stop information access and synthesis." Designed a streamlined workflow of "intelligent search – multi-source aggregation – refined output" to address critical operational efficiency bottlenecks.</li>
-<li class=""><strong>Workflow Development &amp; Implementation:</strong> Built workflows and dialogue flows on Coze, integrating DeepSeek models, knowledge base retrieval, and Web Search plugins. Key implemented features included precise Q&amp;A for individual/company knowledge bases and real-time external data capture with intelligent contextual integration, ensuring structured and traceable information output.</li>
-<li class=""><strong>Iteration &amp; Impact Validation:</strong> Continuously optimized search strategies, prompt engineering, and output structures based on trial feedback. Post-launch targets included approximately 50% improvement in internal knowledge search efficiency and 60% improvement in external data collection and integration efficiency, significantly reducing time spent on cross-platform retrieval and information reorganization.</li>
+<li class="" data-i18n-html="modal.proj.1.li1"><strong>Demand Insight &amp; Analysis:</strong> Identified and analyzed high-value user needs for information retrieval and synthesis in potential/ongoing investment projects. Through user interviews and process reviews, pinpointed core pain points such as fragmented data sources leading to prolonged searches and inefficient compilation, and defined key optimization metrics including search efficiency and information integration.</li>
+<li class="" data-i18n-html="modal.proj.1.li2"><strong>Product Positioning &amp; Feature Design:</strong> Positioned the product as a high-precision internal information aggregation engine, focusing on the single core need of "one-stop information access and synthesis." Designed a streamlined workflow of "intelligent search – multi-source aggregation – refined output" to address critical operational efficiency bottlenecks.</li>
+<li class="" data-i18n-html="modal.proj.1.li3"><strong>Workflow Development &amp; Implementation:</strong> Built workflows and dialogue flows on Coze, integrating DeepSeek models, knowledge base retrieval, and Web Search plugins. Key implemented features included precise Q&amp;A for individual/company knowledge bases and real-time external data capture with intelligent contextual integration, ensuring structured and traceable information output.</li>
+<li class="" data-i18n-html="modal.proj.1.li4"><strong>Iteration &amp; Impact Validation:</strong> Continuously optimized search strategies, prompt engineering, and output structures based on trial feedback. Post-launch targets included approximately 50% improvement in internal knowledge search efficiency and 60% improvement in external data collection and integration efficiency, significantly reducing time spent on cross-platform retrieval and information reorganization.</li>
 </ul>
 </div>
 </div>
@@ -451,14 +511,14 @@
 <div class="modal" id="modal-proj-2">
 <div class="modal-content">
 <span class="close" onclick="closeModal('modal-proj-2')">×</span>
-<h2 class="font-h2 text-h2 text-primary mb-4">Machine Learning & Investment Backtesting in R</h2>
-<h4 class="font-body-md text-body-md italic text-surface-tint mb-6">Course final, MSc Finance · Top 5% of class · Course grade Top 10% | 02/2024 — 05/2024</h4>
+<h2 class="font-h2 text-h2 text-primary mb-4" data-i18n="bg.proj.2.title">Machine Learning & Investment Backtesting in R</h2>
+<h4 class="font-body-md text-body-md italic text-surface-tint mb-6" data-i18n="modal.proj.2.subtitle">Course final, MSc Finance · Top 5% of class · Course grade Top 10% | 02/2024 — 05/2024</h4>
 <div class="space-y-4 font-body-md text-on-surface-variant">
-<p class=""><strong>Project Background:</strong> A final independent project for a Machine Learning course, requiring the use of R and machine learning methods to conduct data analysis, generate investment decisions, and perform backtesting independently.</p>
+<p class="" data-i18n-html="modal.proj.2.intro"><strong>Project Background:</strong> A final independent project for a Machine Learning course, requiring the use of R and machine learning methods to conduct data analysis, generate investment decisions, and perform backtesting independently.</p>
 <ul class="list-disc pl-6 space-y-2">
-<li class=""><strong>Financial Data Processing &amp; Modeling:</strong> Independently completed the course final project. After importing data from financial terminals, performed data cleansing, preprocessing, exploratory analysis, and variable processing using R, establishing a complete data analysis pipeline.</li>
-<li class=""><strong>Application of Regression &amp; Time Series Models:</strong> Built regression and time series models based on the analytical results to validate investment strategy effectiveness. Conducted simulated investment decisions and backtesting, delivering performance reports for the constructed portfolio.</li>
-<li class=""><strong>End-to-End Independent Execution:</strong> Independently executed the entire analytical cycle, from data processing and model development to result interpretation and strategy backtesting. The project ranked in the top 5% of the class, with the overall course grade in the top 10%.</li>
+<li class="" data-i18n-html="modal.proj.2.li1"><strong>Financial Data Processing &amp; Modeling:</strong> Independently completed the course final project. After importing data from financial terminals, performed data cleansing, preprocessing, exploratory analysis, and variable processing using R, establishing a complete data analysis pipeline.</li>
+<li class="" data-i18n-html="modal.proj.2.li2"><strong>Application of Regression &amp; Time Series Models:</strong> Built regression and time series models based on the analytical results to validate investment strategy effectiveness. Conducted simulated investment decisions and backtesting, delivering performance reports for the constructed portfolio.</li>
+<li class="" data-i18n-html="modal.proj.2.li3"><strong>End-to-End Independent Execution:</strong> Independently executed the entire analytical cycle, from data processing and model development to result interpretation and strategy backtesting. The project ranked in the top 5% of the class, with the overall course grade in the top 10%.</li>
 </ul>
 </div>
 </div>
@@ -466,14 +526,14 @@
 <div class="modal" id="modal-proj-3">
 <div class="modal-content">
 <span class="close" onclick="closeModal('modal-proj-3')">×</span>
-<h2 class="font-h2 text-h2 text-primary mb-4">UBS M&A Strategic Analysis</h2>
-<h4 class="font-body-md text-body-md italic text-surface-tint mb-6">Course group project · 2nd place | 10/2023 — 12/2023</h4>
+<h2 class="font-h2 text-h2 text-primary mb-4" data-i18n="bg.proj.3.title">UBS M&A Strategic Analysis</h2>
+<h4 class="font-body-md text-body-md italic text-surface-tint mb-6" data-i18n="modal.proj.3.subtitle">Course group project · 2nd place | 10/2023 — 12/2023</h4>
 <div class="space-y-4 font-body-md text-on-surface-variant">
-<p class=""><strong>Project Background:</strong> A final group project for a Strategic Analysis course, requiring collaborative research on a UBS merger and acquisition case to formulate subsequent development recommendations for the company.</p>
+<p class="" data-i18n-html="modal.proj.3.intro"><strong>Project Background:</strong> A final group project for a Strategic Analysis course, requiring collaborative research on a UBS merger and acquisition case to formulate subsequent development recommendations for the company.</p>
 <ul class="list-disc pl-6 space-y-2">
-<li class=""><strong>M&amp;A Case Analysis:</strong> Conducted strategic analysis of the UBS M&amp;A case, integrating external environment, internal challenges, strategic objectives, and implementation pathways. Contributed to the group report and provided follow-up development recommendations.</li>
-<li class=""><strong>Team Coordination &amp; Progress Management:</strong> Coordinated team execution by structuring deliverables and aligning outputs, ensuring a coherent final narrative.</li>
-<li class=""><strong>AI Tool Integration for Efficiency:</strong> Incorporated AI tools in data collection, information organization, and content refinement, improving work efficiency by approximately 30% compared to other projects. The final presentation was awarded second place.</li>
+<li class="" data-i18n-html="modal.proj.3.li1"><strong>M&amp;A Case Analysis:</strong> Conducted strategic analysis of the UBS M&amp;A case, integrating external environment, internal challenges, strategic objectives, and implementation pathways. Contributed to the group report and provided follow-up development recommendations.</li>
+<li class="" data-i18n-html="modal.proj.3.li2"><strong>Team Coordination &amp; Progress Management:</strong> Coordinated team execution by structuring deliverables and aligning outputs, ensuring a coherent final narrative.</li>
+<li class="" data-i18n-html="modal.proj.3.li3"><strong>AI Tool Integration for Efficiency:</strong> Incorporated AI tools in data collection, information organization, and content refinement, improving work efficiency by approximately 30% compared to other projects. The final presentation was awarded second place.</li>
 </ul>
 </div>
 </div>
@@ -481,14 +541,14 @@
 <div class="modal" id="modal-proj-4">
 <div class="modal-content">
 <span class="close" onclick="closeModal('modal-proj-4')">×</span>
-<h2 class="font-h2 text-h2 text-primary mb-4">Greater Bay Area Finance Challenge — Muyuan Co.</h2>
-<h4 class="font-body-md text-body-md italic text-surface-tint mb-6">National finance challenge · University 2nd prize | 09/2021 — 12/2021</h4>
+<h2 class="font-h2 text-h2 text-primary mb-4" data-i18n="bg.proj.4.title">Greater Bay Area Finance Challenge — Muyuan Co.</h2>
+<h4 class="font-body-md text-body-md italic text-surface-tint mb-6" data-i18n="modal.proj.4.subtitle">National finance challenge · University 2nd prize | 09/2021 — 12/2021</h4>
 <div class="space-y-4 font-body-md text-on-surface-variant">
-<p class=""><strong>Project Background:</strong> Participated in the Guangdong division of a national campus finance challenge. Conducted stock research and analysis on an assigned topic, authored an industry/company report, and delivered a final presentation.</p>
+<p class="" data-i18n-html="modal.proj.4.intro"><strong>Project Background:</strong> Participated in the Guangdong division of a national campus finance challenge. Conducted stock research and analysis on an assigned topic, authored an industry/company report, and delivered a final presentation.</p>
 <ul class="list-disc pl-6 space-y-2">
-<li class=""><strong>Company Research &amp; Financial Modeling:</strong> Conducted in-depth research on Muyuan Co., Ltd. and its industry, utilizing analytical frameworks such as Porter's Five Forces and SWOT analysis to complete the research report. Independently built a financial model to support the conclusions.</li>
-<li class=""><strong>Presentation &amp; Content Coordination:</strong> Responsible for overseeing the overall research direction, integrating report content, and leading the final presentation, ensuring consistency in research logic and delivery.</li>
-<li class=""><strong>Team Task Management:</strong> Assigned tasks and tracked progress based on team members' strengths, coordinated individual contributions to enhance overall output quality. The project won a university-level second prize and advanced to the next round.</li>
+<li class="" data-i18n-html="modal.proj.4.li1"><strong>Company Research &amp; Financial Modeling:</strong> Conducted in-depth research on Muyuan Co., Ltd. and its industry, utilizing analytical frameworks such as Porter's Five Forces and SWOT analysis to complete the research report. Independently built a financial model to support the conclusions.</li>
+<li class="" data-i18n-html="modal.proj.4.li2"><strong>Presentation &amp; Content Coordination:</strong> Responsible for overseeing the overall research direction, integrating report content, and leading the final presentation, ensuring consistency in research logic and delivery.</li>
+<li class="" data-i18n-html="modal.proj.4.li3"><strong>Team Task Management:</strong> Assigned tasks and tracked progress based on team members' strengths, coordinated individual contributions to enhance overall output quality. The project won a university-level second prize and advanced to the next round.</li>
 </ul>
 </div>
 </div>
@@ -496,14 +556,14 @@
 <div class="modal" id="modal-proj-5">
 <div class="modal-content">
 <span class="close" onclick="closeModal('modal-proj-5')">×</span>
-<h2 class="font-h2 text-h2 text-primary mb-4">Huangshang Economic Research Institute Rural Revitalization Project</h2>
-<h4 class="font-body-md text-body-md italic text-surface-tint mb-6">University-led initiative | 09/2021 — 09/2022</h4>
+<h2 class="font-h2 text-h2 text-primary mb-4" data-i18n="bg.proj.5.title">Huangshang Economic Research Institute Rural Revitalization Project</h2>
+<h4 class="font-body-md text-body-md italic text-surface-tint mb-6" data-i18n="modal.proj.5.subtitle">University-led initiative | 09/2021 — 09/2022</h4>
 <div class="space-y-4 font-body-md text-on-surface-variant">
-<p class=""><strong>Project Background:</strong> A college-led rural revitalization initiative undertaking specific projects assigned by higher-level departments. This project involved the revitalization of Dengshan Village in Zengcheng, focusing on securing funding and promoting the commercialization and industrialization of local specialty agricultural products, such as black olives, to increase resident income.</p>
+<p class="" data-i18n-html="modal.proj.5.intro"><strong>Project Background:</strong> A college-led rural revitalization initiative undertaking specific projects assigned by higher-level departments. This project involved the revitalization of Dengshan Village in Zengcheng, focusing on securing funding and promoting the commercialization and industrialization of local specialty agricultural products, such as black olives, to increase resident income.</p>
 <ul class="list-disc pl-6 space-y-2">
-<li class=""><strong>Stakeholder Engagement &amp; Resource Mobilization:</strong> Participated in communication and liaison between government bodies, institutions, enterprises, and the university, assisting in securing project funding and external resources. Supported the planning and implementation of several proposals.</li>
-<li class=""><strong>Field Research &amp; Industry Due Diligence:</strong> Conducted on-site research in Dengshan Village, Zengcheng District, through village residency and interviews to understand the current state, challenges, and development potential of the black olive industry. Contributed to summary reports to inform subsequent project phases.</li>
-<li class=""><strong>Industrialization Support:</strong> Supported the implementation of black olive and derivative product projects. Facilitated connections with experts, processing factories, supply channels, and sales channels. Assisted in maintaining relationships among investors, suppliers, and villagers, supporting the project's transition from research to execution.</li>
+<li class="" data-i18n-html="modal.proj.5.li1"><strong>Stakeholder Engagement &amp; Resource Mobilization:</strong> Participated in communication and liaison between government bodies, institutions, enterprises, and the university, assisting in securing project funding and external resources. Supported the planning and implementation of several proposals.</li>
+<li class="" data-i18n-html="modal.proj.5.li2"><strong>Field Research &amp; Industry Due Diligence:</strong> Conducted on-site research in Dengshan Village, Zengcheng District, through village residency and interviews to understand the current state, challenges, and development potential of the black olive industry. Contributed to summary reports to inform subsequent project phases.</li>
+<li class="" data-i18n-html="modal.proj.5.li3"><strong>Industrialization Support:</strong> Supported the implementation of black olive and derivative product projects. Facilitated connections with experts, processing factories, supply channels, and sales channels. Assisted in maintaining relationships among investors, suppliers, and villagers, supporting the project's transition from research to execution.</li>
 </ul>
 </div>
 </div>
@@ -511,30 +571,30 @@
 <div class="modal" id="modal-edu-1">
 <div class="modal-content">
 <span class="close" onclick="closeModal('modal-edu-1')">×</span>
-<h2 class="font-h2 text-h2 text-primary mb-4">MSc in Finance</h2>
-<h4 class="font-body-md text-body-md italic text-surface-tint mb-6">emlyon business school, Lyon, France | 09/2023 — 03/2025</h4>
+<h2 class="font-h2 text-h2 text-primary mb-4" data-i18n="bg.edu.1.title">MSc in Finance</h2>
+<h4 class="font-body-md text-body-md italic text-surface-tint mb-6" data-i18n="modal.edu.1.subtitle">emlyon business school, Lyon, France | 09/2023 — 03/2025</h4>
 <div class="space-y-4 font-body-md text-on-surface-variant">
-<p class="">2026 QS Finance Master · Rank #26.</p>
-<p class=""><strong>Coursework:</strong> Strategy Analysis · Global Asset Allocation · Commodity Pricing · Negotiation Techniques.</p>
+<p class="" data-i18n="modal.edu.1.p1">2026 QS Finance Master · Rank #26.</p>
+<p class="" data-i18n-html="modal.edu.1.p2"><strong>Coursework:</strong> Strategy Analysis · Global Asset Allocation · Commodity Pricing · Negotiation Techniques.</p>
 </div>
 </div>
 </div>
 <div class="modal" id="modal-edu-2">
 <div class="modal-content">
 <span class="close" onclick="closeModal('modal-edu-2')">×</span>
-<h2 class="font-h2 text-h2 text-primary mb-4">BA in Financial Engineering</h2>
-<h4 class="font-body-md text-body-md italic text-surface-tint mb-6">Huashang College, Guangdong University of Finance & Economics, Guangzhou | 09/2019 — 06/2023</h4>
+<h2 class="font-h2 text-h2 text-primary mb-4" data-i18n="bg.edu.2.title">BA in Financial Engineering</h2>
+<h4 class="font-body-md text-body-md italic text-surface-tint mb-6" data-i18n="modal.edu.2.subtitle">Huashang College, Guangdong University of Finance & Economics, Guangzhou | 09/2019 — 06/2023</h4>
 <div class="space-y-4 font-body-md text-on-surface-variant">
-<p class=""><strong>Main courses:</strong> Financial Metrology · Economics · Financial Statement Analysis · Corporate Finance.</p>
+<p class="" data-i18n-html="modal.edu.2.p1"><strong>Main courses:</strong> Financial Metrology · Economics · Financial Statement Analysis · Corporate Finance.</p>
 </div>
 </div>
 </div>
 <!-- Projects Grid -->
 <section class="mb-section-gap scroll-mt-24 parallax-layer" id="projects">
 <div class="flex justify-between items-end mb-element-gap border-b border-outline-variant pb-4">
-<h2 class="font-h2 text-h2 text-primary">Selected Works</h2>
+<h2 class="font-h2 text-h2 text-primary" data-i18n="works.heading">Selected Works</h2>
 <a class="font-ui-label text-ui-label text-on-surface-variant hover:text-primary transition-colors flex items-center gap-1" href="#experience" onclick="setTimeout(function(){showTab('proj');}, 0);">
-                    View All <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+<span data-i18n="works.viewAll">View All</span> <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
 </a>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
@@ -550,9 +610,9 @@
 <span class="font-ui-metadata text-ui-metadata bg-surface-variant px-2 py-1 text-on-surface uppercase tracking-widest">DeepSeek</span>
 <span class="font-ui-metadata text-ui-metadata bg-surface-variant px-2 py-1 text-on-surface uppercase tracking-widest">RAG</span>
 </div>
-<h3 class="font-h1 text-h1 text-primary group-hover:italic transition-all">AI Research Engine</h3>
-<p class="font-caption text-caption text-on-surface-variant">A precision aggregation engine for investment research — turning fragmented multi-source workflows into one structured output.</p>
-<p class="font-ui-metadata text-ui-metadata text-outline mt-2 uppercase tracking-widest">2026</p>
+<h3 class="font-h1 text-h1 text-primary group-hover:italic transition-all" data-i18n="works.card.1.title">AI Research Engine</h3>
+<p class="font-caption text-caption text-on-surface-variant" data-i18n="works.card.1.desc">A precision aggregation engine for investment research — turning fragmented multi-source workflows into one structured output.</p>
+<p class="font-ui-metadata text-ui-metadata text-outline mt-2 uppercase tracking-widest" data-i18n="works.card.1.year">2026</p>
 </div>
 </div>
 <!-- Project Card 2 -->
@@ -564,12 +624,12 @@
 <div class="space-y-2">
 <div class="flex gap-2 mb-2 flex-wrap">
 <span class="font-ui-metadata text-ui-metadata bg-surface-variant px-2 py-1 text-on-surface uppercase tracking-widest">R</span>
-<span class="font-ui-metadata text-ui-metadata bg-surface-variant px-2 py-1 text-on-surface uppercase tracking-widest">Time Series</span>
-<span class="font-ui-metadata text-ui-metadata bg-surface-variant px-2 py-1 text-on-surface uppercase tracking-widest">Backtesting</span>
+<span class="font-ui-metadata text-ui-metadata bg-surface-variant px-2 py-1 text-on-surface uppercase tracking-widest" data-i18n="works.tag.timeSeries">Time Series</span>
+<span class="font-ui-metadata text-ui-metadata bg-surface-variant px-2 py-1 text-on-surface uppercase tracking-widest" data-i18n="works.tag.backtesting">Backtesting</span>
 </div>
-<h3 class="font-h1 text-h1 text-primary group-hover:italic transition-all">ML-Driven Backtesting in R</h3>
-<p class="font-caption text-caption text-on-surface-variant">An end-to-end pipeline from financial-terminal data to a backtested portfolio — regression, time-series, and a full performance report.</p>
-<p class="font-ui-metadata text-ui-metadata text-outline mt-2 uppercase tracking-widest">2024</p>
+<h3 class="font-h1 text-h1 text-primary group-hover:italic transition-all" data-i18n="works.card.2.title">ML-Driven Backtesting in R</h3>
+<p class="font-caption text-caption text-on-surface-variant" data-i18n="works.card.2.desc">An end-to-end pipeline from financial-terminal data to a backtested portfolio — regression, time-series, and a full performance report.</p>
+<p class="font-ui-metadata text-ui-metadata text-outline mt-2 uppercase tracking-widest" data-i18n="works.card.2.year">2024</p>
 </div>
 </div>
 <!-- Project Card 3 -->
@@ -580,13 +640,13 @@
 </div>
 <div class="space-y-2">
 <div class="flex gap-2 mb-2 flex-wrap">
-<span class="font-ui-metadata text-ui-metadata bg-surface-variant px-2 py-1 text-on-surface uppercase tracking-widest">M&amp;A</span>
-<span class="font-ui-metadata text-ui-metadata bg-surface-variant px-2 py-1 text-on-surface uppercase tracking-widest">Strategy</span>
-<span class="font-ui-metadata text-ui-metadata bg-surface-variant px-2 py-1 text-on-surface uppercase tracking-widest">AI-Assisted</span>
+<span class="font-ui-metadata text-ui-metadata bg-surface-variant px-2 py-1 text-on-surface uppercase tracking-widest" data-i18n="works.tag.ma">M&amp;A</span>
+<span class="font-ui-metadata text-ui-metadata bg-surface-variant px-2 py-1 text-on-surface uppercase tracking-widest" data-i18n="works.tag.strategy">Strategy</span>
+<span class="font-ui-metadata text-ui-metadata bg-surface-variant px-2 py-1 text-on-surface uppercase tracking-widest" data-i18n="works.tag.aiAssisted">AI-Assisted</span>
 </div>
-<h3 class="font-h1 text-h1 text-primary group-hover:italic transition-all">UBS M&amp;A Strategic Analysis</h3>
-<p class="font-caption text-caption text-on-surface-variant">A strategic deep-dive on a real UBS M&amp;A case — environment, objectives, and pathway. AI-assisted research lifted team efficiency ~30%.</p>
-<p class="font-ui-metadata text-ui-metadata text-outline mt-2 uppercase tracking-widest">2023</p>
+<h3 class="font-h1 text-h1 text-primary group-hover:italic transition-all" data-i18n="works.card.3.title">UBS M&amp;A Strategic Analysis</h3>
+<p class="font-caption text-caption text-on-surface-variant" data-i18n="works.card.3.desc">A strategic deep-dive on a real UBS M&amp;A case — environment, objectives, and pathway. AI-assisted research lifted team efficiency ~30%.</p>
+<p class="font-ui-metadata text-ui-metadata text-outline mt-2 uppercase tracking-widest" data-i18n="works.card.3.year">2023</p>
 </div>
 </div>
 <!-- Project Card 4 -->
@@ -597,13 +657,13 @@
 </div>
 <div class="space-y-2">
 <div class="flex gap-2 mb-2 flex-wrap">
-<span class="font-ui-metadata text-ui-metadata bg-surface-variant px-2 py-1 text-on-surface uppercase tracking-widest">Equity Research</span>
-<span class="font-ui-metadata text-ui-metadata bg-surface-variant px-2 py-1 text-on-surface uppercase tracking-widest">Modeling</span>
+<span class="font-ui-metadata text-ui-metadata bg-surface-variant px-2 py-1 text-on-surface uppercase tracking-widest" data-i18n="works.tag.equityResearch">Equity Research</span>
+<span class="font-ui-metadata text-ui-metadata bg-surface-variant px-2 py-1 text-on-surface uppercase tracking-widest" data-i18n="works.tag.modeling">Modeling</span>
 <span class="font-ui-metadata text-ui-metadata bg-surface-variant px-2 py-1 text-on-surface uppercase tracking-widest">Porter</span>
 </div>
-<h3 class="font-h1 text-h1 text-primary group-hover:italic transition-all">Muyuan Co. — Equity Research</h3>
-<p class="font-caption text-caption text-on-surface-variant">Industry and company research using Porter's Five Forces and SWOT, with a fully built financial model. University 2nd prize.</p>
-<p class="font-ui-metadata text-ui-metadata text-outline mt-2 uppercase tracking-widest">2021</p>
+<h3 class="font-h1 text-h1 text-primary group-hover:italic transition-all" data-i18n="works.card.4.title">Muyuan Co. — Equity Research</h3>
+<p class="font-caption text-caption text-on-surface-variant" data-i18n="works.card.4.desc">Industry and company research using Porter's Five Forces and SWOT, with a fully built financial model. University 2nd prize.</p>
+<p class="font-ui-metadata text-ui-metadata text-outline mt-2 uppercase tracking-widest" data-i18n="works.card.4.year">2021</p>
 </div>
 </div>
 </div>
@@ -611,33 +671,33 @@
 <!-- Toolbox Section -->
 <section class="mb-section-gap scroll-mt-24 parallax-layer" id="toolbox">
 <div class="border-b border-outline-variant pb-4 mb-element-gap">
-<h2 class="font-h2 text-h2 text-primary italic">The Toolbox.</h2>
-<p class="font-body-md text-body-md text-on-surface-variant mt-4 max-w-lg">Instruments I use to translate fragmented information into structured decisions — and to build tools that do the same.</p>
+<h2 class="font-h2 text-h2 text-primary italic" data-i18n="toolbox.heading">The Toolbox.</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-4 max-w-lg" data-i18n="toolbox.subtitle">Instruments I use to translate fragmented information into structured decisions — and to build tools that do the same.</p>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
 <div class="bg-surface-container rounded-xl p-8 border border-outline-variant flex flex-col h-full hover:shadow-lg transition-shadow duration-300">
-<h3 class="font-h2 text-h2 text-primary mb-6 border-b border-outline-variant pb-4">Core Disciplines</h3>
+<h3 class="font-h2 text-h2 text-primary mb-6 border-b border-outline-variant pb-4" data-i18n="toolbox.disciplines.title">Core Disciplines</h3>
 <ul class="space-y-4 font-body-md text-body-md text-on-surface-variant flex-grow">
 <li class="flex items-start gap-3 hover:translate-x-1 transition-transform duration-200">
 <span class="material-symbols-outlined text-surface-tint mt-0.5">check_circle</span>
-<span class=""><strong>Industry &amp; Company Research:</strong> Sector deep-dives, business-model deconstruction, competitive landscape, fundamentals.</span>
+<span class="" data-i18n-html="toolbox.disciplines.1"><strong>Industry &amp; Company Research:</strong> Sector deep-dives, business-model deconstruction, competitive landscape, fundamentals.</span>
 </li>
 <li class="flex items-start gap-3 hover:translate-x-1 transition-transform duration-200">
 <span class="material-symbols-outlined text-surface-tint mt-0.5">check_circle</span>
-<span class=""><strong>Due Diligence:</strong> Cash flow, asset quality, and risk assessment via desk research and on-site visits.</span>
+<span class="" data-i18n-html="toolbox.disciplines.2"><strong>Due Diligence:</strong> Cash flow, asset quality, and risk assessment via desk research and on-site visits.</span>
 </li>
 <li class="flex items-start gap-3 hover:translate-x-1 transition-transform duration-200">
 <span class="material-symbols-outlined text-surface-tint mt-0.5">check_circle</span>
-<span class=""><strong>Financial Modeling &amp; Valuation:</strong> Revenue / margin / cash-flow drivers, peer comps, and time-series strategy backtesting.</span>
+<span class="" data-i18n-html="toolbox.disciplines.3"><strong>Financial Modeling &amp; Valuation:</strong> Revenue / margin / cash-flow drivers, peer comps, and time-series strategy backtesting.</span>
 </li>
 <li class="flex items-start gap-3 hover:translate-x-1 transition-transform duration-200">
 <span class="material-symbols-outlined text-surface-tint mt-0.5">check_circle</span>
-<span class=""><strong>AI Product Building:</strong> Workflow design, prompt engineering, RAG, and tool integration on Coze + DeepSeek.</span>
+<span class="" data-i18n-html="toolbox.disciplines.4"><strong>AI Product Building:</strong> Workflow design, prompt engineering, RAG, and tool integration on Coze + DeepSeek.</span>
 </li>
 </ul>
 </div>
 <div class="bg-surface-container rounded-xl p-8 border border-outline-variant flex flex-col h-full hover:shadow-lg transition-shadow duration-300">
-<h3 class="font-h2 text-h2 text-primary mb-6 border-b border-outline-variant pb-4">Software Stack</h3>
+<h3 class="font-h2 text-h2 text-primary mb-6 border-b border-outline-variant pb-4" data-i18n="toolbox.stack.title">Software Stack</h3>
 <div class="grid grid-cols-2 gap-4 flex-grow content-start">
 <div class="flex items-center gap-3 p-4 bg-surface rounded-lg border border-outline-variant hover:border-primary hover:-translate-y-1 hover:shadow-md transition-all duration-300 cursor-pointer">
 <span class="material-symbols-outlined text-primary text-2xl">monitoring</span>
@@ -805,4 +865,5 @@
         }
     }
 </script>
+<script src="./i18n.js"></script>
 </body></html>

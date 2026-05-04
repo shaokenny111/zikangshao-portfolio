@@ -1,0 +1,433 @@
+{
+  "en": {
+    "meta": {
+      "title": "Zikang Shao — Finance × AI Product Builder",
+      "description": "MSc Finance from emlyon business school. Building AI tools for investment research while doing due diligence in financial leasing.",
+      "htmlLang": "en"
+    },
+    "lang": { "en": "EN", "zh": "中" },
+    "nav": {
+      "about": "About",
+      "background": "Background",
+      "works": "Selected Works",
+      "toolbox": "Toolbox"
+    },
+    "hero": {
+      "titleLine1": "Hi, I'm Zikang Shao —",
+      "titleLine2a": "Finance × AI",
+      "titleLine2b": "Product Builder.",
+      "subtitle": "MSc Finance, emlyon business school. I run due diligence on leasing deals — and build AI tools that make investment research faster, sharper, and more honest.",
+      "ctaResume": "Download Resume",
+      "ctaContact": "Get in touch ↓"
+    },
+    "bg": {
+      "heading": "Background",
+      "tab": { "work": "Work Experience", "edu": "Education", "proj": "Project Experience" },
+      "expand": "Click to expand",
+      "work": {
+        "1": {
+          "title": "Project Manager Assistant — Financial Leasing",
+          "org": "Haisheng Financial Leasing, Foshan",
+          "date": "08/2025 — Present",
+          "summary": "Lead due diligence on financial leasing engagements — running industry, business, operational, and financial deep-dives via desk research and on-site visits. Identify cash flow and asset quality risks; draft DD reports that feed approval and structuring decisions."
+        },
+        "2": {
+          "title": "Automotive Group Analyst",
+          "org": "Guoyuan Securities Company Limited, Shanghai",
+          "date": "07/2024 — 11/2024",
+          "summary": "Contributed to 5 in-depth research reports on the automotive sector and its supply chain. Analyzed industry trends, business models, competitive landscape, and company fundamentals to back investment conclusions."
+        },
+        "3": {
+          "title": "Financial Service Clerk — Fund NAV Automation",
+          "org": "HSBC, Foshan",
+          "date": "01/2023 — 06/2023",
+          "summary": "Joined the fund NAV automation project: daily, monthly, and quarterly NAV calculation, procedure verification, and reporting that supported the department's valuation and accounting workflows."
+        }
+      },
+      "proj": {
+        "1": {
+          "title": "AI Product for Investment Research Efficiency",
+          "org": "Personal product · Solo build",
+          "date": "01/2026 — Present",
+          "summary": "Building a precision internal aggregation engine on Coze + DeepSeek that solves fragmented data sources in investment research. Workflow: search → multi-source aggregation → refined output, with both internal knowledge-base retrieval and live web search."
+        },
+        "2": {
+          "title": "Machine Learning & Investment Backtesting in R",
+          "org": "Course final, MSc Finance · Top 5% of class",
+          "date": "02/2024 — 05/2024",
+          "summary": "End-to-end independent project: data ingestion from financial terminals → cleansing → EDA → regression and time-series modeling → simulated investment decisions → portfolio backtesting."
+        },
+        "3": {
+          "title": "UBS M&A Strategic Analysis",
+          "org": "Course group project · 2nd place",
+          "date": "10/2023 — 12/2023",
+          "summary": "Strategic analysis of a UBS M&A case — external environment, internal challenges, strategic objectives, and implementation pathway. AI-assisted research lifted team efficiency ~30% vs. peer groups."
+        },
+        "4": {
+          "title": "Greater Bay Area Finance Challenge — Muyuan Co.",
+          "org": "National finance challenge · University 2nd prize",
+          "date": "09/2021 — 12/2021",
+          "summary": "Equity research on Muyuan Co. using Porter's Five Forces and SWOT. Built a financial model end-to-end. Owned research direction, content integration, and final presentation. Advanced to next round."
+        },
+        "5": {
+          "title": "Huangshang Economic Research Institute Rural Revitalization Project",
+          "org": "University-led initiative",
+          "date": "09/2021 — 09/2022",
+          "summary": "Funding mobilization, field research, and industrialization support for the local black-olive industry. Linked government, institutions, enterprises, and the university to move the project from research to execution."
+        }
+      },
+      "edu": {
+        "1": {
+          "title": "MSc in Finance",
+          "org": "emlyon business school, Lyon, France",
+          "date": "09/2023 — 03/2025"
+        },
+        "2": {
+          "title": "BA in Financial Engineering",
+          "org": "Huashang College, Guangdong University of Finance & Economics, Guangzhou",
+          "date": "09/2019 — 06/2023"
+        }
+      }
+    },
+    "modal": {
+      "work": {
+        "1": {
+          "subtitle": "Haisheng Financial Leasing, Foshan | 08/2025 — Present",
+          "intro": "Lead due diligence on financial leasing deals end-to-end — from kickoff and on-site visit through report drafting and internal approval. Identify cash flow volatility and asset quality risks; structure findings into DD reports that feed approval and deal-structuring decisions.",
+          "li1": "<strong>Due Diligence &amp; Report Writing:</strong> Led 10+ client due diligence for leasing projects, performing in-depth industry, business model, operational, and financial analysis through desktop research and on-site visits. Identified key risk factors including cash flow volatility and asset quality, summarized core operational findings, and drafted due diligence reports to inform project approval decisions and structural design.",
+          "li2": "<strong>Project Documentation &amp; Negotiation Support:</strong> Drove deal execution under incomplete information by reconstructing client financial profiles from fragmented data, closing information gaps through iterative client follow-ups, and enabling transaction structuring and negotiation progression.",
+          "li3": "<strong>Cross-functional Coordination:</strong> Collaborated with Compliance, Risk Management, Finance, and Asset Management departments to advance project workflows. Addressed feedback and additional requirements at each stage, minimized information gaps, and ensured smooth progression through internal approval processes.",
+          "li4": "<strong>Milestone Tracking &amp; Progress Updates:</strong> Tracked project timelines and pending tasks according to advancement schedules. Consolidated updates from relevant stakeholders and communicated progress to project managers, helping maintain oversight, enhance process transparency, and ensure orderly execution."
+        },
+        "2": {
+          "subtitle": "Guoyuan Securities Company Limited, Shanghai | 07/2024 — 11/2024",
+          "intro": "Contributed to the automotive coverage team — sector reports, company fundamentals, and supporting investment narratives across the supply chain.",
+          "li1": "<strong>Industry &amp; Company Research:</strong> Completed and contributed to 5 in-depth industry and company research reports, with a focus on the automotive sector and its supply chain. Conducted analysis on industry trends, deconstructed business models, assessed competitive landscapes, and evaluated company fundamentals to support investment conclusions and research insights.",
+          "li2": "<strong>Financial Analysis &amp; Valuation Updates:</strong> Performed comprehensive fundamental and valuation analysis to drive investment recommendations, including breaking down revenue, margins, and cash flow to identify key value drivers, while refining financial models and conducting peer/trend analysis to strengthen research conclusions.",
+          "li3": "<strong>Database Development &amp; Ongoing Monitoring:</strong> Established and maintained industry databases, continuously tracking policy changes, market dynamics, and competitor information. Regularly updated data and summarized key analytical takeaways to enhance the completeness of research materials and improve the efficiency of subsequent team research."
+        },
+        "3": {
+          "subtitle": "HSBC, Foshan | 01/2023 — 06/2023",
+          "intro": "Joined the fund NAV automation initiative supporting the department's valuation and accounting workflows.",
+          "li1": "<strong>Fund NAV Calculation:</strong> Participated in the fund NAV automation project, responsible for the calculation of daily, monthly, and quarterly net asset values. Verified operational steps, maintained procedure records, and prepared corresponding reports to support the department's daily valuation and accounting tasks.",
+          "li2": "<strong>Automated Process Optimization:</strong> Diagnosed failure points in automated workflows during daily operations, collaborated with risk and IT teams to redesign process logic, and reduced operational error rates by approximately 20 percent.",
+          "li3": "<strong>Cross-Regional Collaboration in English-Speaking Environment:</strong> Worked in a fully English environment with colleagues across regions to handle financial reports and market data. Organized materials, communicated feedback, and executed tasks as required, improving cross-team collaboration efficiency and execution capability."
+        }
+      },
+      "proj": {
+        "1": {
+          "subtitle": "Personal product · Solo build | 01/2026 — Present",
+          "intro": "Building a precision internal aggregation engine on Coze + DeepSeek that solves fragmented data sources in investment research. Workflow: search → multi-source aggregation → refined output, with both internal knowledge-base retrieval and live web search.",
+          "li1": "<strong>Demand Insight &amp; Analysis:</strong> Identified and analyzed high-value user needs for information retrieval and synthesis in potential/ongoing investment projects. Through user interviews and process reviews, pinpointed core pain points such as fragmented data sources leading to prolonged searches and inefficient compilation, and defined key optimization metrics including search efficiency and information integration.",
+          "li2": "<strong>Product Positioning &amp; Feature Design:</strong> Positioned the product as a high-precision internal information aggregation engine, focusing on the single core need of \"one-stop information access and synthesis.\" Designed a streamlined workflow of \"intelligent search – multi-source aggregation – refined output\" to address critical operational efficiency bottlenecks.",
+          "li3": "<strong>Workflow Development &amp; Implementation:</strong> Built workflows and dialogue flows on Coze, integrating DeepSeek models, knowledge base retrieval, and Web Search plugins. Key implemented features included precise Q&amp;A for individual/company knowledge bases and real-time external data capture with intelligent contextual integration, ensuring structured and traceable information output.",
+          "li4": "<strong>Iteration &amp; Impact Validation:</strong> Continuously optimized search strategies, prompt engineering, and output structures based on trial feedback. Post-launch targets included approximately 50% improvement in internal knowledge search efficiency and 60% improvement in external data collection and integration efficiency, significantly reducing time spent on cross-platform retrieval and information reorganization."
+        },
+        "2": {
+          "subtitle": "Course final, MSc Finance · Top 5% of class · Course grade Top 10% | 02/2024 — 05/2024",
+          "intro": "<strong>Project Background:</strong> A final independent project for a Machine Learning course, requiring the use of R and machine learning methods to conduct data analysis, generate investment decisions, and perform backtesting independently.",
+          "li1": "<strong>Financial Data Processing &amp; Modeling:</strong> Independently completed the course final project. After importing data from financial terminals, performed data cleansing, preprocessing, exploratory analysis, and variable processing using R, establishing a complete data analysis pipeline.",
+          "li2": "<strong>Application of Regression &amp; Time Series Models:</strong> Built regression and time series models based on the analytical results to validate investment strategy effectiveness. Conducted simulated investment decisions and backtesting, delivering performance reports for the constructed portfolio.",
+          "li3": "<strong>End-to-End Independent Execution:</strong> Independently executed the entire analytical cycle, from data processing and model development to result interpretation and strategy backtesting. The project ranked in the top 5% of the class, with the overall course grade in the top 10%."
+        },
+        "3": {
+          "subtitle": "Course group project · 2nd place | 10/2023 — 12/2023",
+          "intro": "<strong>Project Background:</strong> A final group project for a Strategic Analysis course, requiring collaborative research on a UBS merger and acquisition case to formulate subsequent development recommendations for the company.",
+          "li1": "<strong>M&amp;A Case Analysis:</strong> Conducted strategic analysis of the UBS M&amp;A case, integrating external environment, internal challenges, strategic objectives, and implementation pathways. Contributed to the group report and provided follow-up development recommendations.",
+          "li2": "<strong>Team Coordination &amp; Progress Management:</strong> Coordinated team execution by structuring deliverables and aligning outputs, ensuring a coherent final narrative.",
+          "li3": "<strong>AI Tool Integration for Efficiency:</strong> Incorporated AI tools in data collection, information organization, and content refinement, improving work efficiency by approximately 30% compared to other projects. The final presentation was awarded second place."
+        },
+        "4": {
+          "subtitle": "National finance challenge · University 2nd prize | 09/2021 — 12/2021",
+          "intro": "<strong>Project Background:</strong> Participated in the Guangdong division of a national campus finance challenge. Conducted stock research and analysis on an assigned topic, authored an industry/company report, and delivered a final presentation.",
+          "li1": "<strong>Company Research &amp; Financial Modeling:</strong> Conducted in-depth research on Muyuan Co., Ltd. and its industry, utilizing analytical frameworks such as Porter's Five Forces and SWOT analysis to complete the research report. Independently built a financial model to support the conclusions.",
+          "li2": "<strong>Presentation &amp; Content Coordination:</strong> Responsible for overseeing the overall research direction, integrating report content, and leading the final presentation, ensuring consistency in research logic and delivery.",
+          "li3": "<strong>Team Task Management:</strong> Assigned tasks and tracked progress based on team members' strengths, coordinated individual contributions to enhance overall output quality. The project won a university-level second prize and advanced to the next round."
+        },
+        "5": {
+          "subtitle": "University-led initiative | 09/2021 — 09/2022",
+          "intro": "<strong>Project Background:</strong> A college-led rural revitalization initiative undertaking specific projects assigned by higher-level departments. This project involved the revitalization of Dengshan Village in Zengcheng, focusing on securing funding and promoting the commercialization and industrialization of local specialty agricultural products, such as black olives, to increase resident income.",
+          "li1": "<strong>Stakeholder Engagement &amp; Resource Mobilization:</strong> Participated in communication and liaison between government bodies, institutions, enterprises, and the university, assisting in securing project funding and external resources. Supported the planning and implementation of several proposals.",
+          "li2": "<strong>Field Research &amp; Industry Due Diligence:</strong> Conducted on-site research in Dengshan Village, Zengcheng District, through village residency and interviews to understand the current state, challenges, and development potential of the black olive industry. Contributed to summary reports to inform subsequent project phases.",
+          "li3": "<strong>Industrialization Support:</strong> Supported the implementation of black olive and derivative product projects. Facilitated connections with experts, processing factories, supply channels, and sales channels. Assisted in maintaining relationships among investors, suppliers, and villagers, supporting the project's transition from research to execution."
+        }
+      },
+      "edu": {
+        "1": {
+          "subtitle": "emlyon business school, Lyon, France | 09/2023 — 03/2025",
+          "p1": "2026 QS Finance Master · Rank #26.",
+          "p2": "<strong>Coursework:</strong> Strategy Analysis · Global Asset Allocation · Commodity Pricing · Negotiation Techniques."
+        },
+        "2": {
+          "subtitle": "Huashang College, Guangdong University of Finance & Economics, Guangzhou | 09/2019 — 06/2023",
+          "p1": "<strong>Main courses:</strong> Financial Metrology · Economics · Financial Statement Analysis · Corporate Finance."
+        }
+      }
+    },
+    "works": {
+      "heading": "Selected Works",
+      "viewAll": "View All",
+      "card": {
+        "1": {
+          "title": "AI Research Engine",
+          "desc": "A precision aggregation engine for investment research — turning fragmented multi-source workflows into one structured output.",
+          "year": "2026"
+        },
+        "2": {
+          "title": "ML-Driven Backtesting in R",
+          "desc": "An end-to-end pipeline from financial-terminal data to a backtested portfolio — regression, time-series, and a full performance report.",
+          "year": "2024"
+        },
+        "3": {
+          "title": "UBS M&A Strategic Analysis",
+          "desc": "A strategic deep-dive on a real UBS M&A case — environment, objectives, and pathway. AI-assisted research lifted team efficiency ~30%.",
+          "year": "2023"
+        },
+        "4": {
+          "title": "Muyuan Co. — Equity Research",
+          "desc": "Industry and company research using Porter's Five Forces and SWOT, with a fully built financial model. University 2nd prize.",
+          "year": "2021"
+        }
+      },
+      "tag": {
+        "timeSeries": "Time Series",
+        "backtesting": "Backtesting",
+        "ma": "M&A",
+        "strategy": "Strategy",
+        "aiAssisted": "AI-Assisted",
+        "equityResearch": "Equity Research",
+        "modeling": "Modeling"
+      }
+    },
+    "toolbox": {
+      "heading": "The Toolbox.",
+      "subtitle": "Instruments I use to translate fragmented information into structured decisions — and to build tools that do the same.",
+      "disciplines": {
+        "title": "Core Disciplines",
+        "1": "<strong>Industry &amp; Company Research:</strong> Sector deep-dives, business-model deconstruction, competitive landscape, fundamentals.",
+        "2": "<strong>Due Diligence:</strong> Cash flow, asset quality, and risk assessment via desk research and on-site visits.",
+        "3": "<strong>Financial Modeling &amp; Valuation:</strong> Revenue / margin / cash-flow drivers, peer comps, and time-series strategy backtesting.",
+        "4": "<strong>AI Product Building:</strong> Workflow design, prompt engineering, context engineering, and tool integration on Coze + DeepSeek."
+      },
+      "stack": {
+        "title": "Software Stack"
+      }
+    }
+  },
+
+  "zh": {
+    "meta": {
+      "title": "邵子康 — 金融与 AI 产品构建者",
+      "description": "emlyon 商学院金融硕士。白天在融资租赁做尽职调查，业余构建投研 AI 工具。",
+      "htmlLang": "zh"
+    },
+    "lang": { "en": "EN", "zh": "中" },
+    "nav": {
+      "about": "关于",
+      "background": "背景",
+      "works": "作品集",
+      "toolbox": "能力"
+    },
+    "hero": {
+      "titleLine1": "你好，我是邵子康 —",
+      "titleLine2a": "金融 × AI",
+      "titleLine2b": "产品构建者。",
+      "subtitle": "金融硕士，里昂商学院。从事融资租赁尽职调查-并构建 AI 工具，让投资研究更快、更敏锐、更真实。",
+      "ctaResume": "下载简历",
+      "ctaContact": "联系我 ↓"
+    },
+    "bg": {
+      "heading": "背景",
+      "tab": { "work": "工作经历", "edu": "教育背景", "proj": "项目经历" },
+      "expand": "点击展开",
+      "work": {
+        "1": {
+          "title": "项目经理助理 — 融资租赁",
+          "org": "海晟金融租赁，佛山",
+          "date": "2025/08 — 至今",
+          "summary": "主导融资租赁项目尽职调查—通过桌面研究与现场走访，深入剖析行业、业务、运营与财务，识别现金流与资产质量风险，并撰写支撑审批与结构设计的尽调报告。"
+        },
+        "2": {
+          "title": "汽车组分析师",
+          "org": "国元证券股份有限公司，上海",
+          "date": "2024/07 — 2024/11",
+          "summary": "参与撰写 5 篇汽车行业及供应链深度研究报告。分析行业趋势、商业模式、竞争格局与公司基本面，支撑投资结论。"
+        },
+        "3": {
+          "title": "金融服务专员 — 基金净值自动化",
+          "org": "汇丰银行，佛山",
+          "date": "2023/01 — 2023/06",
+          "summary": "参与基金净值自动化项目：负责日度、月度与季度净值计算、流程核验与报告产出，支撑部门估值与会计工作。"
+        }
+      },
+      "proj": {
+        "1": {
+          "title": "投研提效 AI 产品",
+          "org": "个人产品 · 独立开发",
+          "date": "2026/01 — 至今",
+          "summary": "基于 Coze + DeepSeek，构建一款解决投研多源信息分散问题的精准内部聚合引擎。流程：搜索 → 多源聚合 → 精炼输出，融合内部知识库检索与实时联网搜索。"
+        },
+        "2": {
+          "title": "R 语言机器学习与投资回测",
+          "org": "金融硕士课程 Final · 全班前 5%",
+          "date": "2024/02 — 2024/05",
+          "summary": "端到端独立项目：金融终端数据导入 → 清洗 → 探索性分析 → 回归与时间序列建模 → 模拟投资决策 → 投资组合回测。"
+        },
+        "3": {
+          "title": "瑞银（UBS）并购战略分析",
+          "org": "课程小组项目 · 第二名",
+          "date": "2023/10 — 2023/12",
+          "summary": "对一桩瑞银并购案进行战略分析—外部环境、内部挑战、战略目标与实施路径。AI 辅助研究使团队效率较同学提升约 30%。"
+        },
+        "4": {
+          "title": "粤港澳大湾区金融挑战赛 — 牧原股份",
+          "org": "全国金融大赛 · 校级二等奖",
+          "date": "2021/09 — 2021/12",
+          "summary": "运用波特五力与 SWOT 对牧原股份进行股票研究，端到端搭建财务模型。负责研究方向、内容整合与最终汇报，晋级下一轮。"
+        },
+        "5": {
+          "title": "华商经济研究院乡村振兴项目",
+          "org": "学校牵头项目",
+          "date": "2021/09 — 2022/09",
+          "summary": "围绕本地乌榄产业，开展资金对接、田野调研与产业化推进。串联政府、科研机构、企业与学校，将项目从研究推向落地。"
+        }
+      },
+      "edu": {
+        "1": {
+          "title": "金融硕士",
+          "org": "里昂商学院，法国里昂",
+          "date": "2023/09 — 2025/03"
+        },
+        "2": {
+          "title": "金融工程学士",
+          "org": "广东财经大学华商学院，广州",
+          "date": "2019/09 — 2023/06"
+        }
+      }
+    },
+    "modal": {
+      "work": {
+        "1": {
+          "subtitle": "海晟金融租赁，佛山 | 2025/08 — 至今",
+          "intro": "端到端主导融资租赁项目尽职调查-从立项、现场走访到报告撰写、内审过会。识别现金流波动与资产质量风险，将发现结构化为支撑审批与交易结构设计的尽调报告。",
+          "li1": "<strong>尽职调查与报告撰写：</strong>主导 10+ 笔租赁项目的客户尽调，通过桌面研究与现场走访，对行业、商业模式、运营与财务进行深度剖析。识别现金流波动、资产质量等关键风险点，提炼核心运营结论，撰写尽调报告，支撑项目审批决策与结构设计。",
+          "li2": "<strong>项目文档与谈判支持：</strong>在信息不对称下推动交易执行-通过对碎片化数据的拼接还原客户财务画像，借助多轮跟进闭合信息缺口，为交易结构设计与谈判推进创造条件。",
+          "li3": "<strong>跨部门协作：</strong>联动合规、风险管理、财务与资产管理等部门推进项目流程，对每个阶段的反馈与补充要求逐项跟进，最大化弥合信息差，确保内审流程顺畅推进。",
+          "li4": "<strong>里程碑跟进与进度同步：</strong>依据项目推进时间表跟踪节点与待办事项，汇总相关方进展并与项目经理保持同步，提升流程透明度，保障项目有序推进。"
+        },
+        "2": {
+          "subtitle": "国元证券股份有限公司，上海 | 2024/07 — 2024/11",
+          "intro": "参与汽车行业组研究工作—围绕行业、公司基本面与供应链投资逻辑产出研究成果。",
+          "li1": "<strong>行业与公司研究：</strong>参与并完成 5 篇深度行业与公司研究报告，聚焦汽车行业及其供应链。分析行业趋势、拆解商业模式、评估竞争格局与公司基本面，支撑投资结论与研究观点。",
+          "li2": "<strong>财务分析与估值更新：</strong>开展全面的基本面与估值分析，拆解营收、毛利与现金流，识别核心价值驱动因素；持续优化财务模型，结合可比公司与趋势分析强化研究结论。",
+          "li3": "<strong>数据库搭建与持续跟踪：</strong>建立并维护行业数据库，持续追踪政策变化、市场动态与竞争对手信息。定期更新数据并提炼分析要点，提升研究素材的完整度与团队后续研究的效率。"
+        },
+        "3": {
+          "subtitle": "汇丰银行，佛山 | 2023/01 — 2023/06",
+          "intro": "加入基金净值自动化项目，支撑部门估值与会计核算工作。",
+          "li1": "<strong>基金净值核算：</strong>参与基金净值自动化项目，负责日度、月度、季度净值计算。核验操作步骤、留存流程记录并产出对应报告，支撑部门日常估值与会计工作。",
+          "li2": "<strong>自动化流程优化：</strong>定位日常作业中自动化流程的失败点，联合风险与 IT 团队重设流程逻辑，将操作错误率降低约 20%。",
+          "li3": "<strong>跨地区英文环境协作：</strong>在全英文环境下与跨地区同事协作处理财务报表与市场数据。整理资料、传递反馈、按要求执行任务，提升跨团队协作效率与执行能力。"
+        }
+      },
+      "proj": {
+        "1": {
+          "subtitle": "个人产品 · 独立开发 | 2026/01 — 至今",
+          "intro": "基于 Coze + DeepSeek 构建一款解决投研多源信息分散问题的精准内部聚合引擎。流程：搜索 → 多源聚合 → 精炼输出，融合内部知识库检索与实时联网搜索。",
+          "li1": "<strong>需求洞察与分析：</strong>识别并分析潜在 / 在投项目中信息检索与综合的高价值用户需求。通过用户访谈与流程复盘，定位核心痛点-多源信息分散导致检索时间长、汇总效率低，并明确搜索效率与信息整合等关键优化指标。",
+          "li2": "<strong>产品定位与功能设计：</strong>将产品定位为高精度内部信息聚合引擎，聚焦\"一站式信息访问与综合\"这一核心需求，设计\"智能搜索 → 多源聚合 → 精炼输出\"的精简工作流，化解关键的运营效率瓶颈。",
+          "li3": "<strong>工作流开发与落地：</strong>在 Coze 上搭建工作流与对话流，集成 DeepSeek 模型、知识库检索与 Web Search 插件。已实现的关键能力包括：个人 / 公司知识库的精准问答、外部数据实时抓取与上下文智能整合，确保结构化、可追溯的信息输出。",
+          "li4": "<strong>迭代与效果验证：</strong>基于试用反馈持续优化检索策略、提示词工程与输出结构。上线目标：内部知识检索效率提升约 50%，外部数据采集与整合效率提升约 60%，显著降低跨平台检索与信息重组的时间成本。"
+        },
+        "2": {
+          "subtitle": "金融硕士课程 Final · 全班前 5% · 课程总成绩前 10% | 2024/02 — 2024/05",
+          "intro": "<strong>项目背景：</strong>机器学习课程的独立期末项目，要求使用 R 与机器学习方法独立完成数据分析、投资决策与回测。",
+          "li1": "<strong>金融数据处理与建模：</strong>独立完成课程期末项目。从金融终端导入数据后，使用 R 进行数据清洗、预处理、探索性分析与变量加工，搭建完整的数据分析流水线。",
+          "li2": "<strong>回归与时间序列模型应用：</strong>基于分析结果构建回归与时间序列模型，验证投资策略有效性。开展模拟投资决策与回测，输出所构建组合的业绩报告。",
+          "li3": "<strong>端到端独立执行：</strong>独立完成从数据处理、模型构建到结果解读与策略回测的完整分析闭环。项目位列全班前 5%，课程总成绩位列前 10%。"
+        },
+        "3": {
+          "subtitle": "课程小组项目 · 第二名 | 2023/10 — 2023/12",
+          "intro": "<strong>项目背景：</strong>战略分析课程的小组期末项目，要求协作研究一桩瑞银并购案，并为公司后续发展给出建议。",
+          "li1": "<strong>并购案分析：</strong>对瑞银并购案进行战略分析，整合外部环境、内部挑战、战略目标与实施路径。参与撰写小组报告，并给出后续发展建议。",
+          "li2": "<strong>团队协调与进度管理：</strong>统筹团队执行节奏，组织交付物结构与产出对齐，确保最终叙事连贯一致。",
+          "li3": "<strong>AI 工具提效整合：</strong>将 AI 工具应用于数据收集、信息整理与内容打磨，工作效率较其他小组提升约 30%。最终汇报获得第二名。"
+        },
+        "4": {
+          "subtitle": "全国金融大赛 · 校级二等奖 | 2021/09 — 2021/12",
+          "intro": "<strong>项目背景：</strong>参加全国校园金融挑战赛广东赛区。围绕指定标的开展股票研究，撰写行业 / 公司报告，并完成最终汇报。",
+          "li1": "<strong>公司研究与财务建模：</strong>对牧原股份及其所在行业开展深度研究，运用波特五力与 SWOT 分析框架完成研究报告。独立搭建财务模型支撑结论。",
+          "li2": "<strong>汇报与内容统筹：</strong>负责把控整体研究方向、整合报告内容并主导最终汇报，确保研究逻辑与表达的一致性。",
+          "li3": "<strong>团队任务管理：</strong>结合成员特长分配任务并跟踪进度，协调个体贡献以提升整体产出质量。项目获校级二等奖，并晋级下一轮。"
+        },
+        "5": {
+          "subtitle": "学校牵头项目 | 2021/09 — 2022/09",
+          "intro": "<strong>项目背景：</strong>由学院牵头、承接上级部门指定任务的乡村振兴项目。围绕增城邓山村，重点对接资金、推动黑橄榄等本地特色农产品的商品化与产业化，提升居民收入。",
+          "li1": "<strong>多方协调与资源对接：</strong>参与政府、科研机构、企业与学校之间的沟通联络，协助推进项目资金与外部资源的对接，支持多项方案的规划与实施。",
+          "li2": "<strong>田野调研与产业尽调：</strong>在增城邓山村进行驻村走访与访谈，了解黑橄榄产业的现状、挑战与发展潜力。参与撰写汇总报告，为后续阶段决策提供依据。",
+          "li3": "<strong>产业化推进：</strong>支持黑橄榄及其衍生产品项目的落地，协助对接专家、加工厂、供应与销售渠道。维护投资人、供应商与村民的关系，推动项目从研究走向执行。"
+        }
+      },
+      "edu": {
+        "1": {
+          "subtitle": "里昂商学院，法国里昂 | 2023/09 — 2025/03",
+          "p1": "2026 QS 金融硕士排名 · 第 26 名。",
+          "p2": "<strong>主要课程：</strong>战略分析  全球资产配置  大宗商品定价  R语言机器学习。"
+        },
+        "2": {
+          "subtitle": "广东财经大学华商学院，广州 | 2019/09 — 2023/06",
+          "p1": "<strong>主要课程：</strong>金融计量学   经济学   财务报表分析   公司金融。"
+        }
+      }
+    },
+    "works": {
+      "heading": "精选作品",
+      "viewAll": "查看全部",
+      "card": {
+        "1": {
+          "title": "AI 投研引擎",
+          "desc": "面向投研的精准聚合引擎-把多源碎片化的工作流，凝练为一份结构化输出。",
+          "year": "2026"
+        },
+        "2": {
+          "title": "R 语言机器学习回测",
+          "desc": "从金融终端数据到回测组合的端到端流水线—回归、时间序列与一份完整的业绩报告。",
+          "year": "2024"
+        },
+        "3": {
+          "title": "瑞银（UBS）并购战略分析",
+          "desc": "针对真实瑞银并购案的战略深度分析—环境、目标与路径。AI 辅助研究使团队效率提升约 30%。",
+          "year": "2023"
+        },
+        "4": {
+          "title": "牧原股份 — 股票研究",
+          "desc": "运用波特五力与 SWOT 进行行业与公司研究，端到端搭建财务模型。校级二等奖。",
+          "year": "2021"
+        }
+      },
+      "tag": {
+        "timeSeries": "时间序列",
+        "backtesting": "回测",
+        "ma": "并购",
+        "strategy": "战略",
+        "aiAssisted": "AI 辅助",
+        "equityResearch": "股票研究",
+        "modeling": "建模"
+      }
+    },
+    "toolbox": {
+      "heading": "能力库。",
+      "subtitle": "我用以将碎片信息转化为结构化决策的工具-也用同一套思路构建工具本身。",
+      "disciplines": {
+        "title": "核心能力",
+        "1": "<strong>行业与公司研究：</strong>行业深度研究、商业模式拆解、竞争格局与公司基本面。",
+        "2": "<strong>尽职调查：</strong>通过桌面研究与现场走访，评估现金流、资产质量与风险。",
+        "3": "<strong>财务建模与估值：</strong>营收 / 毛利 / 现金流驱动因素、可比公司分析，以及时间序列策略回测。",
+        "4": "<strong>AI 产品构建：</strong>基于 Coze + DeepSeek 的工作流设计、提示词工程、上下文工程与工具集成。"
+      },
+      "stack": {
+        "title": "工具栈"
+      }
+    }
+  }
+}
