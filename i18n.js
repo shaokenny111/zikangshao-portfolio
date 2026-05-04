@@ -49,7 +49,7 @@
       a.setAttribute('download', href.split('/').pop());
     });
 
-    document.querySelectorAll('#lang-toggle .lang-btn').forEach(btn => {
+    document.querySelectorAll('.lang-toggle .lang-btn').forEach(btn => {
       btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
     });
 
@@ -60,7 +60,7 @@
   }
 
   function bind() {
-    document.querySelectorAll('#lang-toggle .lang-btn').forEach(btn => {
+    document.querySelectorAll('.lang-toggle .lang-btn').forEach(btn => {
       btn.addEventListener('click', () => apply(btn.getAttribute('data-lang')));
     });
   }
