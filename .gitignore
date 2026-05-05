@@ -12,3 +12,8 @@ Thumbs.db
 # Logs / temp
 *.log
 *.tmp
+
+# Node / package tooling (not needed for static site)
+node_modules/
+package.json
+package-lock.json

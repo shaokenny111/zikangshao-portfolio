@@ -295,6 +295,25 @@
             html, body { overflow-x: hidden; }
         }
 
+        /* Background card logos */
+        .card-logo {
+            width: 24px;
+            height: 24px;
+            flex-shrink: 0;
+            object-fit: contain;
+            filter: grayscale(1);
+            opacity: 0.7;
+            transition: filter 200ms ease, opacity 200ms ease;
+        }
+        @media (min-width: 768px) {
+            .card-logo { width: 32px; height: 32px; }
+        }
+        .exp-card:hover .card-logo,
+        .exp-card:focus-within .card-logo {
+            filter: grayscale(0);
+            opacity: 1;
+        }
+
         /* Touch tooltip toggle (footer) */
         @media (hover: none) {
             .tip-trigger.tip-open > span[data-linkedin-handle],
@@ -378,7 +397,7 @@
 <div class="relative h-[360px] md:h-[460px] lg:h-[600px] w-full max-w-[280px] md:max-w-[360px] lg:max-w-none mx-auto flex justify-center items-end group overflow-hidden rounded md:rounded lg:rounded-2xl bg-surface-container/30">
 <div class="hero-glow"></div>
 <div class="hero-texture"></div>
-<img alt="Portrait of Zikang Shao" class="h-full w-full object-contain object-bottom transition-transform duration-[3000ms] ease-out group-hover:scale-[1.03] group-hover:-translate-y-1 grayscale-init cursor-pointer relative z-10" data-alt="A professional studio portrait of an Asian male professional in his late 20s. He is dressed in a sharp, minimalist dark tailored suit over a crisp white shirt, exuding quiet confidence. The background is completely removed (transparent), allowing the figure to blend seamlessly into the minimalist UI. The lighting is sophisticated and editorial, with soft shadows defining his features. The overall aesthetic is high-end, clean, and modern, fitting for a finance and AI product builder." onmouseover="this.classList.add('colored')" src="https://lh3.googleusercontent.com/aida/ADBb0ujzprqDJonGoQsa_f-7QoHvRM1pktJYb9yXSucjngYFgovxh5MAV6nGj2K5ef7BYxO5Ev2W5_RoQ2rDaPa8qgmi4U5VtqHpp3pVmt1E86J9m2KFkmhw18Yk-0QTQGY5GemUn3btakGamKQ-bV6S3MMu1asWXmA63WW5hVHCQuwwdx2m7mjGbthj3XqZBdPTETZeW_MpiIGGEK26XFTH7nYtgZ8c8V3z21LvjOaK2IbV3kxfgW3FFJlxQAIB-PdY4fUUUYYt7EWc7Ss"/>
+<img alt="Portrait of Zikang Shao" class="h-full w-full object-contain object-bottom transition-transform duration-[3000ms] ease-out group-hover:scale-[1.03] group-hover:-translate-y-1 grayscale-init cursor-pointer relative z-10" onmouseover="this.classList.add('colored')" src="./Hero.png"/>
 </div>
 <div class="space-y-stack-md flex flex-col justify-center parallax-layer" data-speed="0.05">
 <h1 class="font-display-lg text-[30px] md:text-[40px] lg:text-[56px] leading-[1.15] tracking-tight font-normal text-primary">
@@ -407,27 +426,36 @@
 <!-- Work Experience -->
 <div class="block" id="tab-work">
 <div class="border border-transparent border-b-outline-variant pb-element-gap exp-card cursor-pointer p-4 rounded-lg group" onclick="openModal('modal-work-1')">
-<div class="flex flex-col md:flex-row md:justify-between md:items-start mb-2 gap-1 md:gap-4">
+<div class="flex items-start gap-3 mb-2">
+<img src="./logos/haisheng.png" alt="" class="card-logo" loading="lazy"/>
+<div class="flex-1 flex flex-col md:flex-row md:justify-between md:items-start gap-1 md:gap-4">
 <h3 class="font-body-lg text-body-lg text-primary group-hover:italic transition-all" data-i18n="bg.work.1.title">Project Manager Assistant — Financial Leasing</h3>
 <span class="font-ui-metadata text-[14px] md:text-ui-metadata text-on-surface-variant uppercase tracking-widest md:flex-shrink-0 md:whitespace-nowrap" data-i18n="bg.work.1.date">08/2025 — Present</span>
+</div>
 </div>
 <h4 class="font-body-md text-body-md italic text-surface-tint mb-4" data-i18n="bg.work.1.org">Haisheng Financial Leasing, Foshan</h4>
 <p class="font-caption text-caption text-on-surface-variant" data-i18n="bg.work.1.summary">Lead due diligence on financial leasing engagements — running industry, business, operational, and financial deep-dives via desk research and on-site visits. Identify cash flow and asset quality risks; draft DD reports that feed approval and structuring decisions.</p>
 <div class="mt-4 text-xs font-semibold uppercase tracking-wider text-surface-tint opacity-0 group-hover:opacity-100 transition-opacity flex items-center gap-1"><span data-i18n="bg.expand">Click to expand</span> <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6"/><path d="M10 14 20 4"/><path d="M19 13v6a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h6"/></svg></div>
 </div>
 <div class="border border-transparent border-b-outline-variant pb-element-gap exp-card cursor-pointer p-4 rounded-lg mt-4 group" onclick="openModal('modal-work-2')">
-<div class="flex flex-col md:flex-row md:justify-between md:items-start mb-2 gap-1 md:gap-4">
+<div class="flex items-start gap-3 mb-2">
+<img src="./logos/guoyuan.png" alt="" class="card-logo" loading="lazy"/>
+<div class="flex-1 flex flex-col md:flex-row md:justify-between md:items-start gap-1 md:gap-4">
 <h3 class="font-body-lg text-body-lg text-primary group-hover:italic transition-all" data-i18n="bg.work.2.title">Automotive Group Analyst</h3>
 <span class="font-ui-metadata text-[14px] md:text-ui-metadata text-on-surface-variant uppercase tracking-widest md:flex-shrink-0 md:whitespace-nowrap" data-i18n="bg.work.2.date">07/2024 — 11/2024</span>
+</div>
 </div>
 <h4 class="font-body-md text-body-md italic text-surface-tint mb-4" data-i18n="bg.work.2.org">Guoyuan Securities Company Limited, Shanghai</h4>
 <p class="font-caption text-caption text-on-surface-variant" data-i18n="bg.work.2.summary">Contributed to 5 in-depth research reports on the automotive sector and its supply chain. Analyzed industry trends, business models, competitive landscape, and company fundamentals to back investment conclusions.</p>
 <div class="mt-4 text-xs font-semibold uppercase tracking-wider text-surface-tint opacity-0 group-hover:opacity-100 transition-opacity flex items-center gap-1"><span data-i18n="bg.expand">Click to expand</span> <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6"/><path d="M10 14 20 4"/><path d="M19 13v6a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h6"/></svg></div>
 </div>
 <div class="border border-transparent border-b-outline-variant pb-element-gap exp-card cursor-pointer p-4 rounded-lg mt-4 group" onclick="openModal('modal-work-3')">
-<div class="flex flex-col md:flex-row md:justify-between md:items-start mb-2 gap-1 md:gap-4">
+<div class="flex items-start gap-3 mb-2">
+<img src="./logos/hsbc.png" alt="" class="card-logo" loading="lazy"/>
+<div class="flex-1 flex flex-col md:flex-row md:justify-between md:items-start gap-1 md:gap-4">
 <h3 class="font-body-lg text-body-lg text-primary group-hover:italic transition-all" data-i18n="bg.work.3.title">Financial Service Clerk — Fund NAV Automation</h3>
 <span class="font-ui-metadata text-[14px] md:text-ui-metadata text-on-surface-variant uppercase tracking-widest md:flex-shrink-0 md:whitespace-nowrap" data-i18n="bg.work.3.date">01/2023 — 06/2023</span>
+</div>
 </div>
 <h4 class="font-body-md text-body-md italic text-surface-tint mb-4" data-i18n="bg.work.3.org">HSBC, Foshan</h4>
 <p class="font-caption text-caption text-on-surface-variant" data-i18n="bg.work.3.summary">Joined the fund NAV automation project: daily, monthly, and quarterly NAV calculation, procedure verification, and reporting that supported the department's valuation and accounting workflows.</p>
@@ -485,17 +513,23 @@
 <!-- Education -->
 <div class="hidden" id="tab-edu">
 <div class="border border-transparent border-b-outline-variant pb-element-gap exp-card cursor-pointer p-4 rounded-lg group" onclick="openModal('modal-edu-1')">
-<div class="flex flex-col md:flex-row md:justify-between md:items-start mb-2 gap-1 md:gap-4">
+<div class="flex items-start gap-3 mb-2">
+<img src="./logos/emlyon.png" alt="" class="card-logo" loading="lazy"/>
+<div class="flex-1 flex flex-col md:flex-row md:justify-between md:items-start gap-1 md:gap-4">
 <h3 class="font-body-lg text-body-lg text-primary group-hover:italic transition-all" data-i18n="bg.edu.1.title">MSc in Finance</h3>
 <span class="font-ui-metadata text-[14px] md:text-ui-metadata text-on-surface-variant uppercase tracking-widest md:flex-shrink-0 md:whitespace-nowrap" data-i18n="bg.edu.1.date">09/2023 — 03/2025</span>
+</div>
 </div>
 <h4 class="font-body-md text-body-md italic text-surface-tint mb-4" data-i18n="bg.edu.1.org">emlyon business school, Lyon, France</h4>
 <div class="mt-4 text-xs font-semibold uppercase tracking-wider text-surface-tint opacity-0 group-hover:opacity-100 transition-opacity flex items-center gap-1"><span data-i18n="bg.expand">Click to expand</span> <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6"/><path d="M10 14 20 4"/><path d="M19 13v6a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h6"/></svg></div>
 </div>
 <div class="border border-transparent border-b-outline-variant pb-element-gap exp-card cursor-pointer p-4 rounded-lg mt-4 group" onclick="openModal('modal-edu-2')">
-<div class="flex flex-col md:flex-row md:justify-between md:items-start mb-2 gap-1 md:gap-4">
+<div class="flex items-start gap-3 mb-2">
+<img src="./logos/huangshang.png" alt="" class="card-logo" loading="lazy"/>
+<div class="flex-1 flex flex-col md:flex-row md:justify-between md:items-start gap-1 md:gap-4">
 <h3 class="font-body-lg text-body-lg text-primary group-hover:italic transition-all" data-i18n="bg.edu.2.title">BA in Financial Engineering</h3>
 <span class="font-ui-metadata text-[14px] md:text-ui-metadata text-on-surface-variant uppercase tracking-widest md:flex-shrink-0 md:whitespace-nowrap" data-i18n="bg.edu.2.date">09/2019 — 06/2023</span>
+</div>
 </div>
 <h4 class="font-body-md text-body-md italic text-surface-tint mb-4" data-i18n="bg.edu.2.org">Huashang College, Guangdong University of Finance & Economics, Guangzhou</h4>
 <div class="mt-4 text-xs font-semibold uppercase tracking-wider text-surface-tint opacity-0 group-hover:opacity-100 transition-opacity flex items-center gap-1"><span data-i18n="bg.expand">Click to expand</span> <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6"/><path d="M10 14 20 4"/><path d="M19 13v6a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h6"/></svg></div>
