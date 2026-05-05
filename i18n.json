@@ -166,6 +166,7 @@
     "works": {
       "heading": "Selected Works",
       "viewAll": "View All",
+      "viewOnPortfolio": "View on portfolio →",
       "card": {
         "1": {
           "title": "AI Research Engine",
@@ -381,6 +382,7 @@
     "works": {
       "heading": "精选作品",
       "viewAll": "查看全部",
+      "viewOnPortfolio": "在简历中查看 →",
       "card": {
         "1": {
           "title": "AI 投研引擎",
