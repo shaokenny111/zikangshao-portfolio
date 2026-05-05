@@ -199,6 +199,11 @@
         "modeling": "Modeling"
       }
     },
+    "projectsPage": {
+      "title": "All Projects",
+      "subtitle": "Five cases, fully unpacked.",
+      "back": "← Back to portfolio"
+    },
     "toolbox": {
       "heading": "The Toolbox.",
       "subtitle": "Instruments I use to translate fragmented information into structured decisions — and to build tools that do the same.",
@@ -414,6 +419,11 @@
         "equityResearch": "股票研究",
         "modeling": "建模"
       }
+    },
+    "projectsPage": {
+      "title": "全部作品",
+      "subtitle": "五个案例，完整呈现。",
+      "back": "← 返回首页"
     },
     "toolbox": {
       "heading": "能力库。",
