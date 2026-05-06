@@ -350,7 +350,7 @@
 <a class="nav-link text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-50 transition-colors duration-300 cursor-pointer pb-0.5 active" href="#about" data-i18n="nav.about">About</a>
 <a class="nav-link text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-50 transition-colors duration-300 cursor-pointer pb-0.5" href="#experience" data-i18n="nav.background">Background</a>
 <a class="nav-link text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-50 transition-colors duration-300 cursor-pointer pb-0.5" href="#projects" data-i18n="nav.works">Selected Works</a>
-<a class="nav-link text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-50 transition-colors duration-300 cursor-pointer pb-0.5" href="#toolbox" data-i18n="nav.toolbox">Toolbox</a>
+<a class="nav-link text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-50 transition-colors duration-300 cursor-pointer pb-0.5" href="#capabilities" data-i18n="nav.capabilities">Capabilities</a>
 </nav>
 <button id="nav-open" type="button" aria-label="Open menu" class="lg:hidden inline-flex items-center justify-center w-11 h-11 -mr-2 text-primary">
 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
@@ -377,7 +377,7 @@
 <a class="mobile-nav-link" href="#about" data-i18n="nav.about">About</a>
 <a class="mobile-nav-link" href="#experience" data-i18n="nav.background">Background</a>
 <a class="mobile-nav-link" href="#projects" data-i18n="nav.works">Selected Works</a>
-<a class="mobile-nav-link" href="#toolbox" data-i18n="nav.toolbox">Toolbox</a>
+<a class="mobile-nav-link" href="#capabilities" data-i18n="nav.capabilities">Capabilities</a>
 </nav>
 <div class="font-ui-label text-ui-label flex items-center justify-center gap-2 pb-12 lang-toggle" role="group" aria-label="Language">
 <button type="button" class="lang-btn" data-lang="en" aria-label="English">
@@ -769,63 +769,93 @@
 </div>
 </div>
 </section>
-<!-- Toolbox Section -->
-<section class="mb-section-gap scroll-mt-24 parallax-layer" id="toolbox">
+<!-- Capabilities Section -->
+<section class="mb-section-gap scroll-mt-24 parallax-layer" id="capabilities">
 <div class="border-b border-outline-variant pb-4 mb-element-gap">
-<h2 class="font-h2 text-h2 text-primary italic" data-i18n="toolbox.heading">The Toolbox.</h2>
-<p class="font-body-md text-body-md text-on-surface-variant mt-4 max-w-lg" data-i18n="toolbox.subtitle">Instruments I use to translate fragmented information into structured decisions — and to build tools that do the same.</p>
+<h2 class="font-h2 text-h2 text-primary italic" data-i18n="capabilities.heading">Capabilities</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-4 max-w-lg" data-i18n="capabilities.subtitle">What I build and how I approach AI product development</p>
 </div>
-<div class="grid grid-cols-1 lg:grid-cols-2 gap-gutter">
-<div class="bg-surface-container rounded-xl p-5 lg:p-8 border border-outline-variant flex flex-col h-full hover:shadow-lg transition-shadow duration-300">
-<h3 class="font-h2 text-h2 text-primary mb-6 border-b border-outline-variant pb-4" data-i18n="toolbox.disciplines.title">Core Disciplines</h3>
-<ul class="space-y-4 font-body-md text-body-md text-on-surface-variant flex-grow">
-<li class="flex items-start gap-3 hover:translate-x-1 transition-transform duration-200">
-<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-surface-tint mt-0.5 flex-shrink-0" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
-<span class="" data-i18n-html="toolbox.disciplines.1"><strong>Industry &amp; Company Research:</strong> Sector deep-dives, business-model deconstruction, competitive landscape, fundamentals.</span>
+<p class="font-['Newsreader'] text-lg lg:text-xl italic text-on-surface-variant max-w-2xl my-8 lg:my-10" data-i18n="capabilities.tagline">I approach problems as systems, not isolated features — designing workflows before building components.</p>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<div class="bg-surface-container rounded-xl p-8 border border-outline-variant flex flex-col hover:shadow-lg transition-shadow duration-300">
+<i data-lucide="brain" class="w-8 h-8 text-primary mb-6" aria-hidden="true"></i>
+<h3 class="font-['Inter'] text-xl font-semibold text-primary mb-3" data-i18n="capabilities.card1.title">AI Product Design</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-5" data-i18n="capabilities.card1.oneLiner">Design AI-native products that solve real user problems</p>
+<ul class="space-y-3 font-body-md text-body-md text-on-surface-variant">
+<li class="flex items-start gap-3">
+<span class="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0" aria-hidden="true"></span>
+<span data-i18n="capabilities.card1.bullet1">Translate ambiguous user needs into clear product features</span>
 </li>
-<li class="flex items-start gap-3 hover:translate-x-1 transition-transform duration-200">
-<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-surface-tint mt-0.5 flex-shrink-0" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
-<span class="" data-i18n-html="toolbox.disciplines.2"><strong>Due Diligence:</strong> Cash flow, asset quality, and risk assessment via desk research and on-site visits.</span>
+<li class="flex items-start gap-3">
+<span class="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0" aria-hidden="true"></span>
+<span data-i18n="capabilities.card1.bullet2">Design end-to-end user flows for AI copilots and assistants</span>
 </li>
-<li class="flex items-start gap-3 hover:translate-x-1 transition-transform duration-200">
-<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-surface-tint mt-0.5 flex-shrink-0" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
-<span class="" data-i18n-html="toolbox.disciplines.3"><strong>Financial Modeling &amp; Valuation:</strong> Revenue / margin / cash-flow drivers, peer comps, and time-series strategy backtesting.</span>
+<li class="flex items-start gap-3">
+<span class="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0" aria-hidden="true"></span>
+<span data-i18n="capabilities.card1.bullet3">Define interaction patterns between users and intelligent systems</span>
 </li>
-<li class="flex items-start gap-3 hover:translate-x-1 transition-transform duration-200">
-<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-surface-tint mt-0.5 flex-shrink-0" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
-<span class="" data-i18n-html="toolbox.disciplines.4"><strong>AI Product Building:</strong> Workflow design, prompt engineering, RAG, and tool integration on Coze + DeepSeek.</span>
+<li class="flex items-start gap-3">
+<span class="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0" aria-hidden="true"></span>
+<span data-i18n="capabilities.card1.bullet4">Focus on usability and real-world impact</span>
 </li>
 </ul>
 </div>
-<div class="bg-surface-container rounded-xl p-5 lg:p-8 border border-outline-variant flex flex-col h-full hover:shadow-lg transition-shadow duration-300">
-<h3 class="font-h2 text-h2 text-primary mb-6 border-b border-outline-variant pb-4" data-i18n="toolbox.stack.title">Software Stack</h3>
-<div class="grid grid-cols-2 gap-4 flex-grow content-start">
-<div class="flex items-center gap-3 p-4 bg-surface rounded-lg border border-outline-variant hover:border-primary hover:-translate-y-1 hover:shadow-md transition-all duration-300 cursor-pointer">
-<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-primary flex-shrink-0" aria-hidden="true"><path d="M3 3v18h18"/><path d="m7 14 4-4 4 4 5-6"/></svg>
-<span class="font-ui-label text-ui-label text-primary">Wind / Bloomberg</span>
+<div class="bg-surface-container rounded-xl p-8 border border-outline-variant flex flex-col hover:shadow-lg transition-shadow duration-300">
+<i data-lucide="bot" class="w-8 h-8 text-primary mb-6" aria-hidden="true"></i>
+<h3 class="font-['Inter'] text-xl font-semibold text-primary mb-3" data-i18n="capabilities.card2.title">LLM &amp; Agent Systems</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-5" data-i18n="capabilities.card2.oneLiner">Build intelligent agents and LLM-powered applications</p>
+<ul class="space-y-3 font-body-md text-body-md text-on-surface-variant">
+<li class="flex items-start gap-3">
+<span class="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0" aria-hidden="true"></span>
+<span data-i18n="capabilities.card2.bullet1">Design prompt strategies and iterative optimization</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0" aria-hidden="true"></span>
+<span data-i18n="capabilities.card2.bullet2">Construct agent workflows (tools, memory, reasoning loops)</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0" aria-hidden="true"></span>
+<span data-i18n="capabilities.card2.bullet3">Prototype AI systems using platforms like Coze</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0" aria-hidden="true"></span>
+<span data-i18n="capabilities.card2.bullet4">Balance capability with reliability and control</span>
+</li>
+</ul>
 </div>
-<div class="flex items-center gap-3 p-4 bg-surface rounded-lg border border-outline-variant hover:border-primary hover:-translate-y-1 hover:shadow-md transition-all duration-300 cursor-pointer">
-<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-primary flex-shrink-0" aria-hidden="true"><path d="m4 17 6-6-6-6"/><path d="M12 19h8"/></svg>
-<span class="font-ui-label text-ui-label text-primary">Python</span>
+<div class="bg-surface-container rounded-xl p-8 border border-outline-variant flex flex-col hover:shadow-lg transition-shadow duration-300">
+<i data-lucide="line-chart" class="w-8 h-8 text-primary mb-6" aria-hidden="true"></i>
+<h3 class="font-['Inter'] text-xl font-semibold text-primary mb-3" data-i18n="capabilities.card3.title">Research &amp; Decision Systems</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-5" data-i18n="capabilities.card3.oneLiner">Apply rigorous research and data methods to support real-world decisions</p>
+<ul class="space-y-3 font-body-md text-body-md text-on-surface-variant">
+<li class="flex items-start gap-3">
+<span class="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0" aria-hidden="true"></span>
+<span data-i18n="capabilities.card3.bullet1">Industry and company research, business-model deconstruction</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0" aria-hidden="true"></span>
+<span data-i18n="capabilities.card3.bullet2">Due diligence and risk assessment in real engagements</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0" aria-hidden="true"></span>
+<span data-i18n="capabilities.card3.bullet3">Machine learning models for prediction and backtesting</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0" aria-hidden="true"></span>
+<span data-i18n="capabilities.card3.bullet4">Translate analysis into structured, actionable judgment</span>
+</li>
+</ul>
 </div>
-<div class="flex items-center gap-3 p-4 bg-surface rounded-lg border border-outline-variant hover:border-primary hover:-translate-y-1 hover:shadow-md transition-all duration-300 cursor-pointer">
-<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-primary flex-shrink-0" aria-hidden="true"><path d="M3 3v18h18"/><rect x="7" y="13" width="3" height="5"/><rect x="12" y="9" width="3" height="9"/><rect x="17" y="5" width="3" height="13"/></svg>
-<span class="font-ui-label text-ui-label text-primary">R</span>
 </div>
-<div class="flex items-center gap-3 p-4 bg-surface rounded-lg border border-outline-variant hover:border-primary hover:-translate-y-1 hover:shadow-md transition-all duration-300 cursor-pointer">
-<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-primary flex-shrink-0" aria-hidden="true"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v6c0 1.66 3.58 3 8 3s8-1.34 8-3V5"/><path d="M4 11v6c0 1.66 3.58 3 8 3s8-1.34 8-3v-6"/></svg>
-<span class="font-ui-label text-ui-label text-primary">SQL</span>
-</div>
-<div class="flex items-center gap-3 p-4 bg-surface rounded-lg border border-outline-variant hover:border-primary hover:-translate-y-1 hover:shadow-md transition-all duration-300 cursor-pointer">
-<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-primary flex-shrink-0" aria-hidden="true"><circle cx="12" cy="12" r="2"/><circle cx="5" cy="5" r="2"/><circle cx="19" cy="5" r="2"/><circle cx="5" cy="19" r="2"/><circle cx="19" cy="19" r="2"/><path d="m6.5 6.5 4 4"/><path d="m17.5 6.5-4 4"/><path d="m6.5 17.5 4-4"/><path d="m17.5 17.5-4-4"/></svg>
-<span class="font-ui-label text-ui-label text-primary">Coze / DeepSeek</span>
-</div>
-<div class="flex items-center gap-3 p-4 bg-surface rounded-lg border border-outline-variant hover:border-primary hover:-translate-y-1 hover:shadow-md transition-all duration-300 cursor-pointer">
-<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-primary flex-shrink-0" aria-hidden="true"><path d="m8 8-5 4 5 4"/><path d="m16 8 5 4-5 4"/></svg>
-<span class="font-ui-label text-ui-label text-primary">Claude Code / Codex</span>
-</div>
-</div>
-</div>
+<div class="mt-12 pt-6 border-t border-outline-variant">
+<dl class="grid grid-cols-[max-content_1fr] gap-x-8 gap-y-3 text-sm">
+<dt class="font-ui-label text-on-surface-variant" data-i18n="capabilities.tools.aiLabel">AI / LLM</dt>
+<dd class="text-primary" data-i18n="capabilities.tools.aiTools">Coze · DeepSeek · LLM APIs</dd>
+<dt class="font-ui-label text-on-surface-variant" data-i18n="capabilities.tools.dataLabel">Data</dt>
+<dd class="text-primary" data-i18n="capabilities.tools.dataTools">Python · R · SQL</dd>
+<dt class="font-ui-label text-on-surface-variant" data-i18n="capabilities.tools.designLabel">Product / Design</dt>
+<dd class="text-primary" data-i18n="capabilities.tools.designTools">Figma · Claude Code</dd>
+</dl>
 </div>
 </section>
 </main>
@@ -850,7 +880,7 @@
     // Navigation active state via scroll position (uniform behavior for all sections)
     (function() {
         const navLinks = document.querySelectorAll('.nav-link');
-        const navTargets = ['about', 'experience', 'projects', 'toolbox'];
+        const navTargets = ['about', 'experience', 'projects', 'capabilities'];
         const sections = navTargets
             .map(id => document.getElementById(id))
             .filter(Boolean);
@@ -1013,5 +1043,7 @@
         if (open) closeModal(open.id);
     });
 </script>
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+<script>if (window.lucide && lucide.createIcons) lucide.createIcons();</script>
 <script src="./i18n.js"></script>
 </body></html>

@@ -10,7 +10,7 @@
       "about": "About",
       "background": "Background",
       "works": "Selected Works",
-      "toolbox": "Toolbox"
+      "capabilities": "Capabilities"
     },
     "hero": {
       "titleLine1": "Hi, I'm Zikang Shao —",
@@ -204,18 +204,41 @@
       "subtitle": "Five cases, fully unpacked.",
       "back": "← Back to portfolio"
     },
-    "toolbox": {
-      "heading": "The Toolbox.",
-      "subtitle": "Instruments I use to translate fragmented information into structured decisions — and to build tools that do the same.",
-      "disciplines": {
-        "title": "Core Disciplines",
-        "1": "<strong>Industry &amp; Company Research:</strong> Sector deep-dives, business-model deconstruction, competitive landscape, fundamentals.",
-        "2": "<strong>Due Diligence:</strong> Cash flow, asset quality, and risk assessment via desk research and on-site visits.",
-        "3": "<strong>Financial Modeling &amp; Valuation:</strong> Revenue / margin / cash-flow drivers, peer comps, and time-series strategy backtesting.",
-        "4": "<strong>AI Product Building:</strong> Workflow design, prompt engineering, context engineering, and tool integration on Coze + DeepSeek."
+    "capabilities": {
+      "heading": "Capabilities",
+      "subtitle": "What I build and how I approach AI product development",
+      "tagline": "I approach problems as systems, not isolated features — designing workflows before building components.",
+      "card1": {
+        "title": "AI Product Design",
+        "oneLiner": "Design AI-native products that solve real user problems",
+        "bullet1": "Translate ambiguous user needs into clear product features",
+        "bullet2": "Design end-to-end user flows for AI copilots and assistants",
+        "bullet3": "Define interaction patterns between users and intelligent systems",
+        "bullet4": "Focus on usability and real-world impact"
       },
-      "stack": {
-        "title": "Software Stack"
+      "card2": {
+        "title": "LLM & Agent Systems",
+        "oneLiner": "Build intelligent agents and LLM-powered applications",
+        "bullet1": "Design prompt strategies and iterative optimization",
+        "bullet2": "Construct agent workflows (tools, memory, reasoning loops)",
+        "bullet3": "Prototype AI systems using platforms like Coze",
+        "bullet4": "Balance capability with reliability and control"
+      },
+      "card3": {
+        "title": "Research & Decision Systems",
+        "oneLiner": "Apply rigorous research and data methods to support real-world decisions",
+        "bullet1": "Industry and company research, business-model deconstruction",
+        "bullet2": "Due diligence and risk assessment in real engagements",
+        "bullet3": "Machine learning models for prediction and backtesting",
+        "bullet4": "Translate analysis into structured, actionable judgment"
+      },
+      "tools": {
+        "aiLabel": "AI / LLM",
+        "aiTools": "Coze · DeepSeek · LLM APIs",
+        "dataLabel": "Data",
+        "dataTools": "Python · R · SQL",
+        "designLabel": "Product / Design",
+        "designTools": "Figma · Claude Code"
       }
     }
   },
@@ -231,7 +254,7 @@
       "about": "关于",
       "background": "背景",
       "works": "作品集",
-      "toolbox": "能力"
+      "capabilities": "能力"
     },
     "hero": {
       "titleLine1": "你好，我是邵子康 —",
@@ -425,18 +448,41 @@
       "subtitle": "五个案例，完整呈现。",
       "back": "← 返回首页"
     },
-    "toolbox": {
-      "heading": "能力库。",
-      "subtitle": "我用以将碎片信息转化为结构化决策的工具-也用同一套思路构建工具本身。",
-      "disciplines": {
-        "title": "核心能力",
-        "1": "<strong>行业与公司研究：</strong>行业深度研究、商业模式拆解、竞争格局与公司基本面。",
-        "2": "<strong>尽职调查：</strong>通过桌面研究与现场走访，评估现金流、资产质量与风险。",
-        "3": "<strong>财务建模与估值：</strong>营收 / 毛利 / 现金流驱动因素、可比公司分析，以及时间序列策略回测。",
-        "4": "<strong>AI 产品构建：</strong>基于 Coze + DeepSeek 的工作流设计、提示词工程、上下文工程与工具集成。"
+    "capabilities": {
+      "heading": "能力",
+      "subtitle": "我构建什么，以及我如何思考 AI 产品",
+      "tagline": "我把问题当作系统而非孤立功能来思考——先设计工作流，再动手构建。",
+      "card1": {
+        "title": "AI 产品设计",
+        "oneLiner": "设计能解决真实问题的 AI 原生产品",
+        "bullet1": "将模糊的用户需求转化为清晰的产品功能",
+        "bullet2": "为 AI Copilot 与助手设计端到端用户流程",
+        "bullet3": "定义用户与智能系统之间的交互模式",
+        "bullet4": "关注可用性与真实场景下的影响"
       },
-      "stack": {
-        "title": "工具栈"
+      "card2": {
+        "title": "LLM 与 Agent 系统",
+        "oneLiner": "构建智能 Agent 与 LLM 应用",
+        "bullet1": "设计 Prompt 策略并持续迭代优化",
+        "bullet2": "搭建 Agent 工作流（工具、记忆、推理循环）",
+        "bullet3": "在 Coze 等平台上原型化 AI 系统",
+        "bullet4": "在能力与可控性之间取得平衡"
+      },
+      "card3": {
+        "title": "研究与决策系统",
+        "oneLiner": "用严谨的研究与数据方法支撑真实场景下的决策",
+        "bullet1": "行业与公司研究、商业模式拆解",
+        "bullet2": "在真实业务场景中开展尽职调查与风险评估",
+        "bullet3": "用机器学习构建预测与回测模型",
+        "bullet4": "把分析转化为结构化、可执行的判断"
+      },
+      "tools": {
+        "aiLabel": "AI / LLM",
+        "aiTools": "Coze · DeepSeek · LLM APIs",
+        "dataLabel": "数据",
+        "dataTools": "Python · R · SQL",
+        "designLabel": "产品 / 设计",
+        "designTools": "Figma · Claude Code"
       }
     }
   }
