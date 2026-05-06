@@ -770,94 +770,126 @@
 </div>
 </section>
 <!-- Capabilities Section -->
+<style>
+  #capabilities .cap-reveal { opacity: 0; transform: translateY(16px); transition: opacity 600ms ease-out, transform 600ms ease-out; transition-delay: var(--cap-delay, 0ms); }
+  #capabilities.is-visible .cap-reveal { opacity: 1; transform: translateY(0); }
+  @media (prefers-reduced-motion: reduce) { #capabilities .cap-reveal { opacity: 1; transform: none; transition: none; } }
+</style>
 <section class="mb-section-gap scroll-mt-24 parallax-layer" id="capabilities">
 <div class="border-b border-outline-variant pb-4 mb-element-gap">
-<h2 class="font-h2 text-h2 text-primary italic" data-i18n="capabilities.heading">Capabilities</h2>
-<p class="font-body-md text-body-md text-on-surface-variant mt-4 max-w-lg" data-i18n="capabilities.subtitle">What I build and how I approach AI product development</p>
+<h2 class="font-h2 text-h2 text-primary cap-reveal" style="--cap-delay:0ms" data-i18n="capabilities.heading">Capabilities</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-4 max-w-lg cap-reveal" style="--cap-delay:100ms" data-i18n="capabilities.subtitle">What I build and how I approach AI product development</p>
 </div>
-<p class="font-['Newsreader'] text-lg lg:text-xl italic text-on-surface-variant max-w-2xl my-8 lg:my-10" data-i18n="capabilities.tagline">I approach problems as systems, not isolated features — designing workflows before building components.</p>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
-<div class="bg-surface-container rounded-xl p-8 border border-outline-variant flex flex-col hover:shadow-lg transition-shadow duration-300">
-<i data-lucide="brain" class="w-8 h-8 text-primary mb-6" aria-hidden="true"></i>
+<div class="group bg-surface-container rounded-xl p-8 border border-outline-variant flex flex-col transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:border-primary cap-reveal" style="--cap-delay:150ms">
+<i data-lucide="brain" class="w-8 h-8 text-on-surface-variant group-hover:text-primary mb-6 transition-colors duration-300" aria-hidden="true"></i>
 <h3 class="font-['Inter'] text-xl font-semibold text-primary mb-3" data-i18n="capabilities.card1.title">AI Product Design</h3>
 <p class="font-body-md text-body-md text-on-surface-variant mb-5" data-i18n="capabilities.card1.oneLiner">Design AI-native products that solve real user problems</p>
 <ul class="space-y-3 font-body-md text-body-md text-on-surface-variant">
 <li class="flex items-start gap-3">
 <span class="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0" aria-hidden="true"></span>
-<span data-i18n="capabilities.card1.bullet1">Translate ambiguous user needs into clear product features</span>
+<span data-i18n="capabilities.card1.bullet1">Translate user needs and workflows into product features</span>
 </li>
 <li class="flex items-start gap-3">
 <span class="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0" aria-hidden="true"></span>
-<span data-i18n="capabilities.card1.bullet2">Design end-to-end user flows for AI copilots and assistants</span>
+<span data-i18n="capabilities.card1.bullet2">Design end-to-end user flows for AI-powered tools</span>
 </li>
 <li class="flex items-start gap-3">
 <span class="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0" aria-hidden="true"></span>
-<span data-i18n="capabilities.card1.bullet3">Define interaction patterns between users and intelligent systems</span>
+<span data-i18n="capabilities.card1.bullet3">Define interaction patterns between users and AI systems</span>
 </li>
 <li class="flex items-start gap-3">
 <span class="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0" aria-hidden="true"></span>
-<span data-i18n="capabilities.card1.bullet4">Focus on usability and real-world impact</span>
+<span data-i18n="capabilities.card1.bullet4">Iterate based on feedback and usage data</span>
 </li>
 </ul>
 </div>
-<div class="bg-surface-container rounded-xl p-8 border border-outline-variant flex flex-col hover:shadow-lg transition-shadow duration-300">
-<i data-lucide="bot" class="w-8 h-8 text-primary mb-6" aria-hidden="true"></i>
+<div class="group bg-surface-container rounded-xl p-8 border border-outline-variant flex flex-col transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:border-primary cap-reveal" style="--cap-delay:250ms">
+<i data-lucide="bot" class="w-8 h-8 text-on-surface-variant group-hover:text-primary mb-6 transition-colors duration-300" aria-hidden="true"></i>
 <h3 class="font-['Inter'] text-xl font-semibold text-primary mb-3" data-i18n="capabilities.card2.title">LLM &amp; Agent Systems</h3>
 <p class="font-body-md text-body-md text-on-surface-variant mb-5" data-i18n="capabilities.card2.oneLiner">Build intelligent agents and LLM-powered applications</p>
 <ul class="space-y-3 font-body-md text-body-md text-on-surface-variant">
 <li class="flex items-start gap-3">
 <span class="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0" aria-hidden="true"></span>
-<span data-i18n="capabilities.card2.bullet1">Design prompt strategies and iterative optimization</span>
+<span data-i18n="capabilities.card2.bullet1">Write and iterate prompts for specific tasks</span>
 </li>
 <li class="flex items-start gap-3">
 <span class="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0" aria-hidden="true"></span>
-<span data-i18n="capabilities.card2.bullet2">Construct agent workflows (tools, memory, reasoning loops)</span>
+<span data-i18n="capabilities.card2.bullet2">Build agent workflows with tools, memory, and retrieval</span>
 </li>
 <li class="flex items-start gap-3">
 <span class="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0" aria-hidden="true"></span>
-<span data-i18n="capabilities.card2.bullet3">Prototype AI systems using platforms like Coze</span>
+<span data-i18n="capabilities.card2.bullet3">Integrate LLMs with external APIs and knowledge bases</span>
 </li>
 <li class="flex items-start gap-3">
 <span class="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0" aria-hidden="true"></span>
-<span data-i18n="capabilities.card2.bullet4">Balance capability with reliability and control</span>
+<span data-i18n="capabilities.card2.bullet4">Test and evaluate output quality across cases</span>
 </li>
 </ul>
 </div>
-<div class="bg-surface-container rounded-xl p-8 border border-outline-variant flex flex-col hover:shadow-lg transition-shadow duration-300">
-<i data-lucide="line-chart" class="w-8 h-8 text-primary mb-6" aria-hidden="true"></i>
+<div class="group bg-surface-container rounded-xl p-8 border border-outline-variant flex flex-col transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:border-primary cap-reveal" style="--cap-delay:350ms">
+<i data-lucide="line-chart" class="w-8 h-8 text-on-surface-variant group-hover:text-primary mb-6 transition-colors duration-300" aria-hidden="true"></i>
 <h3 class="font-['Inter'] text-xl font-semibold text-primary mb-3" data-i18n="capabilities.card3.title">Research &amp; Decision Systems</h3>
 <p class="font-body-md text-body-md text-on-surface-variant mb-5" data-i18n="capabilities.card3.oneLiner">Apply rigorous research and data methods to support real-world decisions</p>
 <ul class="space-y-3 font-body-md text-body-md text-on-surface-variant">
 <li class="flex items-start gap-3">
 <span class="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0" aria-hidden="true"></span>
-<span data-i18n="capabilities.card3.bullet1">Industry and company research, business-model deconstruction</span>
+<span data-i18n="capabilities.card3.bullet1">Industry and company research, business-model analysis</span>
 </li>
 <li class="flex items-start gap-3">
 <span class="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0" aria-hidden="true"></span>
-<span data-i18n="capabilities.card3.bullet2">Due diligence and risk assessment in real engagements</span>
+<span data-i18n="capabilities.card3.bullet2">Due diligence and risk assessment</span>
 </li>
 <li class="flex items-start gap-3">
 <span class="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0" aria-hidden="true"></span>
-<span data-i18n="capabilities.card3.bullet3">Machine learning models for prediction and backtesting</span>
+<span data-i18n="capabilities.card3.bullet3">Statistical and machine learning models for prediction</span>
 </li>
 <li class="flex items-start gap-3">
 <span class="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0" aria-hidden="true"></span>
-<span data-i18n="capabilities.card3.bullet4">Translate analysis into structured, actionable judgment</span>
+<span data-i18n="capabilities.card3.bullet4">Translate findings into structured recommendations</span>
 </li>
 </ul>
 </div>
 </div>
-<div class="mt-12 pt-6 border-t border-outline-variant">
-<dl class="grid grid-cols-[max-content_1fr] gap-x-8 gap-y-3 text-sm">
-<dt class="font-ui-label text-on-surface-variant" data-i18n="capabilities.tools.aiLabel">AI / LLM</dt>
-<dd class="text-primary" data-i18n="capabilities.tools.aiTools">Coze · DeepSeek · LLM APIs</dd>
-<dt class="font-ui-label text-on-surface-variant" data-i18n="capabilities.tools.dataLabel">Data</dt>
-<dd class="text-primary" data-i18n="capabilities.tools.dataTools">Python · R · SQL</dd>
-<dt class="font-ui-label text-on-surface-variant" data-i18n="capabilities.tools.designLabel">Product / Design</dt>
-<dd class="text-primary" data-i18n="capabilities.tools.designTools">Figma · Claude Code</dd>
-</dl>
+<div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<div class="bg-surface-container rounded-xl p-6 border border-outline-variant transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:border-primary cap-reveal" style="--cap-delay:450ms">
+<h4 class="font-['Inter'] text-base font-medium text-primary mb-4" data-i18n="capabilities.tools.aiTitle">AI / LLM</h4>
+<div class="flex flex-wrap gap-2">
+<span class="rounded-full border border-outline-variant px-3 py-1 text-xs text-on-surface-variant transition-colors duration-200 hover:bg-primary/10 hover:text-primary">Coze</span>
+<span class="rounded-full border border-outline-variant px-3 py-1 text-xs text-on-surface-variant transition-colors duration-200 hover:bg-primary/10 hover:text-primary">DeepSeek</span>
+<span class="rounded-full border border-outline-variant px-3 py-1 text-xs text-on-surface-variant transition-colors duration-200 hover:bg-primary/10 hover:text-primary">LLM APIs</span>
+</div>
+</div>
+<div class="bg-surface-container rounded-xl p-6 border border-outline-variant transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:border-primary cap-reveal" style="--cap-delay:550ms">
+<h4 class="font-['Inter'] text-base font-medium text-primary mb-4" data-i18n="capabilities.tools.dataTitle">Data</h4>
+<div class="flex flex-wrap gap-2">
+<span class="rounded-full border border-outline-variant px-3 py-1 text-xs text-on-surface-variant transition-colors duration-200 hover:bg-primary/10 hover:text-primary">Python</span>
+<span class="rounded-full border border-outline-variant px-3 py-1 text-xs text-on-surface-variant transition-colors duration-200 hover:bg-primary/10 hover:text-primary">R</span>
+<span class="rounded-full border border-outline-variant px-3 py-1 text-xs text-on-surface-variant transition-colors duration-200 hover:bg-primary/10 hover:text-primary">SQL</span>
+</div>
+</div>
+<div class="bg-surface-container rounded-xl p-6 border border-outline-variant transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:border-primary cap-reveal" style="--cap-delay:650ms">
+<h4 class="font-['Inter'] text-base font-medium text-primary mb-4" data-i18n="capabilities.tools.productTitle">Product / Design</h4>
+<div class="flex flex-wrap gap-2">
+<span class="rounded-full border border-outline-variant px-3 py-1 text-xs text-on-surface-variant transition-colors duration-200 hover:bg-primary/10 hover:text-primary">Figma</span>
+<span class="rounded-full border border-outline-variant px-3 py-1 text-xs text-on-surface-variant transition-colors duration-200 hover:bg-primary/10 hover:text-primary">Claude Code</span>
+</div>
+</div>
 </div>
 </section>
+<script>
+  (function () {
+    const root = document.getElementById('capabilities');
+    if (!root) return;
+    if (!('IntersectionObserver' in window)) { root.classList.add('is-visible'); return; }
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) { root.classList.add('is-visible'); io.disconnect(); }
+      });
+    }, { threshold: 0.15 });
+    io.observe(root);
+  })();
+</script>
 </main>
 <!-- Footer -->
 <footer class="bg-[#FBFAF7] dark:bg-stone-950 text-stone-900 dark:text-stone-100 font-['Inter'] text-xs tracking-widest uppercase full-width py-20 border-t border-[#E5E2DA] dark:border-stone-800 flat no shadows transition-all duration-200">
