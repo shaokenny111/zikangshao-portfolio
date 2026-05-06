@@ -1,8 +1,8 @@
 {
   "en": {
     "meta": {
-      "title": "Zikang Shao — Finance × AI Product Builder",
-      "description": "MSc Finance from emlyon business school. Building AI tools for investment research while doing due diligence in financial leasing.",
+      "title": "Zikang Shao — AI Product Builder",
+      "description": "Design and ship intelligent agents that help people make better decisions",
       "htmlLang": "en"
     },
     "lang": { "en": "EN", "zh": "中" },
@@ -14,9 +14,9 @@
     },
     "hero": {
       "titleLine1": "Hi, I'm Zikang Shao —",
-      "titleLine2a": "Finance × AI",
+      "titleLine2a": "AI",
       "titleLine2b": "Product Builder.",
-      "subtitle": "MSc Finance, emlyon business school. I run due diligence on leasing deals — and build AI tools that make investment research faster, sharper, and more honest.",
+      "subtitle": "I design and ship intelligent agents that help people make better decisions. Background in finance, currently in finance — and building AI tools in parallel.",
       "ctaResume": "Download Resume"
     },
     "bg": {
@@ -222,8 +222,8 @@
 
   "zh": {
     "meta": {
-      "title": "邵子康 — 金融与 AI 产品构建者",
-      "description": "emlyon 商学院金融硕士。白天在融资租赁做尽职调查，业余构建投研 AI 工具。",
+      "title": "邵子康 — AI 产品构建者",
+      "description": "研发AI产品协助人们做出更明智的决策。",
       "htmlLang": "zh"
     },
     "lang": { "en": "EN", "zh": "中" },
@@ -235,9 +235,9 @@
     },
     "hero": {
       "titleLine1": "你好，我是邵子康 —",
-      "titleLine2a": "金融 × AI",
+      "titleLine2a": "AI",
       "titleLine2b": "产品构建者。",
-      "subtitle": "金融硕士，里昂商学院。从事融资租赁尽职调查-并构建 AI 工具，让投资研究更快、更敏锐、更真实。",
+      "subtitle": "我研发AI产品，旨在协助人们做出更明智的决策。我拥有金融背景，目前也深耕于金融领域——与此同时，我也在同步开发AI工具。",
       "ctaResume": "下载简历"
     },
     "bg": {
