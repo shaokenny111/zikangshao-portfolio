@@ -5,7 +5,10 @@
       "description": "Design and ship intelligent agents that help people make better decisions",
       "htmlLang": "en"
     },
-    "lang": { "en": "EN", "zh": "中" },
+    "lang": {
+      "en": "EN",
+      "zh": "中"
+    },
     "nav": {
       "about": "About",
       "background": "Background",
@@ -21,7 +24,11 @@
     },
     "bg": {
       "heading": "Background",
-      "tab": { "work": "Work Experience", "edu": "Education", "proj": "Project Experience" },
+      "tab": {
+        "work": "Work Experience",
+        "edu": "Education",
+        "proj": "Project Experience"
+      },
       "expand": "Click to expand",
       "work": {
         "1": {
@@ -170,8 +177,12 @@
     },
     "projects": {
       "title": "Projects",
-      "products": { "heading": "Products" },
-      "research": { "heading": "Research" },
+      "products": {
+        "heading": "Products"
+      },
+      "research": {
+        "heading": "Research"
+      },
       "copilot": {
         "title": "AI Job Search Copilot",
         "tagline": "LLM-based assistant that scores resume-JD match in real time.",
@@ -229,7 +240,10 @@
         "highlights": "Key highlights",
         "preview": "Preview"
       },
-      "nav": { "prev": "Previous", "next": "Next" },
+      "nav": {
+        "prev": "Previous",
+        "next": "Next"
+      },
       "copilot": {
         "title": "AI Job Search Copilot",
         "tagline": "An LLM-based assistant that scores resume-JD match in real time and suggests improvements.",
@@ -310,6 +324,12 @@
         "h2": "Competitive landscape and key players mapping",
         "h3": "Technology trend analysis: AI integration, sensors, actuators",
         "h4": "Forward-looking outlook on growth drivers and risks"
+      },
+      "viewer": {
+        "page": "Page"
+      },
+      "notes": {
+        "iframeFallback": "If the embedded demo does not load in this iframe, use the button above to open it in a new tab."
       }
     },
     "capabilities": {
@@ -346,14 +366,16 @@
       }
     }
   },
-
   "zh": {
     "meta": {
       "title": "邵子康 — AI 产品构建者",
       "description": "研发AI产品协助人们做出更明智的决策。",
       "htmlLang": "zh"
     },
-    "lang": { "en": "EN", "zh": "中" },
+    "lang": {
+      "en": "EN",
+      "zh": "中"
+    },
     "nav": {
       "about": "关于",
       "background": "背景",
@@ -369,7 +391,11 @@
     },
     "bg": {
       "heading": "背景",
-      "tab": { "work": "工作经历", "edu": "教育背景", "proj": "项目经历" },
+      "tab": {
+        "work": "工作经历",
+        "edu": "教育背景",
+        "proj": "项目经历"
+      },
       "expand": "点击展开",
       "work": {
         "1": {
@@ -518,8 +544,12 @@
     },
     "projects": {
       "title": "作品集",
-      "products": { "heading": "产品" },
-      "research": { "heading": "研究" },
+      "products": {
+        "heading": "产品"
+      },
+      "research": {
+        "heading": "研究"
+      },
       "copilot": {
         "title": "AI 求职助手",
         "tagline": "基于 LLM 的求职助手，实时计算简历与岗位匹配度。",
@@ -577,7 +607,10 @@
         "highlights": "亮点",
         "preview": "预览"
       },
-      "nav": { "prev": "上一个", "next": "下一个" },
+      "nav": {
+        "prev": "上一个",
+        "next": "下一个"
+      },
       "copilot": {
         "title": "AI 求职助手",
         "tagline": "基于 LLM 的求职助手——实时计算简历与岗位匹配度，并给出针对性修改建议。",
@@ -658,6 +691,12 @@
         "h2": "竞争格局与关键玩家梳理",
         "h3": "技术趋势分析：AI 融合、传感器、执行器",
         "h4": "增长驱动与风险的前瞻判断"
+      },
+      "viewer": {
+        "page": "第"
+      },
+      "notes": {
+        "iframeFallback": "如果嵌入的演示无法加载，请使用上方按钮在新标签页中打开。"
       }
     },
     "capabilities": {

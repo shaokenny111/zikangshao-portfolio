@@ -1,7 +1,7 @@
 (function () {
   const STORE_KEY = 'lang';
   const SUPPORTED = ['en', 'zh'];
-  const CV = { en: './Zikang_Shao_CV_EN.pdf', zh: './Zikang_Shao_CV_ZH.pdf' };
+  const CV = { en: '/Zikang_Shao_CV_EN.pdf', zh: '/Zikang_Shao_CV_ZH.pdf' };
   let dict = null;
 
   const get = (obj, path) => path.split('.').reduce((o, k) => (o == null ? o : o[k]), obj);
@@ -65,7 +65,7 @@
     });
   }
 
-  fetch('./i18n.json')
+  fetch('/i18n.json')
     .then(r => r.json())
     .then(d => { dict = d; bind(); apply(pickInitial()); })
     .catch(err => console.error('[i18n] load failed', err));

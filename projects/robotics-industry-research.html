@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html class="light scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title data-i18n="cs.robotics.title">Case Study — Zikang Shao</title>
+<meta name="description" data-i18n-attr="cs.robotics.tagline" content="Case study by Zikang Shao"/>
+<link rel="canonical" href="https://zikangshao.space/projects/robotics-industry-research.html"/>
+<link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
+<meta property="og:type" content="article"/>
+<meta property="og:title" data-i18n-attr="cs.robotics.title" content="Case Study — Zikang Shao"/>
+<meta property="og:description" data-i18n-attr="cs.robotics.tagline" content="Case study by Zikang Shao"/>
+<meta property="og:url" content="https://zikangshao.space/projects/robotics-industry-research.html"/>
+<meta property="og:image" content="https://zikangshao.space/og.png"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:locale:alternate" content="zh_CN"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" data-i18n-attr="cs.robotics.title" content="Case Study — Zikang Shao"/>
+<meta name="twitter:description" data-i18n-attr="cs.robotics.tagline" content="Case study by Zikang Shao"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400;1,6..72,500&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+    tailwind.config = {
+        darkMode: "class",
+        theme: {
+            extend: {
+                "colors": {
+                    "background": "#fdf8f8", "on-surface-variant": "#444748", "on-background": "#1c1b1b",
+                    "on-surface": "#1c1b1b", "surface": "#fdf8f8", "outline-variant": "#c4c7c7",
+                    "surface-bright": "#fdf8f8", "primary": "#000000", "surface-tint": "#5f5e5e",
+                    "surface-container-low": "#f7f3f2", "outline": "#747878", "surface-variant": "#e5e2e1",
+                    "surface-container": "#f1edec", "on-primary": "#ffffff", "tertiary": "#000000"
+                },
+                "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                "spacing": {
+                    "margin-page": "5vw", "stack-sm": "8px", "section-gap": "120px",
+                    "element-gap": "24px", "gutter": "32px", "container-max": "1140px", "stack-md": "16px"
+                },
+                "fontFamily": {
+                    "h1": ["Newsreader"], "display-lg": ["Newsreader"], "ui-label": ["Inter"],
+                    "h2": ["Newsreader"], "caption": ["Newsreader"], "body-lg": ["Newsreader"],
+                    "body-md": ["Newsreader"], "ui-metadata": ["Inter"]
+                },
+                "fontSize": {
+                    "h1": ["32px", { "lineHeight": "1.2", "fontWeight": "500" }],
+                    "display-lg": ["48px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "400" }],
+                    "ui-label": ["13px", { "lineHeight": "1", "letterSpacing": "0.04em", "fontWeight": "600" }],
+                    "h2": ["24px", { "lineHeight": "1.3", "fontWeight": "500" }],
+                    "caption": ["14px", { "lineHeight": "1.4", "fontWeight": "400" }],
+                    "body-lg": ["20px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                    "body-md": ["17px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                    "ui-metadata": ["12px", { "lineHeight": "1.4", "fontWeight": "400" }]
+                }
+            }
+        }
+    }
+</script>
+<style>
+    body { background-color: #FBFAF7; color: #1A1A1A; scroll-behavior: smooth; }
+    .nav-link { position: relative; }
+    .nav-link::after {
+        content: ''; position: absolute; bottom: -2px; left: 0; width: 100%; height: 2px;
+        background-color: currentColor; transform: scaleX(0); transition: transform 0.3s ease; transform-origin: right;
+    }
+    .nav-link:hover::after { transform: scaleX(1); transform-origin: left; }
+    .lang-btn { display: inline-flex; align-items: center; gap: 6px; color: #a8a29e; transition: color 0.2s ease, opacity 0.2s ease; cursor: pointer; }
+    .lang-btn:hover { color: #1c1b1b; }
+    .lang-btn .lang-flag { opacity: 0.55; transition: opacity 0.2s ease; }
+    .lang-btn:hover .lang-flag { opacity: 1; }
+    .lang-btn.active { color: #1c1b1b; font-weight: 700; text-decoration: underline; text-underline-offset: 4px; }
+    .lang-btn.active .lang-flag { opacity: 1; }
+    .lang-divider { color: #d6d3d1; user-select: none; }
+
+    @media (max-width: 767px) {
+        html, body { overflow-x: hidden; }
+        .text-h2 { font-size: 19px !important; line-height: 1.3; }
+        .text-h1 { font-size: 24px !important; line-height: 1.25; }
+        .text-body-lg { font-size: 17px !important; }
+        .text-body-md { font-size: 16px !important; }
+        .pb-section-gap { padding-bottom: 64px !important; }
+        .pt-element-gap { padding-top: 16px !important; }
+    }
+    @media (max-width: 1023px) { html, body { overflow-x: hidden; } }
+
+    /* Preview viewers — disable text selection on protected content */
+    .preview-protect { user-select: none; -webkit-user-select: none; }
+    .preview-protect img { -webkit-user-drag: none; -webkit-touch-callout: none; }
+    .pdf-canvas { display: block; max-width: 100%; height: auto; margin: 0 auto; }
+    .carousel-img { max-height: 600px; }
+</style>
+</head>
+<body class="antialiased min-h-screen relative">
+<!-- TopAppBar -->
+<header class="bg-[#FBFAF7]/90 backdrop-blur-xl font-['Inter'] tracking-tight text-sm uppercase sticky top-0 border-b border-[#E5E2DA] z-50 transition-all duration-300">
+<div class="flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto">
+<a href="/index.html" class="font-['Newsreader'] text-2xl italic font-medium text-stone-900 normal-case tracking-normal">Zikang Shao</a>
+<nav class="hidden lg:flex gap-8">
+<a class="nav-link text-stone-500 hover:text-stone-900 transition-colors duration-300 cursor-pointer pb-0.5" href="/index.html#about" data-i18n="nav.about">About</a>
+<a class="nav-link text-stone-500 hover:text-stone-900 transition-colors duration-300 cursor-pointer pb-0.5" href="/index.html#experience" data-i18n="nav.background">Background</a>
+<a class="nav-link text-stone-900 font-semibold pb-0.5" href="/projects.html" data-i18n="nav.works">Selected Works</a>
+<a class="nav-link text-stone-500 hover:text-stone-900 transition-colors duration-300 cursor-pointer pb-0.5" href="/index.html#capabilities" data-i18n="nav.capabilities">Capabilities</a>
+</nav>
+<div class="font-ui-label text-ui-label hidden lg:flex items-center gap-2 lang-toggle" id="lang-toggle" role="group" aria-label="Language">
+<button type="button" class="lang-btn" data-lang="en" aria-label="English">
+<svg class="lang-flag" width="20" height="14" viewBox="0 0 60 42" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="60" height="42" fill="#012169"/><path d="M0,0 L60,42 M60,0 L0,42" stroke="#ffffff" stroke-width="6"/><path d="M30,0 V42 M0,21 H60" stroke="#ffffff" stroke-width="10"/><path d="M30,0 V42 M0,21 H60" stroke="#C8102E" stroke-width="6"/></svg>
+<span data-i18n="lang.en">EN</span>
+</button>
+<span class="lang-divider">/</span>
+<button type="button" class="lang-btn" data-lang="zh" aria-label="中文">
+<svg class="lang-flag" width="20" height="14" viewBox="0 0 30 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="30" height="20" fill="#DE2910"/><polygon fill="#FFDE00" points="6,3 7.18,5.6 9.95,5.6 7.69,7.21 8.7,9.83 6,8.16 3.3,9.83 4.31,7.21 2.05,5.6 4.82,5.6"/></svg>
+<span data-i18n="lang.zh">中</span>
+</button>
+</div>
+</div>
+</header>
+
+<main class="max-w-[840px] mx-auto px-margin-page pb-section-gap pt-element-gap">
+
+<div class="pt-8 pb-6">
+<a href="/projects.html" class="inline-flex items-center gap-2 font-ui-label text-ui-label text-on-surface-variant hover:text-primary transition-colors" data-i18n="cs.back">← Back to Projects</a>
+</div>
+
+<!-- Hero -->
+<header class="mb-12">
+<div class="flex flex-wrap gap-2 mb-4">
+<span class="font-ui-metadata text-ui-metadata bg-surface-variant px-2 py-1 text-on-surface uppercase tracking-widest" data-i18n="cs.robotics.year">2026</span>
+<span class="font-ui-metadata text-ui-metadata bg-surface-variant px-2 py-1 text-on-surface uppercase tracking-widest" data-i18n="cs.robotics.tag1">Tag 1</span>
+<span class="font-ui-metadata text-ui-metadata bg-surface-variant px-2 py-1 text-on-surface uppercase tracking-widest" data-i18n="cs.robotics.tag2">Tag 2</span>
+<span class="font-ui-metadata text-ui-metadata bg-surface-variant px-2 py-1 text-on-surface uppercase tracking-widest" data-i18n="cs.robotics.tag3">Tag 3</span>
+</div>
+<h1 class="font-display-lg text-[36px] md:text-[48px] lg:text-[56px] leading-[1.1] tracking-tight font-normal text-primary mb-4" data-i18n="cs.robotics.title">Project Title</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl" data-i18n="cs.robotics.tagline">Project tagline.</p>
+</header>
+
+<!-- Cover -->
+<div class="bg-surface-container aspect-[16/10] mb-10 overflow-hidden relative bg-stone-200 rounded-lg">
+<img alt="" loading="lazy" class="w-full h-full object-cover" src="/images/work-robotics.svg"/>
+<div class="absolute inset-0 border border-outline/20 mix-blend-overlay pointer-events-none"></div>
+</div>
+
+<!-- Primary CTA -->
+<div class="mb-16">
+<a href="#preview" class="inline-flex items-center gap-2 px-6 py-3 bg-primary text-on-primary font-ui-label text-ui-label hover:bg-stone-700 transition-colors rounded" data-i18n="cs.robotics.cta">View ↓</a>
+</div>
+
+<!-- About -->
+<section class="mb-12">
+<h2 class="font-h2 text-h2 text-primary mb-4 border-b border-outline-variant pb-3" data-i18n="cs.section.about">About this project</h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed" data-i18n="cs.robotics.about">About copy.</p>
+</section>
+
+<!-- Highlights -->
+<section class="mb-16">
+<h2 class="font-h2 text-h2 text-primary mb-4 border-b border-outline-variant pb-3" data-i18n="cs.section.highlights">Key highlights</h2>
+<ul class="space-y-3 list-none">
+<li class="flex gap-3"><span class="text-on-surface-variant mt-1.5">•</span><span class="font-body-md text-body-md text-on-surface-variant" data-i18n="cs.robotics.h1">Highlight 1</span></li>
+<li class="flex gap-3"><span class="text-on-surface-variant mt-1.5">•</span><span class="font-body-md text-body-md text-on-surface-variant" data-i18n="cs.robotics.h2">Highlight 2</span></li>
+<li class="flex gap-3"><span class="text-on-surface-variant mt-1.5">•</span><span class="font-body-md text-body-md text-on-surface-variant" data-i18n="cs.robotics.h3">Highlight 3</span></li>
+<li class="flex gap-3"><span class="text-on-surface-variant mt-1.5">•</span><span class="font-body-md text-body-md text-on-surface-variant" data-i18n="cs.robotics.h4">Highlight 4</span></li>
+</ul>
+</section>
+
+<!-- Preview -->
+<section id="preview" class="mb-16 scroll-mt-24">
+<h2 class="font-h2 text-h2 text-primary mb-6 border-b border-outline-variant pb-3" data-i18n="cs.section.preview">Preview</h2>
+<div id="img-carousel" class="rounded-lg overflow-hidden border border-outline-variant bg-surface-container preview-protect" oncontextmenu="return false;">
+<div class="flex items-center justify-between px-4 py-3 border-b border-outline-variant bg-surface-container-low">
+<span class="font-ui-metadata text-ui-metadata text-on-surface-variant">
+<span id="carousel-num">1</span> / <span id="carousel-count">…</span>
+</span>
+<div class="flex gap-2">
+<button id="carousel-prev" type="button" class="font-ui-label text-ui-label px-3 py-1.5 rounded border border-outline-variant hover:bg-surface-variant transition-colors disabled:opacity-40 disabled:cursor-not-allowed">←</button>
+<button id="carousel-next" type="button" class="font-ui-label text-ui-label px-3 py-1.5 rounded border border-outline-variant hover:bg-surface-variant transition-colors disabled:opacity-40 disabled:cursor-not-allowed">→</button>
+</div>
+</div>
+<div class="relative p-4 bg-stone-100 flex items-center justify-center" style="min-height: 400px;">
+<img id="carousel-img" class="carousel-img max-w-full object-contain shadow-md bg-white" alt="" draggable="false"/>
+<span class="absolute bottom-3 right-5 text-[10px] text-stone-400 select-none pointer-events-none uppercase tracking-widest">© Zikang Shao — Sample</span>
+</div>
+</div>
+<script>
+(function() {
+    const dir = '/reports/robotics';
+    const exts = ['png', 'jpg', 'jpeg'];
+    const imgEl = document.getElementById('carousel-img');
+    const numEl = document.getElementById('carousel-num');
+    const countEl = document.getElementById('carousel-count');
+    const prevBtn = document.getElementById('carousel-prev');
+    const nextBtn = document.getElementById('carousel-next');
+    let images = [];
+    let idx = 0;
+
+    async function tryLoad(path) {
+        return new Promise(resolve => {
+            const im = new Image();
+            im.onload = () => resolve(true);
+            im.onerror = () => resolve(false);
+            im.src = path;
+        });
+    }
+    async function discoverImages() {
+        for (let i = 1; i <= 12; i++) {
+            const n = String(i).padStart(2, '0');
+            let found = false;
+            for (const ext of exts) {
+                const path = dir + '/' + n + '.' + ext;
+                if (await tryLoad(path)) { images.push(path); found = true; break; }
+            }
+            if (!found && i > 1) break;
+        }
+    }
+    function show(i) {
+        if (!images.length) return;
+        idx = (i + images.length) % images.length;
+        imgEl.src = images[idx];
+        numEl.textContent = idx + 1;
+        prevBtn.disabled = (idx === 0);
+        nextBtn.disabled = (idx === images.length - 1);
+    }
+    prevBtn.addEventListener('click', () => show(idx - 1));
+    nextBtn.addEventListener('click', () => show(idx + 1));
+
+    discoverImages().then(() => {
+        countEl.textContent = images.length || 0;
+        if (images.length) { show(0); }
+        else {
+            document.getElementById('img-carousel').innerHTML = '<div class="p-8 text-center text-on-surface-variant"><p>Sample pages are not available yet.</p></div>';
+        }
+    });
+})();
+</script>
+</section>
+
+<!-- Prev / Next -->
+<nav class="flex justify-between items-center pt-8 border-t border-outline-variant">
+<a href="/projects/take-two-interactive-research.html" class="inline-flex items-center gap-2 font-ui-label text-ui-label text-on-surface-variant hover:text-primary transition-colors">
+<span aria-hidden="true">←</span> <span data-i18n="cs.nav.prev">Previous</span>
+</a>
+<a href="/projects/ai-job-search-copilot.html" class="inline-flex items-center gap-2 font-ui-label text-ui-label text-on-surface-variant hover:text-primary transition-colors">
+<span data-i18n="cs.nav.next">Next</span> <span aria-hidden="true">→</span>
+</a>
+</nav>
+
+</main>
+
+<!-- Footer -->
+<footer class="bg-[#FBFAF7] text-stone-900 font-['Inter'] text-xs tracking-widest uppercase py-20 border-t border-[#E5E2DA] transition-all duration-200">
+<div class="flex justify-center items-center w-full px-8 max-w-7xl mx-auto">
+<div class="flex gap-10 items-center">
+<a class="min-w-[44px] min-h-[44px] text-stone-400 hover:text-stone-900 transition-colors duration-200 inline-flex items-center justify-center" href="https://www.linkedin.com/in/zikang-shao-314282294" target="_blank" rel="noopener" aria-label="LinkedIn">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14zM8.339 18.337v-8.49H5.667v8.49h2.672zM7.003 8.575a1.546 1.546 0 1 0 0-3.092 1.546 1.546 0 0 0 0 3.092zM18.338 18.337v-4.65c0-2.475-1.319-3.628-3.078-3.628-1.42 0-2.056.781-2.41 1.328v-1.14h-2.672c.035.755 0 8.49 0 8.49h2.672v-4.741c0-.24.017-.48.088-.652.193-.48.633-.977 1.371-.977.967 0 1.354.736 1.354 1.815v4.555h2.675z"/></svg>
+</a>
+<a class="min-w-[44px] min-h-[44px] text-stone-400 hover:text-stone-900 transition-colors duration-200 inline-flex items-center justify-center" href="mailto:847919752@qq.com" aria-label="Email">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+</a>
+</div>
+</div>
+</footer>
+
+<script src="/i18n.js"></script>
+</body>
+</html>
