@@ -166,43 +166,151 @@
     "works": {
       "heading": "Selected Works",
       "viewAll": "View All",
-      "viewOnPortfolio": "View on portfolio →",
-      "card": {
-        "1": {
-          "title": "AI Research Engine",
-          "desc": "A precision aggregation engine for investment research — turning fragmented multi-source workflows into one structured output.",
-          "year": "2026"
-        },
-        "2": {
-          "title": "ML-Driven Backtesting in R",
-          "desc": "An end-to-end pipeline from financial-terminal data to a backtested portfolio — regression, time-series, and a full performance report.",
-          "year": "2024"
-        },
-        "3": {
-          "title": "UBS M&A Strategic Analysis",
-          "desc": "A strategic deep-dive on a real UBS M&A case — environment, objectives, and pathway. AI-assisted research lifted team efficiency ~30%.",
-          "year": "2023"
-        },
-        "4": {
-          "title": "Muyuan Co. — Equity Research",
-          "desc": "Industry and company research using Porter's Five Forces and SWOT, with a fully built financial model. University 2nd prize.",
-          "year": "2021"
-        }
+      "viewOnPortfolio": "View on portfolio →"
+    },
+    "projects": {
+      "title": "Projects",
+      "products": { "heading": "Products" },
+      "research": { "heading": "Research" },
+      "copilot": {
+        "title": "AI Job Search Copilot",
+        "tagline": "LLM-based assistant that scores resume-JD match in real time.",
+        "tag1": "LLM",
+        "tag2": "Prompt Engineering",
+        "tag3": "Web App",
+        "badge": "2026"
       },
-      "tag": {
-        "timeSeries": "Time Series",
-        "backtesting": "Backtesting",
-        "ma": "M&A",
-        "strategy": "Strategy",
-        "aiAssisted": "AI-Assisted",
-        "equityResearch": "Equity Research",
-        "modeling": "Modeling"
+      "agent": {
+        "title": "AI Investment Research Agent",
+        "tagline": "Precision aggregation engine for investment research workflows.",
+        "tag1": "Coze",
+        "tag2": "DeepSeek",
+        "tag3": "RAG",
+        "badge": "2026"
+      },
+      "ml": {
+        "title": "ML-Driven Backtesting in R",
+        "tagline": "End-to-end pipeline from financial-terminal data to backtested portfolio.",
+        "tag1": "R",
+        "tag2": "Time Series",
+        "tag3": "Backtesting",
+        "badge": "Top 5%"
+      },
+      "guoyuan": {
+        "title": "Guoyuan Auto Sector Research",
+        "tagline": "Sell-side coverage of the automotive sector and its supply chain.",
+        "tag1": "Equity Research",
+        "tag2": "Auto Sector",
+        "badge": "Sell-side"
+      },
+      "taketwo": {
+        "title": "Take-Two Interactive Company Research",
+        "tagline": "Independent equity research on Take-Two Interactive (NASDAQ: TTWO).",
+        "tag1": "Equity Research",
+        "tag2": "Gaming",
+        "badge": "2025"
+      },
+      "robotics": {
+        "title": "Robotics Industry Research",
+        "tagline": "Industry deep-dive on the robotics sector — market structure, players, and outlook.",
+        "tag1": "Industry Research",
+        "tag2": "Robotics",
+        "badge": "2025"
       }
     },
     "projectsPage": {
-      "title": "All Projects",
-      "subtitle": "Five cases, fully unpacked.",
-      "back": "← Back to portfolio"
+      "title": "Projects — Zikang Shao",
+      "back": "← Back to home"
+    },
+    "cs": {
+      "back": "← Back to Projects",
+      "section": {
+        "about": "About this project",
+        "highlights": "Key highlights",
+        "preview": "Preview"
+      },
+      "nav": { "prev": "Previous", "next": "Next" },
+      "copilot": {
+        "title": "AI Job Search Copilot",
+        "tagline": "An LLM-based assistant that scores resume-JD match in real time and suggests improvements.",
+        "year": "2026",
+        "tag1": "LLM",
+        "tag2": "Prompt Engineering",
+        "tag3": "Web App",
+        "cta": "Try Live Demo →",
+        "about": "A copilot for job seekers navigating fragmented job descriptions and uncertain resume fit. The user pastes a JD and a resume; the system returns a match score, a breakdown of strengths and gaps, and concrete suggestions for tailoring the resume. Built end-to-end as a solo project, from prompt design to deployment.",
+        "h1": "Real-time resume-JD matching using LLM-based reasoning",
+        "h2": "Structured output: match score, strengths, gaps, suggested edits",
+        "h3": "Built with prompt engineering and lightweight web stack",
+        "h4": "Deployed publicly on Cloudflare Pages"
+      },
+      "agent": {
+        "title": "AI Investment Research Agent",
+        "tagline": "A precision aggregation engine that turns fragmented investment research workflows into one structured output.",
+        "year": "2026",
+        "tag1": "Coze",
+        "tag2": "DeepSeek",
+        "tag3": "RAG",
+        "cta": "Try Demo →",
+        "about": "An internal research aggregation engine built on Coze and DeepSeek. The workflow combines knowledge-base retrieval with live web search to address the fragmentation problem in early-stage investment research — where analysts spend disproportionate time gathering and reconciling sources before any analysis begins.",
+        "h1": "Agent workflow: intelligent search → multi-source aggregation → refined output",
+        "h2": "Combines internal knowledge-base retrieval with live web search",
+        "h3": "Built on Coze platform with DeepSeek as the reasoning model",
+        "h4": "Targets ~50% efficiency lift on internal search, ~60% on external aggregation"
+      },
+      "ml": {
+        "title": "ML-Driven Backtesting in R",
+        "tagline": "An end-to-end pipeline from financial-terminal data to a backtested portfolio strategy.",
+        "year": "2024",
+        "tag1": "R",
+        "tag2": "Time Series",
+        "tag3": "Backtesting",
+        "cta": "Read Full Report ↓",
+        "about": "Independent final project for the Machine Learning course in the MSc Finance program at emlyon. From raw financial-terminal data to a backtested portfolio, the project covers data cleansing, exploratory analysis, regression and time-series modeling, simulated investment decisions, and a full performance report. Ranked top 5% of the class.",
+        "h1": "End-to-end pipeline: ingestion → cleansing → EDA → modeling → backtesting",
+        "h2": "Applied regression and time-series methods to validate investment strategies",
+        "h3": "Independently executed from data preparation through reporting",
+        "h4": "Course final ranked top 5%; overall course grade top 10%"
+      },
+      "guoyuan": {
+        "title": "Guoyuan Auto Sector Research",
+        "tagline": "Sell-side coverage of the automotive sector and its supply chain at Guoyuan Securities.",
+        "year": "2024",
+        "tag1": "Equity Research",
+        "tag2": "Auto Sector",
+        "cta": "View Sample Pages ↓",
+        "about": "Contributed to 5 in-depth research reports on the automotive sector and its supply chain during the analyst role at Guoyuan Securities. Work covered industry trends, business-model deconstruction, competitive landscape analysis, and company fundamentals — supporting investment narratives across the coverage universe.",
+        "h1": "Contributed to 5 sector and company research reports",
+        "h2": "Industry trend analysis and supply-chain mapping",
+        "h3": "Financial analysis: revenue, margin, cash-flow drivers",
+        "h4": "Industry database setup and ongoing maintenance"
+      },
+      "taketwo": {
+        "title": "Take-Two Interactive Company Research",
+        "tagline": "Independent equity research on Take-Two Interactive (NASDAQ: TTWO).",
+        "year": "2025",
+        "tag1": "Equity Research",
+        "tag2": "Gaming Sector",
+        "cta": "View Sample Pages ↓",
+        "about": "An independent company research project on Take-Two Interactive, covering business segments, key franchises (Grand Theft Auto, NBA 2K, Red Dead Redemption), financial performance, and competitive positioning within the global gaming industry.",
+        "h1": "Company overview: business segments and revenue mix",
+        "h2": "Franchise analysis: GTA, NBA 2K, Red Dead Redemption",
+        "h3": "Financial deep-dive: revenue drivers and margin structure",
+        "h4": "Competitive positioning within the gaming sector"
+      },
+      "robotics": {
+        "title": "Robotics Industry Research",
+        "tagline": "Industry deep-dive on the robotics sector — market structure, players, and outlook.",
+        "year": "2025",
+        "tag1": "Industry Research",
+        "tag2": "Robotics",
+        "cta": "View Sample Pages ↓",
+        "about": "An independent industry research project on the global robotics sector. Covers market structure across industrial, service, and humanoid segments; key players and competitive dynamics; technology trends; and forward-looking outlook on growth drivers.",
+        "h1": "Market segmentation: industrial, service, humanoid robotics",
+        "h2": "Competitive landscape and key players mapping",
+        "h3": "Technology trend analysis: AI integration, sensors, actuators",
+        "h4": "Forward-looking outlook on growth drivers and risks"
+      }
     },
     "capabilities": {
       "heading": "Capabilities",
@@ -406,43 +514,151 @@
     "works": {
       "heading": "精选作品",
       "viewAll": "查看全部",
-      "viewOnPortfolio": "在简历中查看 →",
-      "card": {
-        "1": {
-          "title": "AI 投研引擎",
-          "desc": "面向投研的精准聚合引擎-把多源碎片化的工作流，凝练为一份结构化输出。",
-          "year": "2026"
-        },
-        "2": {
-          "title": "R 语言机器学习回测",
-          "desc": "从金融终端数据到回测组合的端到端流水线—回归、时间序列与一份完整的业绩报告。",
-          "year": "2024"
-        },
-        "3": {
-          "title": "瑞银（UBS）并购战略分析",
-          "desc": "针对真实瑞银并购案的战略深度分析—环境、目标与路径。AI 辅助研究使团队效率提升约 30%。",
-          "year": "2023"
-        },
-        "4": {
-          "title": "牧原股份 — 股票研究",
-          "desc": "运用波特五力与 SWOT 进行行业与公司研究，端到端搭建财务模型。校级二等奖。",
-          "year": "2021"
-        }
+      "viewOnPortfolio": "在简历中查看 →"
+    },
+    "projects": {
+      "title": "作品集",
+      "products": { "heading": "产品" },
+      "research": { "heading": "研究" },
+      "copilot": {
+        "title": "AI 求职助手",
+        "tagline": "基于 LLM 的求职助手，实时计算简历与岗位匹配度。",
+        "tag1": "LLM",
+        "tag2": "Prompt Engineering",
+        "tag3": "Web App",
+        "badge": "2026"
       },
-      "tag": {
-        "timeSeries": "时间序列",
-        "backtesting": "回测",
-        "ma": "并购",
-        "strategy": "战略",
-        "aiAssisted": "AI 辅助",
-        "equityResearch": "股票研究",
-        "modeling": "建模"
+      "agent": {
+        "title": "AI 投研 Agent",
+        "tagline": "面向投研流程的精准信息聚合 Agent。",
+        "tag1": "Coze",
+        "tag2": "DeepSeek",
+        "tag3": "RAG",
+        "badge": "2026"
+      },
+      "ml": {
+        "title": "机器学习驱动的投资回测（R）",
+        "tagline": "从金融终端数据到组合回测的端到端机器学习流程。",
+        "tag1": "R",
+        "tag2": "时间序列",
+        "tag3": "回测",
+        "badge": "Top 5%"
+      },
+      "guoyuan": {
+        "title": "国元证券 · 汽车行业研究",
+        "tagline": "汽车行业及供应链的卖方研究覆盖。",
+        "tag1": "卖方研究",
+        "tag2": "汽车行业",
+        "badge": "卖方"
+      },
+      "taketwo": {
+        "title": "Take-Two Interactive 公司研究",
+        "tagline": "Take-Two Interactive (NASDAQ: TTWO) 独立公司研究。",
+        "tag1": "公司研究",
+        "tag2": "游戏行业",
+        "badge": "2025"
+      },
+      "robotics": {
+        "title": "机器人行业研究",
+        "tagline": "机器人行业深度研究——市场结构、玩家与前景。",
+        "tag1": "行业研究",
+        "tag2": "机器人",
+        "badge": "2025"
       }
     },
     "projectsPage": {
-      "title": "全部作品",
-      "subtitle": "五个案例，完整呈现。",
+      "title": "作品集 — 邵子康",
       "back": "← 返回首页"
+    },
+    "cs": {
+      "back": "← 返回作品集",
+      "section": {
+        "about": "项目简介",
+        "highlights": "亮点",
+        "preview": "预览"
+      },
+      "nav": { "prev": "上一个", "next": "下一个" },
+      "copilot": {
+        "title": "AI 求职助手",
+        "tagline": "基于 LLM 的求职助手——实时计算简历与岗位匹配度，并给出针对性修改建议。",
+        "year": "2026",
+        "tag1": "LLM",
+        "tag2": "Prompt Engineering",
+        "tag3": "Web App",
+        "cta": "立即体验 →",
+        "about": "一款帮助求职者应对碎片化 JD 与简历适配难题的 Copilot。用户粘贴 JD 与简历，系统返回匹配评分、优劣势拆解，以及具体的修改建议。从 Prompt 设计到上线部署，独立完成。",
+        "h1": "基于 LLM 推理的实时简历-岗位匹配",
+        "h2": "结构化输出：匹配评分、优势、不足、修改建议",
+        "h3": "Prompt 工程 + 轻量 Web 技术栈",
+        "h4": "部署于 Cloudflare Pages，已公开上线"
+      },
+      "agent": {
+        "title": "AI 投研 Agent",
+        "tagline": "面向投研流程的精准信息聚合引擎——把散落的多源工作流整合为结构化输出。",
+        "year": "2026",
+        "tag1": "Coze",
+        "tag2": "DeepSeek",
+        "tag3": "RAG",
+        "cta": "立即体验 →",
+        "about": "基于 Coze 与 DeepSeek 搭建的内部研究聚合引擎。工作流结合知识库检索与实时网页搜索，解决投研早期\"信息散落多源、收集整理耗时远大于分析本身\"的核心痛点。",
+        "h1": "Agent 工作流：智能检索 → 多源聚合 → 精炼输出",
+        "h2": "内部知识库检索 + 实时 Web Search 双轨",
+        "h3": "Coze 平台搭建，DeepSeek 作为推理模型",
+        "h4": "目标：内部检索效率提升约 50%，外部聚合效率提升约 60%"
+      },
+      "ml": {
+        "title": "机器学习驱动的投资回测（R）",
+        "tagline": "从金融终端数据到组合回测的端到端机器学习流程。",
+        "year": "2024",
+        "tag1": "R",
+        "tag2": "时间序列",
+        "tag3": "回测",
+        "cta": "阅读完整报告 ↓",
+        "about": "emlyon 金融硕士机器学习课程的独立期末项目。从金融终端原始数据出发，经过数据清洗、探索性分析、回归与时间序列建模、模拟投资决策，最终形成组合回测报告。项目排名班级前 5%。",
+        "h1": "端到端流程：数据导入 → 清洗 → EDA → 建模 → 回测",
+        "h2": "应用回归与时间序列方法验证投资策略",
+        "h3": "从数据准备到报告独立完成",
+        "h4": "期末项目班级前 5%；课程总成绩前 10%"
+      },
+      "guoyuan": {
+        "title": "国元证券 · 汽车行业研究",
+        "tagline": "国元证券实习期间，汽车行业及供应链的卖方研究覆盖。",
+        "year": "2024",
+        "tag1": "卖方研究",
+        "tag2": "汽车行业",
+        "cta": "查看样张 ↓",
+        "about": "在国元证券汽车组实习期间，参与 5 份汽车行业及供应链研究报告，涵盖行业趋势分析、商业模式拆解、竞争格局评估、公司基本面研究——为覆盖范围内的投资判断提供支撑。",
+        "h1": "参与 5 份行业与公司研究报告",
+        "h2": "行业趋势分析与供应链梳理",
+        "h3": "财务分析：收入、毛利、现金流驱动因子",
+        "h4": "建立并维护行业数据库"
+      },
+      "taketwo": {
+        "title": "Take-Two Interactive 公司研究",
+        "tagline": "Take-Two Interactive (NASDAQ: TTWO) 独立公司研究。",
+        "year": "2025",
+        "tag1": "公司研究",
+        "tag2": "游戏行业",
+        "cta": "查看样张 ↓",
+        "about": "Take-Two Interactive 独立公司研究项目，涵盖业务板块、核心 IP（GTA、NBA 2K、Red Dead Redemption）、财务表现，以及在全球游戏行业中的竞争定位。",
+        "h1": "公司概览：业务板块与收入结构",
+        "h2": "核心 IP 分析：GTA、NBA 2K、Red Dead Redemption",
+        "h3": "财务深度分析：收入驱动与利润结构",
+        "h4": "游戏行业内的竞争定位"
+      },
+      "robotics": {
+        "title": "机器人行业研究",
+        "tagline": "机器人行业深度研究——市场结构、玩家与前景。",
+        "year": "2025",
+        "tag1": "行业研究",
+        "tag2": "机器人",
+        "cta": "查看样张 ↓",
+        "about": "全球机器人行业独立研究项目，覆盖工业、服务、人形三大细分赛道的市场结构；关键玩家与竞争格局；技术趋势；以及对增长驱动因子的前瞻判断。",
+        "h1": "市场细分：工业、服务、人形机器人",
+        "h2": "竞争格局与关键玩家梳理",
+        "h3": "技术趋势分析：AI 融合、传感器、执行器",
+        "h4": "增长驱动与风险的前瞻判断"
+      }
     },
     "capabilities": {
       "heading": "能力",
