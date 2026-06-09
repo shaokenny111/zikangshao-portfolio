@@ -184,8 +184,8 @@
         "heading": "Research"
       },
       "copilot": {
-        "title": "AI Job Search Copilot",
-        "tagline": "LLM-based assistant that scores resume-JD match in real time.",
+        "title": "AI Resume Compiler",
+        "tagline": "Compiles a tailored resume for each job — with every AI edit traceable to its source.",
         "tag1": "LLM",
         "tag2": "Prompt Engineering",
         "tag3": "Web App",
@@ -245,18 +245,20 @@
         "next": "Next"
       },
       "copilot": {
-        "title": "AI Job Search Copilot",
-        "tagline": "An LLM-based assistant that scores resume-JD match in real time and suggests improvements.",
+        "title": "AI Resume Compiler",
+        "tagline": "Compiles a tailored resume for each job — with every AI edit traceable to its source.",
         "year": "2026",
         "tag1": "LLM",
         "tag2": "Prompt Engineering",
         "tag3": "Web App",
         "cta": "Try Live Demo →",
-        "about": "A copilot for job seekers navigating fragmented job descriptions and uncertain resume fit. The user pastes a JD and a resume; the system returns a match score, a breakdown of strengths and gaps, and concrete suggestions for tailoring the resume. Built end-to-end as a solo project, from prompt design to deployment.",
-        "h1": "Real-time resume-JD matching using LLM-based reasoning",
-        "h2": "Structured output: match score, strengths, gaps, suggested edits",
-        "h3": "Built with prompt engineering and lightweight web stack",
-        "h4": "Deployed publicly on Cloudflare Pages"
+        "about": "A resume tool built on one idea: treat your resume as a compilable asset. You maintain a single master resume as your source of truth, and edit it whenever you like; the system never writes back into it — instead it compiles a separate, tailored version against each job description, selecting, rewriting, and analyzing gaps. Every rewritten line is tagged by source (green = from your master, yellow = inferred, red = AI-added, which you must confirm before it's written in), so the AI can never silently fabricate experience for you. Built end-to-end as a solo project, from product design and prompt engineering to deployment.",
+        "h1": "Master–child compilation: your master stays the source of truth, a tailored version per job",
+        "h2": "Green / yellow / red source tagging — red (AI-inferred) requires your confirmation",
+        "h3": "Cross-language matching: Chinese resume against an English JD, scored honestly",
+        "h4": "Honest scoring that won't inflate — shows a tier, not a falsely precise number",
+        "h5": "Solo build: product design, prompt engineering, deployment on Cloudflare Pages",
+        "note": "Note: the live demo relies on an AI service that isn't available in all regions, so it may not load on some networks. If it doesn't open for you, I'm happy to share a screen recording or walk you through it directly."
       },
       "agent": {
         "title": "AI Investment Research Agent",
@@ -551,8 +553,8 @@
         "heading": "研究"
       },
       "copilot": {
-        "title": "AI 求职助手",
-        "tagline": "基于 LLM 的求职助手，实时计算简历与岗位匹配度。",
+        "title": "AI 简历编译助手",
+        "tagline": "为每个岗位编译一份定向简历，且每一处 AI 改写都可追溯来源。",
         "tag1": "LLM",
         "tag2": "Prompt Engineering",
         "tag3": "Web App",
@@ -612,18 +614,20 @@
         "next": "下一个"
       },
       "copilot": {
-        "title": "AI 求职助手",
-        "tagline": "基于 LLM 的求职助手——实时计算简历与岗位匹配度，并给出针对性修改建议。",
+        "title": "AI 简历编译助手",
+        "tagline": "为每个岗位编译一份定向简历，且每一处 AI 改写都可追溯来源。",
         "year": "2026",
         "tag1": "LLM",
         "tag2": "Prompt Engineering",
         "tag3": "Web App",
         "cta": "立即体验 →",
-        "about": "一款帮助求职者应对碎片化 JD 与简历适配难题的 Copilot。用户粘贴 JD 与简历，系统返回匹配评分、优劣势拆解，以及具体的修改建议。从 Prompt 设计到上线部署，独立完成。",
-        "h1": "基于 LLM 推理的实时简历-岗位匹配",
-        "h2": "结构化输出：匹配评分、优势、不足、修改建议",
-        "h3": "Prompt 工程 + 轻量 Web 技术栈",
-        "h4": "部署于 Cloudflare Pages，已公开上线"
+        "about": "一个建立在单一理念上的简历工具：把简历当作可编译资产。你维护一份作为唯一事实来源的母版，并可随时自行编辑；系统从不回写母版，而是针对每个岗位描述另外编译出一份独立的定向简历——做取舍、改写与差距分析。每一条改写都按来源标注（绿=来自母版，黄=合理推断，红=AI 新增、须你确认后才写入），从机制上杜绝 AI 替你凭空编造经历。从产品设计、提示词工程到部署，独立完成全流程。",
+        "h1": "母版—子版编译：母版始终是你掌控的唯一事实来源，每个岗位编译一份定向简历",
+        "h2": "绿/黄/红三级来源标注——红色（AI 推断）必须经你确认",
+        "h3": "跨语言匹配：中文简历对英文 JD，也能诚实评分",
+        "h4": "诚实评分，不虚高——给出匹配档位，而非一个看似精确的假数字",
+        "h5": "独立完成：产品设计、提示词工程、Cloudflare Pages 部署",
+        "note": "提示：本 Demo 依赖的 AI 服务在部分地区暂不可用，某些网络环境下可能无法加载。如果你这边打不开，我很乐意提供操作录屏，或直接为你演示。"
       },
       "agent": {
         "title": "AI 投研 Agent",
