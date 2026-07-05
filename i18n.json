@@ -192,11 +192,11 @@
         "badge": "2026"
       },
       "agent": {
-        "title": "AI Investment Research Agent",
-        "tagline": "Precision aggregation engine for investment research workflows.",
-        "tag1": "Coze",
-        "tag2": "DeepSeek",
-        "tag3": "RAG",
+        "title": "Enterprise AI Retrieval Assistant",
+        "tagline": "A RAG + Agent enterprise knowledge assistant over five internal knowledge bases.",
+        "tag1": "RAG + Agent",
+        "tag2": "Hybrid Retrieval",
+        "tag3": "FastAPI",
         "badge": "2026"
       },
       "ml": {
@@ -261,18 +261,18 @@
         "note": "Note: the live demo relies on an AI service that isn't available in all regions, so it may not load on some networks. If it doesn't open for you, I'm happy to share a screen recording or walk you through it directly."
       },
       "agent": {
-        "title": "AI Investment Research Agent",
-        "tagline": "A precision aggregation engine that turns fragmented investment research workflows into one structured output.",
+        "title": "Enterprise AI Retrieval Assistant",
+        "tagline": "A RAG + Agent enterprise knowledge assistant over five internal knowledge bases.",
         "year": "2026",
-        "tag1": "Coze",
-        "tag2": "DeepSeek",
-        "tag3": "RAG",
+        "tag1": "RAG + Agent",
+        "tag2": "Hybrid Retrieval",
+        "tag3": "FastAPI",
         "cta": "Try Demo →",
-        "about": "An internal research aggregation engine built on Coze and DeepSeek. The workflow combines knowledge-base retrieval with live web search to address the fragmentation problem in early-stage investment research — where analysts spend disproportionate time gathering and reconciling sources before any analysis begins.",
-        "h1": "Agent workflow: intelligent search → multi-source aggregation → refined output",
-        "h2": "Combines internal knowledge-base retrieval with live web search",
-        "h3": "Built on Coze platform with DeepSeek as the reasoning model",
-        "h4": "Targets ~50% efficiency lift on internal search, ~60% on external aggregation"
+        "about": "A RAG + Agent enterprise knowledge assistant. Autonomously routes across five knowledge bases with cross-base retrieval; uses hybrid vector + BM25 search for exact-match cases, with honest fallback over hallucination. Built from scratch in Python and deployed live.",
+        "h1": "Agent autonomously routes each query across five internal knowledge bases, with cross-base retrieval",
+        "h2": "Hybrid vector + BM25 retrieval for exact-match cases such as precise IDs and clause numbers",
+        "h3": "Honest fallback when no answer is found — refuses to fabricate rather than hallucinate",
+        "h4": "Built end-to-end from scratch in Python (FastAPI) and deployed live on Hugging Face Spaces"
       },
       "ml": {
         "title": "ML-Driven Backtesting in R",
@@ -561,11 +561,11 @@
         "badge": "2026"
       },
       "agent": {
-        "title": "AI 投研 Agent",
-        "tagline": "面向投研流程的精准信息聚合 Agent。",
-        "tag1": "Coze",
-        "tag2": "DeepSeek",
-        "tag3": "RAG",
+        "title": "企业内部 AI 信息检索助手",
+        "tagline": "基于 RAG + Agent 的企业内部知识问答系统，自主路由五个知识库。",
+        "tag1": "RAG + Agent",
+        "tag2": "混合检索",
+        "tag3": "FastAPI",
         "badge": "2026"
       },
       "ml": {
@@ -630,18 +630,18 @@
         "note": "提示：本 Demo 依赖的 AI 服务在部分地区暂不可用，某些网络环境下可能无法加载。如果你这边打不开，我很乐意提供操作录屏，或直接为你演示。"
       },
       "agent": {
-        "title": "AI 投研 Agent",
-        "tagline": "面向投研流程的精准信息聚合引擎——把散落的多源工作流整合为结构化输出。",
+        "title": "企业内部 AI 信息检索助手",
+        "tagline": "基于 RAG + Agent 的企业内部知识问答系统，自主路由五个知识库。",
         "year": "2026",
-        "tag1": "Coze",
-        "tag2": "DeepSeek",
-        "tag3": "RAG",
+        "tag1": "RAG + Agent",
+        "tag2": "混合检索",
+        "tag3": "FastAPI",
         "cta": "立即体验 →",
-        "about": "基于 Coze 与 DeepSeek 搭建的内部研究聚合引擎。工作流结合知识库检索与实时网页搜索，解决投研早期\"信息散落多源、收集整理耗时远大于分析本身\"的核心痛点。",
-        "h1": "Agent 工作流：智能检索 → 多源聚合 → 精炼输出",
-        "h2": "内部知识库检索 + 实时 Web Search 双轨",
-        "h3": "Coze 平台搭建，DeepSeek 作为推理模型",
-        "h4": "目标：内部检索效率提升约 50%，外部聚合效率提升约 60%"
+        "about": "基于 RAG + Agent 的企业内部知识问答系统。自主路由五个知识库、跨库检索，精确编号场景用向量 + BM25 混合检索，查不到时诚实兜底不编造。Python 从零实现并部署上线。",
+        "h1": "Agent 自主路由五个内部知识库，支持跨库检索",
+        "h2": "精确编号等场景采用向量 + BM25 混合检索",
+        "h3": "查不到时诚实兜底、拒绝编造，而非幻觉输出",
+        "h4": "Python 从零实现（FastAPI），已部署上线（Hugging Face Spaces）"
       },
       "ml": {
         "title": "机器学习驱动的投资回测（R）",
